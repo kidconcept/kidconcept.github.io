@@ -1,0 +1,1881 @@
+// /Library/WebServer/menu/_widgets/manage/e123-menu.css
+		.notes-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+
+		.notes-wrapper .note {	
+			position: relative;
+			margin-top:20px;	
+		}
+			
+		.notes-wrapper .next-note {
+			position: relative;
+			transform: scale(.9);	
+			height: 80px;
+			margin-bottom:-100px;
+			background-color: ##efda73;
+			
+			/*animated */
+			top: 0;
+			opacity: 0;
+			transition-property: top, opacity;
+			transition-duration: 250ms; 	
+		}	
+					
+		.notes-wrapper textarea {
+			background-color: transparent;
+			border: none;
+			width: 100%;
+			min-height: 200px;
+			resize: none;
+		}
+		
+		.notes-wrapper textarea:focus {
+			outline: none !important;
+			resize: vertical;
+		}
+		
+		.notes-wrapper .addNote{
+			margin-top: 0;
+			padding: 0;
+			display: inline-block;
+		}
+		
+		
+		.notes-wrapper  .noteType{
+			display: inline-block;
+		}
+		
+				
+		.notes-wrapper .active{
+			margin-top: 10px;
+			padding: 0;
+		}
+		
+		.notes-wrapper .header {
+			display: flex;
+			justify-content: space-between;
+		}		
+
+		.notes-wrapper .footer {
+			display: flex;
+			justify-content: flex-end;
+		}
+		
+		.notes-wrapper .close{
+			margin-right: 10px;		
+		}
+	
+		.notes-wrapper .close:focus {
+			border: none;
+			outline: none;
+		}
+		
+		.notes-wrapper .next-note.peak {	
+			top:-13px;
+			opacity: 1;
+			transition-property: top, opacity;
+			transition-duration: 300ms;			
+		}
+		
+		.fade-enter-active{
+       	 /*animated */
+			top: 0;
+			margin-bottom: 0;
+			transform: scale(1);
+			background-color: ##F9ED80;
+			
+			transition-property: transform, margin,top,background;
+			transition-duration: 300ms;
+    	}
+   	    	
+		.fade-enter{
+       		 /*animated */
+			top: 0;
+			margin-bottom:-300px;
+			transform: scale(.8);	
+			background-color: ##efda73;
+    	}
+    	
+		.fade-leave-active{		
+			opacity: 0;
+			transition-property: opacity;
+			transition-duration: 200ms;
+		}
+		
+		.fade-leave{
+			opacity: 1;			
+		}	
+				
+		.preload * {
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-ms-transition: none !important;
+		-o-transition: none !important;
+		}
+// /Library/WebServer/menu/_widgets/manage/e123-note.css
+/*
+Script Name..: e123-notes.css
+Date Created.: 02/ - / 2019
+Copyright....: Enrollment123.com, 2016-present
+Author.......: Tatsat Divetia 
+Description..: Note widget css.
+
+Jira ticket : NFD-16
+
+
+Revision History:
+
+*/
+
+
+.notes-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.notes-wrapper .note {	
+	position: relative;
+	margin-top:20px;	
+}
+	
+.notes-wrapper .next-note {
+	position: relative;
+	transform: scale(.9);	
+	height: 80px;
+	margin-bottom:-100px;
+	background-color: #efda73;
+	
+	/*animated */
+	top: 0;
+	opacity: 0;
+	transition-property: top, opacity;
+	transition-duration: 250ms; 	
+}	
+			
+.notes-wrapper textarea {
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	min-height: 200px;
+	resize: none;
+}
+
+.notes-wrapper textarea:focus {
+	outline: none !important;
+	resize: vertical;
+}
+
+.notes-wrapper .addNote{
+	margin-top: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+
+.notes-wrapper  .noteType{
+	display: inline-block;
+}
+
+		
+.notes-wrapper .active{
+	margin-top: 10px;
+	padding: 0;
+}
+
+.notes-wrapper .header {
+	display: flex;
+	justify-content: space-between;
+}		
+
+.notes-wrapper .footer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.notes-wrapper .fake .special{
+	padding-top:15px;
+}
+
+
+.notes-wrapper .close{
+	margin-right: 10px;		
+}
+
+.notes-wrapper .close:focus {
+	border: none;
+	outline: none;
+}
+
+.notes-wrapper .next-note.peak {	
+	top:-20px;
+	opacity: 1;
+	transition-property: top, opacity;
+	transition-duration: 300ms;			
+}
+
+.fade-enter-active{
+	 /*animated */
+	top: 0;
+	margin-bottom: 0;
+	transform: scale(1);
+	background-color: #F9ED80;
+	
+	transition-property: transform, margin,top,background;
+	transition-duration: 300ms;
+}
+    	
+.fade-enter{
+		 /*animated */
+	top: 0;
+	margin-bottom:-144px;
+	transform: scale(.8);	
+	background-color: #efda73;
+}
+
+.fade-leave-active{		
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 200ms;
+}
+
+.fade-leave{
+	opacity: 1;			
+}	
+		
+.preload * {
+-webkit-transition: none !important;
+-moz-transition: none !important;
+-ms-transition: none !important;
+-o-transition: none !important;
+}
+
+// /Library/WebServer/menu//_themes/reset/shiv.css
+/* 
+
+Script Name..: shiv.css
+Date Created.: 03/14/2019
+Copyright....: Enrollment123.com, 2016-present
+Author.......: Tatsat Divetia
+Description..: Shiv is used to override the css of below files :
+
+Revision History:
+
+*/
+
+
+
+
+/* ====== 1) Admin.css (/css/admin.css). Remove these styles when we remove admin ========= */
+
+
+
+.page_text {
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: coral !important;	
+}
+
+.note .button,
+.note .button:focus,
+.note .button:hover{
+	border: none;
+}
+
+nav.amaranth ul li, nav.amaranth div{
+	font-family: "Source Sans Pro" !important;
+}
+
+nav .button{
+	background-color: none !important;
+}
+
+nav ul a:hover{
+	text-decoration: none;
+}
+
+nav.amaranth ul ul {
+	border: 1px solid #e8e8e8 !important;
+}
+
+/*
+nav .user{
+	background-color: none;
+	background : none;
+	border:none;
+	color: #ffffff;
+	}
+*/
+
+
+/* ====== 1) Bootstrap.css (/css/bootstrap.css). Remove these styles when we remove bootstrap ========= */
+
+
+
+/* ====== 1) Header.cfm inline styles. Remove these styles when we remove the inline styles from header.cfm ========= */
+
+.info{
+	background: #f8fafc !important;
+    border-color: #3892d2 !important;
+}
+
+/* ====== 1) Dang Theme  ========= */
+
+body {
+	background-color: transparent !important;
+}
+
+nav.amaranth .search {
+	font-family: inherit;
+    font-size: inherit;
+}
+
+
+
+
+
+// /Library/WebServer/menu//_themes/leopardshark.css
+@charset "UTF-8";
+@import '../normalize.css';
+/*
+
+Using Colors. There are 12 themeable colors used throughout Leopard Shark.
+
+text // For all body text, table text, and form field text
+textoff // To indicate text and fields that is not selected 
+foreground // For headers and table highlights
+background // Background color of page
+navcolor // Nav bar color
+navtext // Nav text color
+primary // For links and headers
+highlight // Indicates selections
+buttoncolor // For button backgrounds
+buttontext // Button text
+formfield // input, select and textarea backgrounds
+formborder // input, select and textarea borders
+
+
+To use themed colors you must wrap the themed mixin around the properties you want to theme, and then assign one of the 12 themed colors with the themed function.
+
+Example:
+
+element {
+	@include themed($colors) {
+		color: themed('primary');
+		background-color: themed('highlight')
+	}
+}
+
+
+*/
+.office-blue body {
+  background-color: #f5f6f6;
+  color: #231f20;
+}
+.day-blue body {
+  background-color: #fff;
+  color: #231f20;
+}
+.night-blue body {
+  background-color: #282923;
+  color: #fff;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+}
+
+p {
+  margin: 12px 0 7px 0;
+}
+
+.wire-icon.miniburger:before {
+  content: "";
+}
+
+.wire-icon.arrow:before {
+  content: "";
+}
+
+.wire-icon.checkbox:before {
+  content: "";
+}
+
+.wire-icon.search:before {
+  content: "";
+}
+
+.wire-icon.camera:before {
+  content: "";
+}
+
+.wire-icon.help:before {
+  content: "";
+}
+
+.wire-icon.settings:before {
+  content: "";
+}
+
+.wire-icon.person:before {
+  content: "";
+}
+
+/*
+
+ Using the Wire icons:
+ The wire icons are single color font icons.
+
+ To use the wire icons give the class wire-icon and add the desired icon noun. Wire icons can be color changed with the css color property.
+
+ List of available wire icons:
+ camera
+ help
+ settings
+ users
+
+ EXAMPLE
+
+ <i class="wire-icon camera">
+
+ i {
+   color: coral;
+ }
+
+ Using the Flat CSS icons:
+ The flat icons are full color svgs. They come in two styles, icon and button. To include an icon add the class icon-[noun]. To make it a button add the class button. Icons come in three sizes, use the class big and small to access the non default sizes.
+
+
+ <div class="icon-world"></div>
+ <div class="icon-world small"></div>
+
+ <div class="icon-pie_chart button">Pie is delicious</div>
+ <div class="icon-phone button ">Call me</div>
+
+ Here are a list of nouns.
+ briefcase
+ coin
+ download
+ mail
+ phone
+ printer
+ edit
+ pie_chart
+ world
+
+  */
+[class^=icon-] {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  height: 18px;
+  width: 18px;
+}
+[class^=icon-].big {
+  height: 25px;
+  width: 25px;
+}
+[class^=icon-].small {
+  height: 16px;
+  width: 16px;
+}
+[class^=icon-].button {
+  vertical-align: middle;
+  font-style: normal;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+  background-repeat: no-repeat;
+  height: 22px;
+  margin: 0 2px;
+  background-position-y: 50%;
+  background-position-x: 3px;
+  background-size: 18px;
+  padding-right: 6px;
+  padding-left: 26px;
+  padding-top: 5px;
+  font-size: 12px;
+}
+.office-blue [class^=icon-].button {
+  color: #231f20;
+}
+.day-blue [class^=icon-].button {
+  color: #231f20;
+}
+.night-blue [class^=icon-].button {
+  color: #fff;
+}
+[class^=icon-].button.big {
+  height: 36px;
+  margin: 0 5px;
+  background-size: 30px;
+  background-position-x: 5px;
+  padding-right: 10px;
+  padding-left: 37px;
+  padding-top: 8px;
+  font-size: 17px;
+}
+[class^=icon-].button.small {
+  margin: 0 5px;
+  height: 18px;
+  margin-top: -3px;
+  background-position-x: 4px;
+  background-size: 13px;
+  font-size: 10px;
+  line-height: 9px;
+  padding-left: 19px;
+  padding-right: 7px;
+}
+[class^=icon-].button:hover {
+  background-color: white;
+  position: relative;
+  top: -1px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+[class^=icon-].button:active {
+  top: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.icon-briefcase {
+  background-image: url(/_themes/icons/flaticons/./briefcase.svg);
+}
+.icon-briefcase:hover {
+  background-image: url(/_themes/icons/flaticons/./briefcase.svg);
+}
+
+.icon-coin {
+  background-image: url(/_themes/icons/flaticons/./coin_silhouette.svg);
+}
+.icon-coin:hover {
+  background-image: url(/_themes/icons/flaticons/./coin_silhouette.svg);
+}
+
+.icon-download {
+  background-image: url(/_themes/icons/flaticons/./download2.svg);
+}
+.icon-download:hover {
+  background-image: url(/_themes/icons/flaticons/./download2.svg);
+}
+
+.icon-mail {
+  background-image: url(/_themes/icons/flaticons/./envelope_open.svg);
+}
+.icon-mail:hover {
+  background-image: url(/_themes/icons/flaticons/./envelope_open.svg);
+}
+
+.icon-phone {
+  background-image: url(/_themes/icons/flaticons/./phone.svg);
+}
+.icon-phone:hover {
+  background-image: url(/_themes/icons/flaticons/./phone.svg);
+}
+
+.icon-printer {
+  background-image: url(/_themes/icons/flaticons/./printer.svg);
+}
+.icon-printer:hover {
+  background-image: url(/_themes/icons/flaticons/./printer.svg);
+}
+
+.icon-edit {
+  background-image: url(/_themes/icons/flaticons/./script_editor.svg);
+}
+.icon-edit:hover {
+  background-image: url(/_themes/icons/flaticons/./script_editor.svg);
+}
+
+.icon-pie_chart {
+  background-image: url(/_themes/icons/flaticons/./stats_pie_chart.svg);
+}
+.icon-pie_chart:hover {
+  background-image: url(/_themes/icons/flaticons/./stats_pie_chart.svg);
+}
+
+.icon-world {
+  background-image: url(/_themes/icons/flaticons/./world_america.svg);
+}
+.icon-world:hover {
+  background-image: url(/_themes/icons/flaticons/./world_america.svg);
+}
+
+.icon-calendar {
+  background-image: url(/_themes/icons/flaticons/./calendar.svg);
+}
+.icon-calendar:hover {
+  background-image: url(/_themes/icons/flaticons/./calendar.svg);
+}
+
+.icon-saved {
+  background-image: url(/_themes/icons/flaticons/./saved.svg);
+}
+.icon-saved:hover {
+  background-image: url(/_themes/icons/flaticons/./saved.svg);
+}
+
+.icon-saving {
+  background-image: url(/_themes/icons/flaticons/./saving.svg);
+}
+.icon-saving:hover {
+  background-image: url(/_themes/icons/flaticons/./saving.svg);
+}
+
+.icon-add {
+  background-image: url(/_themes/icons/flaticons/./add.svg);
+}
+.icon-add:hover {
+  background-image: url(/_themes/icons/flaticons/./add.svg);
+}
+
+.icon-close {
+  background-image: url(/_themes/icons/flaticons/./close.svg);
+}
+.icon-close:hover {
+  background-image: url(/_themes/icons/flaticons/./close.svg);
+}
+
+.icon-rightarrow {
+  background-image: url(/_themes/icons/flaticons/./right-arrow.svg);
+}
+.icon-rightarrow:hover {
+  background-image: url(/_themes/icons/flaticons/./right-arrow.svg);
+}
+
+.icon-clipboard {
+  background-image: url(/_themes/icons/flaticons/./clipboard.svg);
+}
+.icon-clipboard:hover {
+  background-image: url(/_themes/icons/flaticons/./clipboard.svg);
+}
+
+.icon-old-phone {
+  background-image: url(/_themes/icons/flaticons/./old-phone.svg);
+}
+.icon-old-phone:hover {
+  background-image: url(/_themes/icons/flaticons/./old-phone.svg);
+}
+
+.icon-robot {
+  background-image: url(/_themes/icons/flaticons/./robot.svg);
+}
+.icon-robot:hover {
+  background-image: url(/_themes/icons/flaticons/./robot.svg);
+}
+
+.icon-chat_exclamation {
+  background-image: url(/_themes/icons/flaticons/./chat_exclamation.svg);
+}
+.icon-chat_exclamation:hover {
+  background-image: url(/_themes/icons/flaticons/./chat_exclamation.svg);
+}
+
+.icon-emergency {
+  background-image: url(/_themes/icons/flaticons/./emergency.svg);
+}
+.icon-emergency:hover {
+  background-image: url(/_themes/icons/flaticons/./emergency.svg);
+}
+
+.icon-issue_log {
+  background-image: url(/_themes/icons/flaticons/./issue_log.svg);
+}
+.icon-issue_log:hover {
+  background-image: url(/_themes/icons/flaticons/./issue_log.svg);
+}
+
+.icon-problems {
+  background-image: url(/_themes/icons/flaticons/./problems.svg);
+}
+.icon-problems:hover {
+  background-image: url(/_themes/icons/flaticons/./problems.svg);
+}
+
+.icon-clipboard-error {
+  background-image: url(/_themes/icons/flaticons/./clipboard-error.svg);
+}
+.icon-clipboard-error:hover {
+  background-image: url(/_themes/icons/flaticons/./clipboard-error.svg);
+}
+
+.icon-alarm {
+  background-image: url(/_themes/icons/flaticons/./alarm.svg);
+}
+.icon-alarm:hover {
+  background-image: url(/_themes/icons/flaticons/./alarm.svg);
+}
+
+.icon-graphics-eye_open {
+  background-image: url(/_themes/icons/flaticons/graphics/eye_open.svg);
+}
+.icon-graphics-eye_open:hover {
+  background-image: url(/_themes/icons/flaticons/graphics/eye_open.svg);
+}
+
+.icon-networking-sms {
+  background-image: url(/_themes/icons/flaticons/networking/sms.svg);
+}
+.icon-networking-sms:hover {
+  background-image: url(/_themes/icons/flaticons/networking/sms.svg);
+}
+
+.icon-general-edit {
+  background-image: url(/_themes/icons/flaticons/general/edit.svg);
+}
+.icon-general-edit:hover {
+  background-image: url(/_themes/icons/flaticons/general/edit.svg);
+}
+
+.icon-project_management-equipment {
+  background-image: url(/_themes/icons/flaticons/project_management/equipment.svg);
+}
+.icon-project_management-equipment:hover {
+  background-image: url(/_themes/icons/flaticons/project_management/equipment.svg);
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url(/_themes/icons/wireicons/icomoon.eot?xsflga);
+  src: url(/_themes/icons/wireicons/icomoon.eot?xsflga#iefix) format("embedded-opentype"), url(/_themes/icons/wireicons/icomoon.ttf?xsflga) format("truetype"), url(/_themes/icons/wireicons/icomoon.woff?xsflga) format("woff"), url(/_themes/icons/wireicons/icomoon.svg?xsflga#icomoon) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.wire-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div.leopard-form,
+section.leopard-form > div {
+  margin-bottom: 6px;
+  border-radius: 5px;
+  display: flex;
+  align-items: baseline;
+  max-width: 600px;
+}
+.office-blue div.leopard-form,
+.office-blue section.leopard-form > div {
+  background-color: #ffffff;
+  border: 1px solid #E1E1E1;
+}
+.day-blue div.leopard-form,
+.day-blue section.leopard-form > div {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+}
+.night-blue div.leopard-form,
+.night-blue section.leopard-form > div {
+  background-color: #34352f;
+  border: 1px solid #34352f;
+}
+.office-blue div.leopard-form:active,
+.office-blue section.leopard-form > div:active {
+  box-shadow: 0 0 2px 1px #c6d7f4;
+}
+.day-blue div.leopard-form:active,
+.day-blue section.leopard-form > div:active {
+  box-shadow: 0 0 2px 1px #cae7f9;
+}
+.night-blue div.leopard-form:active,
+.night-blue section.leopard-form > div:active {
+  box-shadow: 0 0 2px 1px #315c87;
+}
+div.leopard-form label,
+section.leopard-form > div label {
+  margin: 0 18px 0 7px;
+  font-size: 1rem;
+}
+.office-blue div.leopard-form label,
+.office-blue section.leopard-form > div label {
+  color: #7f7f7f;
+}
+.day-blue div.leopard-form label,
+.day-blue section.leopard-form > div label {
+  color: #7f7f7f;
+}
+.night-blue div.leopard-form label,
+.night-blue section.leopard-form > div label {
+  color: #7f7f7f;
+}
+div.leopard-form select,
+div.leopard-form input,
+div.leopard-form textarea,
+section.leopard-form > div select,
+section.leopard-form > div input,
+section.leopard-form > div textarea {
+  border: none;
+  display: inline-block;
+  flex-grow: 1;
+  padding: 5px 0;
+  font-size: 1.05rem;
+  line-height: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 200;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.office-blue div.leopard-form select,
+.office-blue div.leopard-form input,
+.office-blue div.leopard-form textarea,
+.office-blue section.leopard-form > div select,
+.office-blue section.leopard-form > div input,
+.office-blue section.leopard-form > div textarea {
+  background-color: #ffffff;
+  color: #231f20;
+}
+.day-blue div.leopard-form select,
+.day-blue div.leopard-form input,
+.day-blue div.leopard-form textarea,
+.day-blue section.leopard-form > div select,
+.day-blue section.leopard-form > div input,
+.day-blue section.leopard-form > div textarea {
+  background-color: #fff;
+  color: #231f20;
+}
+.night-blue div.leopard-form select,
+.night-blue div.leopard-form input,
+.night-blue div.leopard-form textarea,
+.night-blue section.leopard-form > div select,
+.night-blue section.leopard-form > div input,
+.night-blue section.leopard-form > div textarea {
+  background-color: #34352f;
+  color: #fff;
+}
+.office-blue div.leopard-form select:focus,
+.office-blue div.leopard-form input:focus,
+.office-blue div.leopard-form textarea:focus,
+.office-blue section.leopard-form > div select:focus,
+.office-blue section.leopard-form > div input:focus,
+.office-blue section.leopard-form > div textarea:focus {
+  outline-color: #c6d7f4;
+}
+.day-blue div.leopard-form select:focus,
+.day-blue div.leopard-form input:focus,
+.day-blue div.leopard-form textarea:focus,
+.day-blue section.leopard-form > div select:focus,
+.day-blue section.leopard-form > div input:focus,
+.day-blue section.leopard-form > div textarea:focus {
+  outline-color: #cae7f9;
+}
+.night-blue div.leopard-form select:focus,
+.night-blue div.leopard-form input:focus,
+.night-blue div.leopard-form textarea:focus,
+.night-blue section.leopard-form > div select:focus,
+.night-blue section.leopard-form > div input:focus,
+.night-blue section.leopard-form > div textarea:focus {
+  outline-color: #315c87;
+}
+div.leopard-form textarea,
+section.leopard-form > div textarea {
+  min-height: 100px;
+  padding-left: 5px;
+}
+div.leopard-form input,
+section.leopard-form > div input {
+  padding-left: 5px;
+}
+div.leopard-form.hasvalue,
+section.leopard-form > div.hasvalue {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+div.leopard-form.hasvalue label,
+section.leopard-form > div.hasvalue label {
+  font-weight: 600;
+}
+.office-blue div.leopard-form.hasvalue,
+.office-blue section.leopard-form > div.hasvalue {
+  border-left: 1px solid #315c87;
+}
+.office-blue div.leopard-form.hasvalue label,
+.office-blue section.leopard-form > div.hasvalue label {
+  color: #315c87;
+}
+.day-blue div.leopard-form.hasvalue,
+.day-blue section.leopard-form > div.hasvalue {
+  border-left: 1px solid #5fa9ed;
+}
+.day-blue div.leopard-form.hasvalue label,
+.day-blue section.leopard-form > div.hasvalue label {
+  color: #5fa9ed;
+}
+.night-blue div.leopard-form.hasvalue,
+.night-blue section.leopard-form > div.hasvalue {
+  border-left: 1px solid #3c9eef;
+}
+.night-blue div.leopard-form.hasvalue label,
+.night-blue section.leopard-form > div.hasvalue label {
+  color: #3c9eef;
+}
+
+div.leopard-form.checkbox,
+section.leopard-form > div.checkbox {
+  display: inline;
+  border: none;
+  background: none;
+}
+div.leopard-form.checkbox label,
+section.leopard-form > div.checkbox label {
+  margin-left: 0;
+}
+.office-blue div.leopard-form.checkbox label,
+.office-blue section.leopard-form > div.checkbox label {
+  cursor: pointer;
+  color: #231f20;
+}
+.day-blue div.leopard-form.checkbox label,
+.day-blue section.leopard-form > div.checkbox label {
+  cursor: pointer;
+  color: #231f20;
+}
+.night-blue div.leopard-form.checkbox label,
+.night-blue section.leopard-form > div.checkbox label {
+  cursor: pointer;
+  color: #fff;
+}
+div.leopard-form.checkbox label:before,
+section.leopard-form > div.checkbox label:before {
+  cursor: pointer;
+  content: "";
+  font-family: icomoon;
+  width: 14px;
+  height: 14px;
+  border-radius: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0);
+  padding-left: 0;
+  box-sizing: border-box;
+  position: relative;
+  top: -1px;
+}
+.office-blue div.leopard-form.checkbox label:before,
+.office-blue section.leopard-form > div.checkbox label:before {
+  background-color: #f5f6f6;
+  border: 1px solid #bfbfbf;
+}
+.day-blue div.leopard-form.checkbox label:before,
+.day-blue section.leopard-form > div.checkbox label:before {
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+}
+.night-blue div.leopard-form.checkbox label:before,
+.night-blue section.leopard-form > div.checkbox label:before {
+  background-color: #282923;
+  border: 1px solid black;
+}
+div.leopard-form.checkbox label:active:before,
+section.leopard-form > div.checkbox label:active:before {
+  box-shadow: none;
+}
+div.leopard-form.checkbox input[type=checkbox],
+section.leopard-form > div.checkbox input[type=checkbox] {
+  display: none;
+}
+div.leopard-form.checkbox input[type=checkbox]:checked ~ label:before,
+section.leopard-form > div.checkbox input[type=checkbox]:checked ~ label:before {
+  content: "";
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+.office-blue div.leopard-form.checkbox input[type=checkbox]:checked ~ label:before,
+.office-blue section.leopard-form > div.checkbox input[type=checkbox]:checked ~ label:before {
+  color: #315c87;
+}
+.day-blue div.leopard-form.checkbox input[type=checkbox]:checked ~ label:before,
+.day-blue section.leopard-form > div.checkbox input[type=checkbox]:checked ~ label:before {
+  color: #5fa9ed;
+}
+.night-blue div.leopard-form.checkbox input[type=checkbox]:checked ~ label:before,
+.night-blue section.leopard-form > div.checkbox input[type=checkbox]:checked ~ label:before {
+  color: #3c9eef;
+}
+
+div.leopard-form.radio,
+section.leopard-form > div.radio {
+  border: none;
+  cursor: pointer;
+}
+div.leopard-form.radio input,
+section.leopard-form > div.radio input {
+  position: relative;
+  top: 1px;
+  height: auto;
+}
+div.leopard-form.radio label,
+section.leopard-form > div.radio label {
+  cursor: pointer;
+  margin: 0 10px 0 0px;
+}
+.office-blue div.leopard-form.radio label,
+.office-blue section.leopard-form > div.radio label {
+  color: #231f20;
+}
+.day-blue div.leopard-form.radio label,
+.day-blue section.leopard-form > div.radio label {
+  color: #231f20;
+}
+.night-blue div.leopard-form.radio label,
+.night-blue section.leopard-form > div.radio label {
+  color: #fff;
+}
+
+section.leopard-form.inline > div,
+div.leopard-form.inline {
+  display: inline-block;
+}
+
+div.leopard-form.has-button {
+  height: 1.9rem;
+}
+div.leopard-form.has-button button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 28px;
+  text-align: center;
+  height: 100%;
+  align-self: stretch;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.office-blue div.leopard-form.has-button button {
+  background-color: #f5f6f6;
+  color: #315c87;
+}
+.day-blue div.leopard-form.has-button button {
+  background-color: #fff;
+  color: #5fa9ed;
+}
+.night-blue div.leopard-form.has-button button {
+  background-color: #282923;
+  color: #3c9eef;
+}
+div.leopard-form.has-button button:hover {
+  cursor: pointer;
+}
+.office-blue div.leopard-form.has-button button:hover {
+  background-color: #edefef;
+  text-shadow: 0 0 0.1px #315c87;
+}
+.day-blue div.leopard-form.has-button button:hover {
+  background-color: #f7f7f7;
+  text-shadow: 0 0 0.1px #5fa9ed;
+}
+.night-blue div.leopard-form.has-button button:hover {
+  background-color: #20211c;
+  text-shadow: 0 0 0.1px #3c9eef;
+}
+div.leopard-form.has-button button:focus {
+  outline: none;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  position: relative;
+  padding-top: 22.5px;
+}
+.office-blue .card {
+  border: 1px solid #E1E1E1;
+  background-color: #ffffff;
+}
+.day-blue .card {
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+.night-blue .card {
+  border: 1px solid #34352f;
+  background-color: #34352f;
+}
+.card h2 {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 5px 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.office-blue .card h2 {
+  color: #ffffff;
+  background-color: #1f4d7a;
+}
+.day-blue .card h2 {
+  color: #fff;
+  background-color: #5fa9ed;
+}
+.night-blue .card h2 {
+  color: #3c9eef;
+  background-color: #42433e;
+}
+.card h2.with-button {
+  display: flex;
+  cursor: pointer;
+  padding: 0;
+}
+.card h2.with-button .title {
+  flex-grow: 1;
+  padding: 5px 15px;
+}
+.card h2.with-button .closetray {
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 5px;
+  transition: background-color 300ms;
+}
+.office-blue .card h2.with-button .closetray {
+  background-color: #1f4d7a;
+}
+.day-blue .card h2.with-button .closetray {
+  background-color: #5fa9ed;
+}
+.night-blue .card h2.with-button .closetray {
+  background-color: #42433e;
+}
+.card h2.with-button .closetray .icon-rightarrow {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.office-blue .card h2.with-button:hover .closetray {
+  background-color: #132e49;
+}
+.day-blue .card h2.with-button:hover .closetray {
+  background-color: #288be7;
+}
+.night-blue .card h2.with-button:hover .closetray {
+  background-color: #232321;
+}
+.card h2.with-button:hover .closetray .icon-rightarrow {
+  opacity: 0.8;
+}
+
+.drawer h3.handle {
+  text-transform: uppercase;
+  cursor: pointer;
+  border-top: 1px dotted;
+  transition: color 200ms;
+  margin: 15px 0 0 0;
+  padding: 2px 0 15px 0;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+.office-blue .drawer h3.handle {
+  border-color: #315c87;
+  color: #315c87;
+}
+.day-blue .drawer h3.handle {
+  border-color: #5fa9ed;
+  color: #5fa9ed;
+}
+.night-blue .drawer h3.handle {
+  border-color: #3c9eef;
+  color: #3c9eef;
+}
+.office-blue .drawer h3.handle:hover {
+  border-color: #5b8fc3;
+  color: #5b8fc3;
+}
+.day-blue .drawer h3.handle:hover {
+  border-color: #bbdaf7;
+  color: #bbdaf7;
+}
+.night-blue .drawer h3.handle:hover {
+  border-color: #9acdf7;
+  color: #9acdf7;
+}
+.drawer h3.handle:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  content: "";
+  font-size: 0.6rem;
+  margin-right: 5px;
+  transform: rotate(90deg);
+  transition: transform 250ms;
+}
+.drawer h3.handle[data-collapsed=true]:before {
+  transform: rotate(0);
+}
+.drawer .tray {
+  transition: height 500ms;
+  overflow: hidden;
+}
+.drawer .tray[data-collapsed=true]:before {
+  height: 0;
+}
+
+.notes-wrapper .note {
+  background-color: #F9ED80;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+.notes-wrapper .note .header {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+  position: relative;
+}
+.notes-wrapper .note .header:hover {
+  cursor: pointer;
+}
+.notes-wrapper .note .add-button, .notes-wrapper .note .remove-button {
+  width: 32px;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-left: 2px solid rgba(239, 218, 115, 0.6);
+  opacity: 0.6;
+}
+.notes-wrapper .note .add-button:hover, .notes-wrapper .note .remove-button:hover {
+  background-color: rgba(239, 218, 115, 0.3);
+  opacity: 1;
+}
+.notes-wrapper .note .add-button:active, .notes-wrapper .note .remove-button:active {
+  background-color: rgba(239, 218, 115, 0.6);
+}
+.notes-wrapper .note h4 {
+  background-color: rgba(255, 255, 255, 0.28);
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 6px 13px 6px 15px;
+  margin: 0 0 5px 0;
+  color: rgba(35, 31, 32, 0.6);
+}
+.notes-wrapper .note p {
+  font-weight: 400;
+  font-size: 10px;
+  display: inline-block;
+  padding: 6px 13px 6px 15px;
+  color: #231f20;
+}
+.notes-wrapper .note textarea {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  min-height: 70px;
+}
+.notes-wrapper .note .footer {
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 8px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+.notes-wrapper .note .footer > * {
+  margin-right: 10px;
+}
+.notes-wrapper .note .footer .saved-wrapper {
+  margin-right: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.notes-wrapper .note .button {
+  color: #231f20;
+  background-color: rgba(255, 255, 255, 0.28);
+}
+.notes-wrapper .note select {
+  background-color: rgba(255, 255, 255, 0.28);
+  color: #231f20;
+  padding: 1px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+  font-size: 11px;
+}
+.notes-wrapper .note .checkbox label {
+  color: #231f20;
+  font-size: 10px;
+}
+.notes-wrapper .note .checkbox label:before {
+  background-color: rgba(255, 255, 255, 0.28);
+  border: none;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+.notes-wrapper .note .formfield {
+  background: none;
+  border: none;
+}
+.notes-wrapper .note .body {
+  margin-top: -10px;
+}
+.notes-wrapper .note.shame .body {
+  margin-top: 10px;
+}
+.notes-wrapper .next-note {
+  background-color: #EFDA73;
+}
+.notes-wrapper .next-note .header,
+.notes-wrapper .next-note .body,
+.notes-wrapper .next-note .footer {
+  visibility: hidden;
+}
+
+div#stickynote textarea {
+  padding-top: 15px;
+}
+
+/* Move to Widget (Get Vue reading SASS) */
+nav.amaranth {
+  top: 0;
+  display: none;
+  z-index: 10;
+  background-color: #505050;
+  color: #00FFFF;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 46px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 200;
+}
+@media (max-width: 736px) {
+  nav.amaranth {
+    flex-direction: column;
+    z-index: 2;
+    overflow: hidden;
+  }
+  nav.amaranth ul {
+    width: 50%;
+  }
+  nav.amaranth.open {
+    position: absolute;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  nav.amaranth.open ul.home {
+    width: 50%;
+  }
+  nav.amaranth.open ul {
+    width: 100%;
+  }
+}
+nav.amaranth.pin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+nav.amaranth ul.dropdowns {
+  padding: 0 6px 0 2px;
+  align-items: center;
+}
+nav.amaranth ul.dropdowns li.first-level a.Product:hover {
+  text-decoration: none;
+}
+nav.amaranth ul.dropdowns:after {
+  content: "";
+  height: 15px;
+  margin-left: 8px;
+}
+.office-blue nav.amaranth ul.dropdowns:after {
+  border-right: 1px dotted #ffffff;
+}
+.day-blue nav.amaranth ul.dropdowns:after {
+  border-right: 1px dotted #fff;
+}
+.night-blue nav.amaranth ul.dropdowns:after {
+  border-right: 1px dotted #3c9eef;
+}
+nav.amaranth ul.dropdowns.operations:after {
+  border-right: none;
+}
+nav.amaranth ul.dropdowns.custom:before {
+  content: "";
+  height: 15px;
+  margin-right: 8px;
+}
+.office-blue nav.amaranth ul.dropdowns.custom:before {
+  border-left: 1px dotted #ffffff;
+}
+.day-blue nav.amaranth ul.dropdowns.custom:before {
+  border-left: 1px dotted #fff;
+}
+.night-blue nav.amaranth ul.dropdowns.custom:before {
+  border-left: 1px dotted #3c9eef;
+}
+nav.amaranth ul.dropdowns.custom:after {
+  border-right: none;
+}
+nav.amaranth ul.dropdowns.home {
+  padding: 0;
+}
+nav.amaranth ul.dropdowns.home:after {
+  border-right: none;
+}
+nav.amaranth ul.dropdowns.home a {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+nav.amaranth ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+}
+@media (max-width: 736px) {
+  nav.amaranth ul {
+    display: block;
+    flex-direction: column;
+  }
+}
+nav.amaranth ul li {
+  display: block;
+}
+nav.amaranth > ul > li {
+  height: 100%;
+}
+nav.amaranth a {
+  display: block;
+  text-decoration: none;
+  height: 15px;
+}
+nav.amaranth a:hover {
+  cursor: pointer;
+}
+nav.amaranth ul.settings > .first-level > a > .wire-icon {
+  font-size: 20px;
+}
+nav.amaranth ul.settings.dropdowns {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+nav.amaranth ul.settings.dropdowns:after {
+  border-right: none;
+}
+@media (max-width: 736px) {
+  nav.amaranth ul.settings.dropdowns {
+    flex-grow: 0;
+    justify-content: flex-start;
+  }
+}
+nav.amaranth #hamburger {
+  border: none;
+  display: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+nav.amaranth #hamburger:focus {
+  outline: none;
+}
+@media (max-width: 736px) {
+  nav.amaranth #hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 46px;
+    display: block;
+  }
+}
+
+#primary-div {
+  margin-top: 60px;
+}
+
+nav.amaranth ul ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 300ms, visibility 300ms;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: auto;
+}
+nav.amaranth ul ul .arrow {
+  font-size: 7px;
+  display: flex;
+  align-items: center;
+}
+.office-blue nav.amaranth ul ul .arrow {
+  color: #b3b3b3;
+}
+.day-blue nav.amaranth ul ul .arrow {
+  color: #b3b3b3;
+}
+.night-blue nav.amaranth ul ul .arrow {
+  color: black;
+}
+
+nav.amaranth ul.settings ul .arrow {
+  transform: rotate(-180deg);
+}
+
+nav.amaranth ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 200ms;
+}
+@media (max-width: 736px) {
+  nav.amaranth ul li:hover > ul {
+    height: auto;
+  }
+}
+
+nav.amaranth ul ul {
+  position: absolute;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (max-width: 736px) {
+  nav.amaranth ul ul {
+    position: static;
+    height: 0;
+  }
+}
+nav.amaranth ul ul li {
+  display: list-item;
+  position: relative;
+}
+
+nav.amaranth ul.settings li {
+  position: relative;
+}
+
+nav.amaranth ul.settings ul {
+  right: 0;
+  left: auto;
+}
+
+nav.amaranth ul ul ul {
+  top: 0;
+  left: 100%;
+}
+nav.amaranth ul ul ul li {
+  position: relative;
+  top: 0;
+}
+nav.amaranth ul ul ul.multicol {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+nav.amaranth ul ul ul.multicol li {
+  height: auto;
+}
+nav.amaranth ul ul ul.savedlist > div {
+  white-space: normal;
+  min-width: 160px;
+}
+
+nav.amaranth ul.settings ul ul {
+  right: 100%;
+  left: auto;
+}
+
+.office-blue nav.amaranth {
+  background-color: #1f4d7a;
+  color: #ffffff;
+}
+.day-blue nav.amaranth {
+  background-color: #5fa9ed;
+  color: #fff;
+}
+.night-blue nav.amaranth {
+  background-color: #42433e;
+  color: #3c9eef;
+}
+.office-blue nav.amaranth span, .office-blue nav.amaranth b {
+  color: #315c87;
+}
+.day-blue nav.amaranth span, .day-blue nav.amaranth b {
+  color: #5fa9ed;
+}
+.night-blue nav.amaranth span, .night-blue nav.amaranth b {
+  color: #3c9eef;
+}
+nav.amaranth .nav-search {
+  margin: 5px 10px;
+}
+nav.amaranth .nav-search div.leopard-form.has-button {
+  height: 22px;
+}
+nav.amaranth .nav-search div.leopard-form.has-button input {
+  font-size: 14px;
+  width: 100px;
+}
+nav.amaranth .nav-search div.leopard-form.has-button button {
+  width: 22px;
+}
+
+nav.amaranth span {
+  padding: 0;
+  border-bottom: none;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+}
+.office-blue nav.amaranth a {
+  color: #ffffff;
+}
+.day-blue nav.amaranth a {
+  color: #fff;
+}
+.night-blue nav.amaranth a {
+  color: #3c9eef;
+}
+
+nav.amaranth ul li.first-level a {
+  height: 100%;
+  padding: 15px 10px;
+  box-sizing: border-box;
+}
+@media (max-width: 736px) {
+  nav.amaranth ul li.first-level a {
+    height: auto;
+  }
+}
+@media (max-width: 736px) {
+  nav.amaranth ul li.first-level a {
+    padding: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  nav.amaranth ul li.first-level a {
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 14px;
+  }
+}
+
+nav.amaranth ul li ul {
+  border: none;
+  list-style-type: none;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+.office-blue nav.amaranth ul li ul {
+  background-color: #ffffff;
+}
+.day-blue nav.amaranth ul li ul {
+  background-color: #fff;
+}
+.night-blue nav.amaranth ul li ul {
+  background-color: #34352f;
+}
+nav.amaranth ul li ul li {
+  padding: 0;
+}
+.office-blue nav.amaranth ul li ul li a:hover {
+  background: #c6d7f4;
+}
+.day-blue nav.amaranth ul li ul li a:hover {
+  background: #cae7f9;
+}
+.night-blue nav.amaranth ul li ul li a:hover {
+  background: #315c87;
+}
+nav.amaranth ul li ul {
+  padding: 5px 0;
+}
+.office-blue nav.amaranth ul li ul {
+  border: 1px solid #E1E1E1;
+}
+.day-blue nav.amaranth ul li ul {
+  border: 1px solid #e8e8e8;
+}
+.night-blue nav.amaranth ul li ul {
+  border: 1px solid #34352f;
+}
+.office-blue nav.amaranth ul li ul li a {
+  color: #231f20;
+}
+.day-blue nav.amaranth ul li ul li a {
+  color: #231f20;
+}
+.night-blue nav.amaranth ul li ul li a {
+  color: #fff;
+}
+
+nav.amaranth ul li.first-level ul li a {
+  padding: 3px 6px;
+}
+nav.amaranth span.subnav-title {
+  text-transform: uppercase;
+  margin: 8px 12px 2px;
+  width: auto;
+  padding-bottom: 6px;
+  max-width: 70%;
+  border-radius: 0;
+}
+.office-blue nav.amaranth span.subnav-title {
+  border-bottom: 1px dotted #315c87;
+}
+.day-blue nav.amaranth span.subnav-title {
+  border-bottom: 1px dotted #5fa9ed;
+}
+.night-blue nav.amaranth span.subnav-title {
+  border-bottom: 1px dotted #3c9eef;
+}
+nav.amaranth span a {
+  padding: 8px 9px;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+nav.amaranth span {
+  margin: 2px 5px;
+  border-radius: 3px;
+}
+.office-blue nav.amaranth ul.dropdowns li.first-level:hover {
+  background-color: #173859;
+  box-shadow: 0px 0px 8px 3px inset rgba(0, 0, 0, 0.1);
+}
+.day-blue nav.amaranth ul.dropdowns li.first-level:hover {
+  background-color: #3a95e9;
+  box-shadow: 0px 0px 8px 3px inset rgba(0, 0, 0, 0.1);
+}
+.night-blue nav.amaranth ul.dropdowns li.first-level:hover {
+  background-color: #2d2e2a;
+  box-shadow: 0px 0px 8px 3px inset rgba(0, 0, 0, 0.1);
+}
+nav.amaranth ul div {
+  margin: 0;
+  padding: 0;
+}
+
+.office-blue nav.amaranth ul li ul li.has-child:hover {
+  background-color: #ebebeb;
+}
+.office-blue nav.amaranth ul li ul li.has-child:hover a.subnav-arrow,
+.office-blue nav.amaranth ul li ul li.has-child:hover span.has-child,
+.office-blue nav.amaranth ul li ul li.has-child:hover .arrow {
+  background-color: transparent;
+}
+.office-blue nav.amaranth ul li ul li:hover > span {
+  background: #c6d7f4;
+}
+.office-blue nav.amaranth ul li ul li:hover > span.subnav-title {
+  background: transparent;
+}
+.office-blue nav.amaranth span.subnav-title:hover {
+  background-color: #ffffff;
+}
+.office-blue nav.amaranth ul li ul li ul li:hover > span {
+  background: #c6d7f4;
+}
+.office-blue nav.amaranth ul li ul li ul li:hover {
+  background: #ffffff;
+}
+.office-blue nav.amaranth ul li ul li ul li:hover > a {
+  background-color: #c6d7f4;
+}
+.day-blue nav.amaranth ul li ul li.has-child:hover {
+  background-color: #ebebeb;
+}
+.day-blue nav.amaranth ul li ul li.has-child:hover a.subnav-arrow,
+.day-blue nav.amaranth ul li ul li.has-child:hover span.has-child,
+.day-blue nav.amaranth ul li ul li.has-child:hover .arrow {
+  background-color: transparent;
+}
+.day-blue nav.amaranth ul li ul li:hover > span {
+  background: #cae7f9;
+}
+.day-blue nav.amaranth ul li ul li:hover > span.subnav-title {
+  background: transparent;
+}
+.day-blue nav.amaranth span.subnav-title:hover {
+  background-color: #fff;
+}
+.day-blue nav.amaranth ul li ul li ul li:hover > span {
+  background: #cae7f9;
+}
+.day-blue nav.amaranth ul li ul li ul li:hover {
+  background: #fff;
+}
+.day-blue nav.amaranth ul li ul li ul li:hover > a {
+  background-color: #cae7f9;
+}
+.night-blue nav.amaranth ul li ul li.has-child:hover {
+  background-color: #1f1f1c;
+}
+.night-blue nav.amaranth ul li ul li.has-child:hover a.subnav-arrow,
+.night-blue nav.amaranth ul li ul li.has-child:hover span.has-child,
+.night-blue nav.amaranth ul li ul li.has-child:hover .arrow {
+  background-color: transparent;
+}
+.night-blue nav.amaranth ul li ul li:hover > span {
+  background: #315c87;
+}
+.night-blue nav.amaranth ul li ul li:hover > span.subnav-title {
+  background: transparent;
+}
+.night-blue nav.amaranth span.subnav-title:hover {
+  background-color: #34352f;
+}
+.night-blue nav.amaranth ul li ul li ul li:hover > span {
+  background: #315c87;
+}
+.night-blue nav.amaranth ul li ul li ul li:hover {
+  background: #34352f;
+}
+.night-blue nav.amaranth ul li ul li ul li:hover > a {
+  background-color: #315c87;
+}
+
+nav.amaranth .number-of-messages {
+  background-color: #f3400a;
+  display: inline-block;
+  padding: 1px 4px;
+  font-weight: 800;
+  font-size: 10px;
+  color: white;
+  border-radius: 41px;
+  line-height: 11px;
+  margin: 0 0 0 2px;
+  position: relative;
+  top: -4px;
+}
+
+.shark-header {
+  height: 50px;
+}
+
+/*# sourceMappingURL=leopardshark.css.map */
+

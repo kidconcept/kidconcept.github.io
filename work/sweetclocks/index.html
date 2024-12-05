@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="">
+   <head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Capslock: UI Design Studio</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+		<!-- Place favicon.ico in the root directory -->
+
+		<link rel="stylesheet" href="../../css/app.css">
+		<script src="../../js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body class="advisor">
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div class="topbar hide" id="topBar">
+			<div class="grid-container">
+				<a href="/" class="logo"><img src="/assets/img/logo.svg" id="navLogo"></a>
+				<nav class="work">
+					<a href="/work" class="casestudies"><img src="/assets/img/casestudies.svg" alt="case studies"></a>
+					<span class="slash"></span>
+					<a href="#hello" class="sayhello"><img src="/assets/img/sayhello.svg" alt="say hello"></a>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Contains Hero Image-->
+		<div class="hero">
+			<div class="image" style="background-image: url('hero.jpg')"></div>
+		</div>
+
+		<div class="page-container work">
+			<div class="grid-container">
+				<div class="text">
+					<h1>A Better Way to Track Global Time</h1>
+					<p>As a consultant who travels frequently and keeps clients, friends, and family in all corners of the globe, one of the things I'm constantly juggling is what timezone my meetings are in. This difficulty is compounded by no one else being willing to deal with the time conversions. Asking around, I realized all of my colleagues who travel frequently have similar frustrations. Most of us relied on the native android/iOS clock apps or simply asking google what time it was in a given location. Each approach had it's limitations. The native apps were limited by search: you had to know a major city within the same timezone you were scheduling around. Fine if you are in New York or London, but frustrating if your friend happens to be in Punto d'Ouro, Mozambique or on the Island of Mabul. Asking google for the time always worked, regardless of how remote the location, but it's results were not persistent. I wanted both, an application that returned times for any location on the planet and remembered all the timezones I was interested in.</p>
+				</div>
+				<video src="./search.mp4" autoplay loop poster="./search.png" class="small"></video>
+				<div class="text">
+					<h2>Choosing the API</h2>
+					<p>I originally targeted timezonedb.com to access the timezone information, but soon realized that it's city search API was much more limited that I wanted. It required that the user select a city, and didn't have nearly the same scoped dataset that google provided. Google seemed like the best solution, and with a little searching I found they have a timezone API. Unfortunately it only accepts results from providing geo-coordinates. But a google Places Autocomplete  query provides geo-coordinates for any location which can be easily passed to the timezone API returns everything else I need, the current time in the location, the offset from GMT, and if the location is currently in Daylight savings time. I was ready to start building.</p>
+				</div>
+				<img src="code.jpg" class="small">
+				<div class="text">
+					<h2>Rapid Prototyping</h2>
+					<p>I already had a good idea of what the product requirements were, so I jumped right into the prototype. I wanted to get a working proof of concept done before I started in on the visual layer. This allowed me to hammer out any problems with the application before I got bogged down pushing pixels.</p>
+				</div>
+				<img src="prototype.jpg" class="small">
+				<div class="text"><h2>Responsive Scaling</h2>
+					<p>I wanted a design that would scale fluidly between responsive states, so the clocks always took up as much screen as you gave them. However, the internal layout of each clock required a static layout just to keep readable and looking clean. So I settled on having a fixed layout, and then fluidly scaling the clocks all together with a 3D transform ratio applied via Javascript attached to an event listener that detects changes to layout.</p>
+				</div>
+				<img src="phones.jpg" class="medium">
+				<div class="text"><h2>User Testing</h2>
+					<p>A simple, single page application with very little depth to the user flow is a good candidate for a high rate of problem discoverability. This means testing with 5 users should discover the large majority of usability issues. I sat on sessions with a small number of users who were trying the app for the first time and noted where they were getting lost or confused within the app. This insight allowed me to adjust the introductory tutorial, add features, and tweak the visual design to overcome usability issues.</p>
+				</div>
+				<img src="ondesk.jpg" class="small">
+			</div>
+
+
+			<footer id="hello">
+				<div>
+					<h2>Let's work together.</h2>
+					<a href="mailto:hello@danvallentyne.com" class="button">hello@danvallentyne.com</a>
+					<p class="phone">Phone: +1 (415) 702-7607</p>
+					<img src="../../assets/img/ohwhale.png">
+				</div>
+			</footer>
+			<script src="/js/vendor/velocity.min.js" type="text/javascript"></script>
+			<script src="/js/capslock.js" type="text/javascript"></script>
+			<script>
+
+				window.onload = function() {
+				   capslock.nav();
+			   };
+
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-16532523-9', 'auto');
+				ga('send', 'pageview');
+
+			</script>
+	</div>
+	</body>
+</html>

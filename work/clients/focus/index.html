@@ -1,0 +1,3938 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://tatsatdev.local/manage/ -->
+<html class="office-blue"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+			
+	
+	
+	
+	<title>Home - Just Stick To Me</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="http://tatsatdev.local/favicon.ico" type="image/x-icon">
+	
+	
+	<link href="./Home - Just Stick To Me_files/css" rel="stylesheet">
+	
+	
+	
+	<link rel="stylesheet" href="./Home - Just Stick To Me_files/admin.css" type="text/css">	
+	
+	
+	<link rel="stylesheet" href="./Home - Just Stick To Me_files/ui.jqgrid.css" type="text/css">
+	<link rel="stylesheet" href="./Home - Just Stick To Me_files/jquery-ui.min.css" type="text/css">
+	
+	
+	<link rel="stylesheet" type="text/css" href="./Home - Just Stick To Me_files/resize.css">
+	<link rel="stylesheet" type="text/css" href="./Home - Just Stick To Me_files/calendar.css">
+	<link rel="stylesheet" type="text/css" href="./Home - Just Stick To Me_files/skin.css">
+	<link rel="stylesheet" type="text/css" href="./Home - Just Stick To Me_files/tabview.css">
+	<link rel="stylesheet" type="text/css" href="./Home - Just Stick To Me_files/container.css">
+	<link rel="stylesheet" type="text/css" href="./Home - Just Stick To Me_files/datatable.css">
+
+	
+	<link rel="stylesheet" href="./Home - Just Stick To Me_files/bootstrap.css"><!-- needed for detail menu/subnav -->
+	
+	
+	<link rel="stylesheet" href="./Home - Just Stick To Me_files/bootstrap_css_overrider.css">
+	
+	
+	<style type="text/css">	
+		.yui-panel-container .yui-resizepanel .bd {
+		    overflow: auto;
+		    background-color: #fff;
+		}
+	
+		.yui-panel-container.hide-scrollbars .yui-resizepanel .bd {
+		    overflow: hidden;
+		}
+	
+		.yui-panel-container.show-scrollbars .yui-resizepanel .bd {
+		    overflow: auto;
+		}
+	
+		.yui-panel-container.show-scrollbars .underlay {
+		    overflow: visible;
+		}
+	
+		.yui-resizepanel .resizehandle {
+		     position: absolute;
+		     width: 10px;
+		     height: 10px;
+		     right: 0;
+		     bottom: 0;
+		     margin: 0;
+		     padding: 0;
+		     z-index: 1;
+		     background: url(/images/corner_resize.gif) left bottom no-repeat;
+		     cursor: se-resize;
+		}
+	</style>
+	
+	
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/yahoo-dom-event.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/calendar-min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/connection-min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/datasource-min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/dragdrop-min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/container-min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/element-beta-min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/datatable-min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/tabview-min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/resize-min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/get-min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/paginator-min.js"></script>
+	<script src="./Home - Just Stick To Me_files/jquery.min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/bootstrap.js"></script><!-- needed for detail menu/subnav -->
+	<script src="./Home - Just Stick To Me_files/jquery-ui.min.js"></script>
+	<script src="./Home - Just Stick To Me_files/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/grid.locale-en.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/jquery.jqGrid.js"></script><script type="text/javascript" charset="utf-8" src="./Home - Just Stick To Me_files/grid.locale-en(1).js"></script><script type="text/javascript" charset="utf-8" src="./Home - Just Stick To Me_files/grid.base.js"></script><script type="text/javascript" charset="utf-8" src="./Home - Just Stick To Me_files/grid.common.js"></script><script type="text/javascript" charset="utf-8" src="./Home - Just Stick To Me_files/jquery.fmatter.js"></script><script type="text/javascript" charset="utf-8" src="./Home - Just Stick To Me_files/JsonXml.js"></script>
+	<script type="text/javascript">var arguments = null;</script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/application.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/enrollment123_common.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/ckeditor.js"></script><style>.cke{visibility:hidden;}</style>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/jqCommonFunctions.js"></script>
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/bowser.js"></script>
+
+
+	
+	<script type="text/javascript" src="./Home - Just Stick To Me_files/amaranth.js"></script>
+	<link rel="stylesheet" type="text/css" href="./Home - Just Stick To Me_files/amaranth.css">
+	
+	
+	
+
+	<script>
+	const http = axios.create({
+		baseURL: '/api/Apollo/index.cfm?endpoint=/',
+		timeout: 5000,
+		headers: {"BS_ID":"JG8YQudNWKPRb3DJpRJrJQ==","APIKEY":"myQ+qcUpMEPb18eodj5RM5jeHOj4Agdt5iUZWNn1l1E=","BROKER_ID":"jLSXdDLtMciWmwoaM2kcew=="}
+	});
+	</script>
+
+	
+	<script>
+		$(document).ready( function() {
+		
+			// Init Key corpTypeDisplay Label Vars For Use In JS
+			jsSetCorpTypeDisplay({agentLabel:escape('Group'),
+								agentLabelP:escape('Groups'),
+								memberLabel:escape('Member'),
+								memberLabelP:escape('Members'),
+								productLabel:escape('Product'),
+								productLabelP:escape('Products')});
+		});
+		
+	</script>
+	
+	
+	
+	
+</head>
+
+
+<body bgcolor="#ffffff" text="#000000" class="yui-skin-sam">
+		
+	
+	
+
+	<style media="screen">
+		.info {
+		    background: transparent;
+		    background-image: initial;
+		    background-position-x: initial;
+		    background-position-y: initial;
+		    background-size: initial;
+		    background-repeat-x: initial;
+		    background-repeat-y: initial;
+		    background-attachment: initial;
+		    background-origin: initial;
+		    background-clip: initial;
+		    background-color: transparent;
+		    border-color: transparent;
+		    border-top-color: transparent;
+		    border-right-color: transparent;
+		    border-bottom-color: transparent;
+		    font-weight: normal;
+		    border-left-color: transparent;
+		}
+		input, button, select, textarea {
+		    font-size: 12px;
+		}
+
+		
+		.color-inactive,
+		.color-inactive .color-inactive,
+		.color-inactive a{
+			color: #666 !important;
+			cursor: default;
+		}
+		.color-subnav a,
+		.color-subnav,
+		.color-selected-dropdown.open,
+		.color-selected-dropdown.open >a,
+		.color-subnav-unreactive{
+			background-color: #9933FF !important;
+		}
+		.color-logo-area{
+			background-color: #9932CC !important;
+		}
+		.color-main:hover,
+		.color-main:hover>a,
+		.color-main>a:hover,
+		.color-subnav a:hover,
+		.color-subnav [data-js]:hover{
+			background-color: #9370DB !important;
+		}
+		.color-main:active,
+		.color-main:active>a,
+		.color-main>a:active,
+		.color-selected,
+		.main-selected{
+			background-color: #800080 !important;
+		}
+		
+		.no-break-spaces{
+			white-space: nowrap;
+		}
+		.log-out-td{
+			padding-right: 10px !important;
+		}
+		.jewel-Count {
+		    color: #FFFFFF;
+		    font-size: 10px;
+		    font-weight: bold;
+		    -moz-border-bottom-colors: none;
+		    -moz-border-image: none;
+		    -moz-border-left-colors: none;
+		    -moz-border-right-colors: none;
+		    -moz-border-top-colors: none;
+		    background-color: #F03D25;
+		    border-color: -moz-use-text-color #DD3822 #DD3822;
+		    border-radius: 100%;
+		    /* border-right: 1px solid #DD3822;
+		    border-style: none solid solid; */
+		    border-width: 0 1px 1px;
+		    display: inline;
+		    padding: 1px 4px 0;
+			position: relative;
+			top: -5px;
+		}
+		.jewel-in-dropdown{
+		    top: -10px;
+			left: -5px;
+		}
+		
+		.ellipsis{
+			white-space: nowrap;
+			overflow: hidden;
+			max-width: 275px;
+		}
+		.color-title span.corp-id-span{
+			color: #999 !important;
+		}
+		input.e123-form-input{
+			font-size: 11px;
+			height: 29px;
+			padding:6px;
+		}
+		
+		/* ************************ */
+		/* CSS For Dropdowns in nav */
+		/* ************************ */
+		.dropdown-submenu {
+				position: relative;
+		}
+	
+		.dropdown-submenu>.dropdown-menu {
+				top: .5em;
+				left: 100% !important;
+				margin-top: -6px;
+				margin-left: -1px;
+				-webkit-border-radius: 0 6px 6px 6px;
+				-moz-border-radius: 0 6px 6px;
+				border-radius: 0 6px 6px 6px;
+		}
+		.dropdown-submenu>.dropdown-menu.e123-dropdown-menu-left{
+				left:initial !important;
+				right: 98%;
+				border-top-left-radius: 6px;
+				border-top-right-radius: 0;
+		}
+	
+		.dropdown:hover>.dropdown-menu {
+				display: block;
+		}
+	
+		.dropdown-submenu:hover>.dropdown-menu {
+				display: block;
+		}
+	
+		.dropdown-submenu>a:after {
+				display: block;
+				content: " ";
+				float: right;
+				width: 0;
+				height: 0;
+				border-color: transparent;
+				border-style: solid;
+				border-width: 5px 0 5px 5px;
+				border-left-color: #333;
+				margin-top: 5px;
+				margin-right: -6px;
+		}
+	
+		.dropdown-submenu:hover>a:after {
+				border-left-color: #bbb;
+		}
+		/* *********************** */
+		/*
+			CSS for the nav dropdowns 
+			specifiic to a dropdown
+		*/
+		/* *********************** */
+		.logout-dropdown img{
+		    height: 12px !important;
+		    width: 12px !important;
+		    position: relative;
+		    top: -1px;
+		}
+		.logout-dropdown{
+			margin-top:9px;
+		}
+		/* ****************** */
+		/* CSS for js pop outs*/
+		/* ****************** */
+		td.topnav div.subnav{
+		position:relative;
+		display:none;
+		float:left;
+		width:auto;
+		clear:both;
+		z-index:1000;
+		}		
+		td.topnav div.subnav table{
+			position:absolute;
+			margin:0;
+			padding:0;
+			clear:both;
+			width:auto;
+		}
+		
+		/* ************************* */
+		/* ***CSS for message div*** */
+		/* ************************* */		
+		.warning-message-div{
+			display:none;
+			font-size:14px;
+			position: sticky;
+			top: 50px;
+			z-index: 1;
+		}
+		@media(max-width: 1000px) and (min-width:768px){
+			.warning-message-div{
+				top:100px;
+			}			
+		}
+	
+		/* ************************ */
+		/* CSS detail page header */
+		/* ************************ */
+		
+		
+		div.e123-detail-header {
+			/* margin:72px 20px 0px 20px; */
+			text-align: center;
+			z-index:9;
+			position: fixed; /* this is for old browser compatibility */
+			position: -webkit-sticky;
+			position: sticky;
+			top: 65px;
+			
+		}
+		div.e123-detail-header > div{		
+			box-shadow: 0px 2px 12px rgba(0,0,0,0.175);
+		}
+		a.e123-detail-header-name {
+			font-size: 14px;
+			font-weight: bold;
+			color: #000000 !important;
+			
+		}
+		@media (min-width: 768px) and (max-width: 1000px){
+			div.e123-detail-header{
+				top: 115px;
+			}
+		}
+		
+		/* END css for detail page header*/
+
+		/***** Modes for Nav Sub Nav *****/
+		.e123-detail-header .btn,
+		.e123-detail-header li,
+		.e123-detail-header p{
+			font-size: 12px;
+		}
+		.e123-detail-header .btn{
+			border-radius: 2px;
+			padding-top:5px;
+			padding-bottom: 5px;
+		}
+		
+		/* *************** */
+		/* E123 CSS Library */
+		/* *************** */
+		
+		
+
+		.e123-text-area{
+			font-size: 11px;
+			font-weight: normal;
+			line-height: normal;
+			padding-top: 3px;
+			padding-right: 3px;
+			padding-bottom: 3px;
+			padding-left: 3px;
+		}
+
+		#savesearch.modal{
+			height: fit-content;
+		}
+		#savesearch.modal .modal-footer:before, #savesearch.modal .modal-footer:after{
+			display: initial;
+			
+		}
+		
+		/*  ************************ */
+		/*  *** For Sub Sub Nav **** */
+		/*  ************************ */
+		.btn.btn-no-right{
+			border-right: 0;
+			padding-right: 10px;
+		}
+		.btn.btn-no-left{
+			border-left: 0;
+			padding-left: 0;
+		}
+		.btn .inner-span{
+			padding: 0 5px 0 0;
+		}
+		.glyphicon.glyphicon-new-window.e123{
+			font-size: 10px;
+			vertical-align: text-top;
+		}
+		/*  ************************ */
+		/*  Multi-Column Dropdown CSS*/
+		/*  ************************ */
+		
+		.dropdown-menu.columns-2 {
+			min-width: 300px;
+		}
+		.dropdown-menu.columns-3 {
+			min-width: 500px;
+		}
+		.dropdown-menu.columns-4 {
+			min-width: 700px;
+		}
+		.multi-column-dropdown {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+		.multi-column-dropdown li a {
+			display: block;
+			clear: both;
+			line-height: 1.428571429;
+			color: #333;
+			white-space: normal;
+		}
+		.multi-column-dropdown li a:hover {
+			text-decoration: none;
+			color: #262626;
+			background-color: #f5f5f5;
+		}
+		.columns-3 .multi-column-dropdown li a,
+		.columns-4 .multi-column-dropdown li a{
+			padding-left: 3px;
+			padding-right: 3px;
+		}
+		.multi-column .right-side-narrow{
+			padding-right: 8px;
+		}
+		.multi-column .left-side-narrow{
+			padding-left: 8px;
+		}
+		.columns-3.multi-column .right-side-narrow,
+		.columns-4.multi-column .right-side-narrow{
+			padding-right: 2px;
+		}
+		.columns-3.multi-column .left-side-narrow,
+		.columns-4.multi-column .left-side-narrow{
+			padding-left: 2px;
+		}
+		 
+		@media (max-width: 767px) {
+			.dropdown-menu.multi-column {
+				min-width: 240px !important;
+				overflow-x: hidden;
+			}
+		}
+		
+		/* css for span in li in Mulit-Column Dowpdown*/
+		li span.current-list-type{
+			padding: 5px 10px;
+		    display: block;
+		    clear: both;
+		    font-weight: normal;
+		    line-height: 1.42857143;
+		    color: #999;
+		    white-space: nowrap;
+		}
+		
+		/* ******************* */
+		/* **Mobile View CSS** */
+		/* ******************* */
+		@media (max-width: 767px) {
+			.mobile-hide{
+				display: none;
+			}
+			.e123-navbar-right{
+				float: inherit;
+			}
+			.nav-icon-text.icon-mobile-view{
+				display: inline-block;
+				padding-left: 5px;
+				font-size: 14px;
+				color: #777;
+			}
+			.dropdown:hover>.dropdown-menu
+			{
+				display: none;
+			}
+			.dropdown.open:hover>.dropdown-menu{
+				display: block;
+			}
+			.open > .dropdown-menu{
+				display: block;
+			}
+			.e123-nav-container .navbar-collapse .dropdown{
+				text-align: left;
+			}
+			.dropdown-menu{
+				text-align: left;
+				font-size: 14px;
+			}
+			.color-main{
+				background-color: #fefefe !important;
+			}
+			.color-main.open{
+				background-color: #fefefe !important;
+			}
+			selected-dropdown.open,
+			.color-selected-dropdown.open{
+				background-color: #eee !important;
+			}
+			.color-main:hover,
+			.color-main:hover>a,
+			.color-main>a:hover,
+			.color-subnav a:hover,
+			.color-subnav [data-js]:hover,
+			.color-main:hover,
+			.color-main:active,
+			.color-main>a:hover,
+			.color-main>a:active{
+				background-color: #fefefe !important;
+			}
+			.color-selected-dropdown.open >a{
+				background-color: #fefefe !important;
+			}
+			.color-main.open:hover{
+				background-color: #fefefe !important;
+			}
+			.color-subnav-drop-down li:hover{
+				background-color: #ddd;
+			}
+			#this-navbar-collapse-zero{
+				position: fixed;
+				top: 3.5%;
+				right: 2%;
+				border: 1px solid #ccc;
+				width: auto;
+				max-width: 20em;
+				min-width: 15em;
+				background: #fff;
+				border-radius: 0.5em;
+				-moz-box-shadow:  0px 2px 12px rgba(0,0,0,0.5);
+				-webkit-box-shadow: 0px 2px 12px rgba(0,0,0,0.5);
+				box-shadow: 0px 2px 12px rgba(0,0,0,0.5);
+				height: 300px;
+				max-height: 300px;
+				overflow-y: scroll;
+				-webkit-overflow-scrolling: touch;
+
+			}
+			
+			.navbar-nav .open .dropdown-menu > li > a{
+				padding-left: 10px;
+			}
+		}
+
+	</style>
+	
+
+	<input type="hidden" id="pageRequestCorpID" name="pageRequestCorpID" value="1001">
+	<input type="hidden" id="pageRequestBrokerID" name="pageRequestBrokerID" value="1002">
+	
+	
+
+<script type="text/x-template" id="e123Note">
+<div class="notes-wrapper" :class="preloadClass">
+	
+					<div class="note next-note" :class="peakClass"></div>
+						<div v-if = "(notes.length == 0 && ops.add) || (ops.add && !ops.edit)" class="note fake">		
+							<section class="body">
+								<textarea v-model="note.note" 
+									oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
+									class="noteText special"  placeholder="Edit note."
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Edit note.'" 
+									@input ="note.isSaving=true, autoSave(note)" maxlength="500" :maxlength="length"></textarea>		
+							</section>		
+							<section class="footer">
+								<div v-if = "endpoint !== 'stickynote' && ops.edit"" class="icon-calendar small button" @click ="dateStamp(event.target.parentNode.parentNode, note)">Add Date</div>
+								<div v-if = "endpoint !== 'stickynote'" class="formfield">
+									<select v-if="recordType.length > 0" v-model="note.recordType" @change="note.isSaving=true, autoSave(note)">
+										<option value="" disabled>Category</option>
+										<option v-for="(item, key) in recordType" :value="item">
+											{{item}}
+										</option>			
+									</select>
+								</div>
+								<div  v-if = "ops.edit ==='admin'" class="formfield checkbox">
+									<input v-if = "endpoint !== 'stickynote'" v-model="note.bAdmin" type="checkbox" :id = "note.id" value="1" @change="autoSave(note)">
+									<label v-if = "endpoint !== 'stickynote'" class="noteType" :for="note.id">Admin</label>
+								</div>
+								<div class="saved-wrapper">
+									<div v-if ="ops.add && !ops.edit" 
+										class="icon-rightarrow small button saver" @click="commitNote(note)" >Save Note</div>
+									<div v-if ="note.isSaving && ops.edit" class="icon-saving small button saver" >Saving</div> 
+									<div v-if ="!note.isSaving && ops.edit" class="icon-saved  small button saver" >Saved</div>
+								</div>
+							</section>
+	
+						</div>	
+						
+						<transition-group name="fade" tag="p"> 
+							<div v-if = "notes.length >0" v-for="(note, index) in notes ":key="note.id" :class="preloadClass">
+								<div class="note">	
+									<section class="header">	
+										<h4 v-if = "endpoint !== 'stickynote'">Created by {{note.username}} on {{note.dtCreated}}</h4>
+										<div v-if="index==0 && note.id > 1 && ops.add && ops.edit"
+											 @mouseover= "peakClass ='peak'" 
+											 @mouseout = "peakClass =''"
+											 class="add-button"
+											 @click="emptyNote()">
+											<div class="icon-add small"></div>
+										</div>
+										<div v-if = "notes.length > 1 && ops.delete" class="remove-button" 
+											 aria-label="Close" @click="delNote(note.id)"  
+											 title="Delete note">
+											 <div class="icon-close small"></div>
+										</div>	
+									</section>
+											
+									<section class="body">
+										<textarea :autofocus="notes.length ==1 && endpoint !== 'stickynote'"
+											:disabled="!ops.edit"
+											:key = "note.id" 
+											class="noteText"
+										    v-model="note.note" 
+											placeholder="Edit note."
+											onfocus="this.placeholder = ''"
+											onblur="this.placeholder = 'Edit note.'" 
+											@input ="note.isSaving=true, autoSave(note), resize(event.path[0])"
+										    :maxlength="length"
+										    @keyup="countdown(note)"></textarea>												 
+									</section>	
+										
+									<section class="footer">
+										<span class = "note-error">{{error}}</span>
+										<div v-if="endpoint !== 'stickynote' && ops.edit"" :disabled="!ops.edit" class="icon-calendar small button" @click ="dateStamp(event.target.parentNode.parentNode, note)">Add Date</div>
+										<div v-if = "endpoint !== 'stickynote'" class="formfield">
+											<select v-if="recordType.length > 0" v-model="note.recordType" @change="note.isSaving=true, commitNote(note)" :disabled="!ops.edit">
+												<option value="" disabled selected>Category</option>
+												<option v-for="(item, key) in recordType" :value="item">
+													{{item}}
+												</option>			
+											</select>
+										</div>
+										<div v-if = "ops.edit ==='admin'" class="formfield checkbox">
+								
+											<input v-model="note.bAdmin" type="checkbox" :id = "note.id" value="1" @change="note.isSaving=true, commitNote(note)">
+											<label class="noteType" :for="note.id">Admin</label>
+										</div>
+										<div v-if="ops.edit" class="saved-wrapper">
+											<div v-if ="note.isSaving" class="icon-saving small button saver" >Saving</div> 
+											<div v-else class="icon-saved small button saver" >Saved</div>
+										</div>
+									</section>
+								</div>			
+							</div>	
+						</transition-group>	
+				</div>
+</script>
+
+
+<script>
+function debounce (fn, delay) {
+	var timeoutID = null;
+	return function () {
+		clearTimeout(timeoutID)
+		var args = arguments;
+		var that = this;
+		timeoutID = setTimeout(function () {
+				fn.apply(that, args);
+		}, delay)
+		}
+}	
+
+function autoExpand(e,el){
+    var el = el || e.target;
+    el.style.height = 'inherit';
+    el.style.height = el.scrollHeight+'px';
+  }
+  
+
+// Define a new component called note-component
+Vue.component('e123-note', {
+	
+	props: ['endpoint', 'unique', 'parent_id'],
+	
+				
+	data: function() {
+		return {
+			index		: '',
+			notes 		: [],
+			note        : { "recordType" : "" },
+			recordType	: [],
+			peakClass	: '',
+			error		: '',
+			ops			: {},
+			preloadClass:'preload'
+		}
+	},
+	
+	
+	template: '#e123Note',
+				
+	computed: {
+   			
+   		length: function () {
+   				if(this.endpoint == 'stickynote'){
+   					return 500;
+   				}
+   				else{
+   					return '';
+		 		}
+		 	}
+	},
+		
+		
+	methods: {
+		listNote : function()	{		
+			let vm = this;
+			http
+				.get(this.endpoint, {"headers" : { 'parent_id' : this.parent_id }})
+				.then(function(res) {vm.notes = res.data.data, vm.ops=res.data.ops; vm.note.bAdmin = (vm.ops.add === 'admin')  });
+			
+			var notesoptions = '';		
+			if (this.endpoint === 'brokernotes') { notesoptions = 'abrokernotetypes'; }
+			if (this.endpoint === 'usernotes') 	{ notesoptions = 'ausernotetypes'; }	
+			if (notesoptions !== '')	{	
+				http
+					.get("jsrequest/" + notesoptions)
+					.then(function(res) { vm.recordType = res.data.data });
+			}		
+		},
+
+		
+		emptyNote : function() {
+			this.preloadClass = "";
+			this.peakClass="";				
+			let vm = this;
+			http
+				.put(this.endpoint, { "note" : '', "recordType" : '', "bAdmin" : vm.ops.add === 'admin' }, {"headers" :  { 'parent_id' : this.parent_id}})
+				.then(function(res) {vm.notes = res.data.data; })
+		},
+
+
+		commitNote : function (mynote) {
+			let vm = this;	
+			if (typeof mynote.id === 'undefined')	{
+				http
+					.put(this.endpoint, 					{ "note" : mynote.note, "recordType" : (this.recordType.length == 0 ? '' : mynote.recordType), "bAdmin" : mynote.bAdmin }, {"headers" :  { 'parent_id' : this.parent_id }})
+					.then(function(res) {vm.notes = res.data.data; });
+				this.note = { "note" : '', recordType : "" };
+			}
+			
+			else {
+	
+				http
+					.post(this.endpoint + "/" + mynote.id, { "note" : mynote.note, "recordType" : (this.recordType.length == 0 ? '' : mynote.recordType), "bAdmin" : mynote.bAdmin }, {"headers" :  { 'parent_id' : this.parent_id }})
+					.then(function(res) {vm.notes = res.data.data; });
+				}
+				
+		},
+		
+		
+		delNote : function (id) {	
+			this.preloadClass = "";
+			let vm = this;
+			this.note.note="";
+			this.note.isSaving = false;
+		
+		
+			http
+				.delete(this.endpoint + "/" + id, {"headers" :  { 'parent_id' : this.parent_id }})
+				.then(function(res) {vm.notes = res.data.data; })
+		},
+		
+		
+		dateStamp : function(event, note) {
+			if (typeof note.note === 'undefined')	{
+				note.note = '';
+			}
+			
+			note.note = note.note + "\n\nUpdated " +  new Date().toDateString() + ' ' + new Date().toLocaleTimeString() + " by " + note.username + "\n\n";
+			this.commitNote(note);
+
+			event.getElementsByClassName('noteText').item(0).focus(); 				
+		},
+		
+		
+		resize: function(e){
+            e.style.height = e.scrollHeight + "px";
+            e.addEventListener('paste',autoExpand);
+			e.addEventListener('input',autoExpand);
+			e.addEventListener('keyup',autoExpand);
+               
+		},
+		
+		resizeAll : function(){
+			var e = this.$el.getElementsByClassName('noteText');
+			for(i =0; i< e.length; i++){
+				this.resize(e.item(i));	
+			}	
+		},
+		
+		countdown	: function(mynote){
+			
+			if(mynote.note.length==500 && this.endpoint == 'stickynote'){
+				
+				this.error = 'Limit 500 characters';			
+			}else{
+				this.error = '';
+			}
+		},
+		
+		autoSave : debounce(function (note) {
+			if(this.ops.edit){
+				this.commitNote(note);	
+			}	
+		}, 1000)
+					
+	}, //method ends		
+
+	mounted : function() {
+		this.listNote();
+			
+	},
+	
+	updated : function() {
+		this.resizeAll();			
+	},
+	
+});
+</script>
+
+
+
+<script type="text/x-template" id="e123Menu">
+	
+<nav :class="{open:isOpen}" class="amaranth topnavs" role="navigation" >
+		<button  @click="isOpen=!isOpen" id="hamburger"><i class="wire-icon miniburger"></i></button>
+		<ul v-for="(value, key) in values" class="dropdowns" :class= "value.category" >	
+			<li v-for="(menu, key) in value.menu" class="first-level">
+				
+				<a v-if="menu.id === 'main'" :class = "[{theOne : check(menu.id)}, menu.id]"  class="mainnav" :href="menu.href" >
+					{{label}}
+				</a>
+				
+				<a v-else-if="menu.id === 'settings'" :class = "[{theOne : check(menu.id)}, menu.id]"> 
+					<img  src="/_themes/icons/flaticons/settings.svg">
+				</a>
+				
+				<a v-else-if="menu.id === 'userlist'":class = "[{theOne : check(menu.id)}, menu.id]"> 
+					<img  src="/_themes/icons/flaticons/user.svg">
+				</a>
+				
+				<a v-else-if="menu.id === 'materials'" :class = "[{theOne : check(menu.id)}, menu.id]" class="mainnav" :href="menu.href" >
+					<img  src="/_themes/icons/flaticons/info.svg">
+				</a>	
+				
+				<a v-else-if="menu.id === 'media'" :class = "[{theOne : check(menu.id)}, menu.id]" class="mainnav" :href="menu.href">
+					<img  src="/_themes/icons/flaticons/media.svg">
+				</a>
+				
+				<a v-else-if="typeof menu.href === 'undefined'" :class = "[{theOne : check(menu.id)}, menu.id]"> 
+					{{menu.text}} 
+				</a>	
+				<a v-else class="mainnav" :href="menu.href"  :class = "[{theOne : check(menu.id)}, menu.id, menu.text]">
+					{{menu.text}} 
+				</a>										
+				<ul v-if="typeof menu.drop !== 'undefined'" >
+						
+					<template v-for="(submenu, subkey) in menu.drop">
+									
+						<li class="has-child" v-if="typeof submenu.drop !== 'undefined'" >
+																	
+							<span v-if="menu.id === 'settings'" class="has-child"><i class="wire-icon arrow"></i><a href="#" class="subnav-arrow">{{submenu.text}}</i></a></span>
+							<span v-else class="has-child"><a href="#" class="subnav-arrow">{{submenu.text}}</i></a><i class="wire-icon arrow"></i></span>
+										
+							<ul v-if="typeof submenu.drop !== 'undefined'" :class = "[{multicol : checkCol(submenu.drop.length)}, {savedlist	: checkList(submenu.text)}]">
+								<div>
+									<li v-for = "(subsubmenu, subsubkey) in submenu.drop">
+										<template v-if  = "subsubkey == 14 && typeof subsubmenu.href !== 'undefined' 
+											|| subsubkey < 14
+											">			
+											<span v-if="typeof subsubmenu.href === 'undefined'" class="subnav-title">{{subsubmenu.text}} </span>
+											<span v-else class="hover-style">
+												<a :href="subsubmenu.href">{{subsubmenu.text}} </a>
+											</span>
+										</template>
+									</li>
+								</div>
+								
+								<div v-if = "submenu.drop.length >= 14">
+									<li v-for="(subsubmenu, subsubkey) in submenu.drop">
+										
+										<template v-if = "
+									  			subsubkey == 14 && typeof subsubmenu.href === 'undefined'
+									  		||	subsubkey >  14 && subsubkey < 29 
+									  		|| 	subsubkey == 29 && typeof subsubmenu.href !== 'undefined'
+											">
+											<span v-if="typeof subsubmenu.href === 'undefined'" class="subnav-title">{{subsubmenu.text}} </span>
+											<span v-else class="hover-style">
+												<a :href="subsubmenu.href">{{subsubmenu.text}} </a>
+											</span>
+										</template>
+									</li>
+								</div>
+								<div v-if = "submenu.drop.length >= 29">
+									<li v-for="(subsubmenu, subsubkey) in submenu.drop">
+										
+										<template v-if = "
+									  			subsubkey == 29 && typeof subsubmenu.href === 'undefined'
+									  		||	subsubkey >  29 && subsubkey < 44 
+									  		|| 	subsubkey == 44 && typeof subsubmenu.href !== 'undefined'
+											">
+											<span v-if="typeof subsubmenu.href === 'undefined'" class="subnav-title">{{subsubmenu.text}} </span>
+											<span v-else class="hover-style">
+												<a :href="subsubmenu.href">{{subsubmenu.text}} </a>
+											</span>
+										</template>	
+									</li>
+								</div>	
+								<div v-if = "submenu.drop.length >= 44">
+									<li v-for="(subsubmenu, subsubkey) in submenu.drop">
+										
+										<template v-if = "
+											subsubkey == 44 && typeof subsubmenu.href === 'undefined' 
+										||  subsubkey >  44
+										">
+											<span v-if="typeof subsubmenu.href === 'undefined'" class="subnav-title">{{subsubmenu.text}} </span>
+											<span v-else class="hover-style">
+												<a :href="subsubmenu.href">{{subsubmenu.text}} </a>
+											</span>
+										</template>	
+									</li>
+								</div>	
+							</ul>
+						</li>	
+						<li v-if="typeof submenu.drop === 'undefined'">
+							<div class="nav-search" v-if="submenu.search">
+								<form id="navSearch" name="navSearch" action="/manage/search/navSearch.cfm" method="post" role="search">
+									<div class="leopard-form has-button">
+										<input type="text" name="searchFor" placeholder = "Search">
+										<button id="nav-btn-search" type="submit"><i class="wire-icon search"></i></button>
+									</div>
+								</form>
+							</div>
+							<span v-if="typeof submenu.search === 'undefined' && typeof submenu.href === 'undefined' && typeof submenu.user === 'undefined'"><a href="#"><b class="text-muted">{{submenu.text}}</b></a></span>
+							<span v-if="typeof submenu.search === 'undefined' && typeof submenu.href === 'undefined' && typeof submenu.user !== 'undefined'"><a href="#" @click="useSearch(submenu.user)">{{submenu.text}}</a></span>
+							<span v-if="typeof submenu.search === 'undefined' && typeof submenu.href !== 'undefined'"><a :href="tokenme(submenu.href)" :target="submenu.target">{{submenu.text}}</a></span>
+						</li>
+					</template>
+				</ul>	
+			</li>
+		</ul>
+</nav>
+
+</script>
+
+
+<script>
+Vue.component('e123-menu', {
+	props : ['label','nav','urltoken'],
+	template : '#e123Menu',
+	
+	data: function () {
+    	return {
+			values : [],
+			isOpen : false
+		
+		}
+	},
+		
+	methods:	{
+
+		listMenu : function()	{
+			
+			let vm = this;
+			
+			http.get("links/mainnav")
+				.then(function(res) {
+					
+					var category = "";
+					var arpost = -1;
+					
+					inMenus = res.data.data;
+					for(i = 0; i < inMenus.length; i++){
+						if (inMenus[i].category !== category)	{
+							category = inMenus[i].category;
+							arpost++;
+
+							vm.values.push({ "category" : category, menu : [] });
+						}	
+			
+						vm.values[arpost].menu.push(inMenus[i]);
+					}
+					
+				})
+		},
+		
+		tokenme: function (value) {
+		
+			if (!value) return '';
+		
+			value = value.toString();
+			return value.replace('%q', this.urltoken);
+  		},
+		
+		
+		useSearch : function(searchName){
+
+				console.log("Doing Search Name " + searchName);
+
+				
+				if(searchName == "user"){
+					showsearch('myinformation', '');
+				}
+				else {
+
+					if ($('#myinformation').css("display") == 'none') {
+						showsearch('myinformation','');
+					}
+
+				MyInfoTab('user-' + searchName)
+				}		
+		},
+		
+		check	: function(id){
+			if(id==="main" && this.nav==="main"){   
+				return false;
+			} // we don't want this style for the logo. Dan does't feel it
+			
+		 	else if(id===this.nav){
+				return true;
+			}
+			
+			//  using userlist insted of user to avoid css name conflict .user has style in admin.css
+			 
+			else if(id==="userlist" && this.nav==="user"){   
+				return true;
+			}
+			
+			//  using productlist insted of product to avoid css name conflict .user has style in admin.css
+			else if(id==="productlist" && this.nav==="products"){   
+				return true;
+			}
+			return false;
+		},
+		
+		checkList 	: function(label){
+			if(label =="Saved Lists"){
+				return true;
+			}
+			return false;
+		},
+		
+		checkCol	: function(len){
+			if(len>15){
+				return true
+			}
+			return false
+		}
+
+
+	}, // end methods
+	
+	mounted : function (){
+
+		this.listMenu();
+		
+	}
+	
+	
+});
+</script>
+
+
+
+
+<style type="text/css">
+	
+	.upgrademsg {
+	    text-align: center;
+	    padding: 10px 100px;
+	    display: block;
+	}
+
+	.upgrademsg .fas {
+		color: red;
+	}
+
+	.warning-message-div {
+	    font-size: 14px;
+	    position: sticky;
+	    top: 50px;
+	    z-index: 1;
+	}
+
+
+	.warning {
+		width: 540px;
+	    background: #fff6bf;
+	    border-color: #ffd324;
+	    border-style: solid;
+	    border-width: 1px;
+	    color: #000;
+	    font-weight: normal;
+	    margin: 10px auto;
+	    padding: 6px 10px;
+	    text-align: left;
+	}
+	
+</style>
+
+
+
+	
+	
+	<style>
+		nav.amaranth ul.dropdowns li.first-level a.settings,
+		nav.amaranth ul.dropdowns li.first-level a.main,
+		nav.amaranth ul.dropdowns li.first-level a.userlist,
+		nav.amaranth ul.dropdowns li.first-level a.materials,
+		nav.amaranth ul.dropdowns li.first-level a.media,
+		nav.amaranth ul.dropdowns li.first-level a.search,
+		nav.amaranth ul.dropdowns li.first-level a.member,
+		nav.amaranth ul.dropdowns li.first-level a.agent,
+		nav.amaranth ul.dropdowns li.first-level a.productlist,
+		nav.amaranth ul.dropdowns li.first-level a.billing,
+		nav.amaranth ul.dropdowns li.first-level a.payables,
+		nav.amaranth ul.dropdowns li.first-level a.payouts,
+		nav.amaranth ul.dropdowns li.first-level a.listbilling,
+		nav.amaranth ul.dropdowns li.first-level a.operations,
+		nav.amaranth ul.dropdowns li.first-level a.reports,
+		nav.amaranth ul.dropdowns li.first-level a.todo,
+		nav.amaranth ul.dropdowns li.first-level a.email {
+			color:#FFFFE0;
+		}
+		
+		.office-blue nav.amaranth ul.hr:after,
+		.office-blue nav.amaranth ul.accounting:after{
+			border-right: 1px dotted #FFFFE0;
+		}
+		
+		nav.amaranth ul.dropdowns li.first-level a.settings:hover,
+		nav.amaranth ul.dropdowns li.first-level a.main:hover,
+		nav.amaranth ul.dropdowns li.first-level a.userlist:hover,
+		nav.amaranth ul.dropdowns li.first-level a.materials:hover,
+		nav.amaranth ul.dropdowns li.first-level a.media:hover,
+		nav.amaranth ul.dropdowns li.first-level a.Search:hover,
+		nav.amaranth ul.dropdowns li.first-level a.Member:hover,
+		nav.amaranth ul.dropdowns li.first-level a.Agent:hover,
+		nav.amaranth ul.dropdowns li.first-level a.product:hover,
+		nav.amaranth ul.dropdowns li.first-level a.Billing:hover,
+		nav.amaranth ul.dropdowns li.first-level a.payables:hover,
+		nav.amaranth ul.dropdowns li.first-level a.payouts:hover,
+		nav.amaranth ul.dropdowns li.first-level a.listbilling:hover,
+		nav.amaranth ul.dropdowns li.first-level a.operations:hover,
+		nav.amaranth ul.dropdowns li.first-level a.reports:hover,
+		nav.amaranth ul.dropdowns li.first-level a.todo:hover,
+		nav.amaranth ul.dropdowns li.first-level a.email:hover{
+			background-color: #9370DB !important;
+		}
+		.office-blue nav.amaranth ul.dropdowns li.first-level:hover{
+			background-color: #9370DB !important;
+		}
+		
+		.office-blue nav.amaranth{
+			background: #9932CC !important;
+		}
+		
+		.office-blue nav.amaranth ul.dropdowns li a.main{
+			background: #9932CC !important;
+		}
+		
+		.office-blue nav.amaranth ul.dropdowns li a.theOne{
+			background: #800080 !important;
+		}
+
+	</style>
+	
+	
+	<div id="menu"><nav role="navigation" class="amaranth topnavs open" ontouchstart=""><button id="hamburger"><i class="wire-icon miniburger"></i></button> <ul class="dropdowns home"><li class="first-level"><a href="http://tatsatdev.local/manage/" class="mainnav main">
+					Just Stick To Me
+				</a> <!----></li></ul><ul class="dropdowns hr"><li class="first-level"><a class="search"> 
+					Search 
+				</a> <ul><!----> <li><div class="nav-search"><form id="navSearch" name="navSearch" action="http://tatsatdev.local/manage/search/navSearch.cfm" method="post" role="search"><div class="leopard-form has-button"><input type="text" name="searchFor" placeholder="Search"> <button id="nav-btn-search" type="submit"><i class="wire-icon search"></i></button></div></form></div> <!----> <!----> <!----></li><!----> <li><!----> <!----> <!----> <span><a href="javascript:showsearch(&#39;memberQuick&#39;,	&#39;&#39;)">Members (Basic)</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="javascript:showsearch(&#39;member&#39;,		&#39;&#39;)">Members (Advanced)</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="javascript:showsearch(&#39;agent&#39;,			&#39;&#39;)">Groups</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="javascript:showsearch(&#39;billing&#39;,		&#39;&#39;)">Billing</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="javascript:showsearch(&#39;product&#39;,		&#39;&#39;)">Products</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/listbilling/invoices.cfm?opensearch=1">Invoices</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/payables/index.cfm?opensearch=1&amp;dtPosted_start=06/19/2019&amp;dtPosted_end=06/19/2019&amp;view=full">Payables</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/todo/index_new.cfm?opensearch=1">ToDo</a></span></li></ul></li><li class="first-level"><a class="member"> 
+					Members 
+				</a> <ul><!----> <li><!----> <!----> <!----> <span><a href="javascript: showsearch(&#39;memberQuick&#39;,	&#39;&#39;)">Search (Basic)</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="javascript: showsearch(&#39;member&#39;, 		&#39;&#39;)">Search (Advanced)</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/operations/1001_multicorp_search.cfm">Multi-Corp Search</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/users/index.cfm">View Members</a></span></li><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">Saved Lists</a><i class="wire-icon arrow"></i></span> <ul class="multicol savedlist"><div><li><span class="subnav-title">Member </span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=186&amp;submit=View">Test List Member </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=15&amp;submit=View">Member List </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=291&amp;submit=View">Age &amp; Gender </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=318&amp;submit=View">Active Members </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=6738&amp;submit=View">Test Member Export for Importing into Agent Portal </a></span></li><li><span class="subnav-title">Product </span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=188&amp;submit=View">Customer List * </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=16&amp;submit=View">Product List * </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=294&amp;submit=View">Rainbow Dates </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=297&amp;submit=View">Product Category </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=300&amp;submit=View">Next Billing Today </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=303&amp;submit=View">Next Billing No Date </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=306&amp;submit=View">Next Billing in Past </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=312&amp;submit=View">Created Today </a></span></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li></div> <div><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=315&amp;submit=View">Hold List </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=321&amp;submit=View">Inactive List </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=5491&amp;submit=View">Next Billing Amount Old </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=5492&amp;submit=View">Next Billing Amount New </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=7624&amp;submit=View">Bill List </a></span></li><li><span class="subnav-title">Saved </span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/index.cfm?reportId=7988&amp;submit=View">test1 </a></span></li></div> <!----> <!----></ul></li> <!----><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">Add Member</a><i class="wire-icon arrow"></i></span> <ul class=""><div><li><span class="hover-style"><a href="javascript: showsearch(&#39;addform&#39;, &#39;%q&#39;)">Short Form </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/manage.cfm?method=user">Long Form </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/create.cfm">1 Page Vert </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/create_new.cfm">1 Page Horiz </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">Member Import</a><i class="wire-icon arrow"></i></span> <ul class=""><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/import_process.cfm">Fixed File </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/import-dynamic.cfm">Dynamic File </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/global/duplicates/">View Duplicates</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/users/undelete.cfm">View Deleted</a></span></li></ul></li><li class="first-level"><a class="agent"> 
+					Groups 
+				</a> <ul><!----> <li><!----> <!----> <!----> <span><a href="javascript:showsearch(&#39;agent&#39;, &#39;&#39;)">Group Search</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/operations/1001_multicorp_search_agent.cfm">Multi-Corp Search</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/agents/index.cfm">View Groups</a></span></li><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">Saved Lists</a><i class="wire-icon arrow"></i></span> <ul class="savedlist"><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/index.cfm?reportId=3433&amp;submit=view">Agent List * </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/index.cfm?reportId=3867&amp;submit=view">Group List </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/index.cfm?reportId=3654&amp;submit=view">Contact List </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/index.cfm?reportId=3933&amp;submit=view">Vendor List </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/index.cfm?reportId=6904&amp;submit=view">Testing the Criteria </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/index.cfm?reportId=8700&amp;submit=view">TEst </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/agents/index.cfm?view=tree">Group Tree</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/agents/orgchart.cfm" target="_blank">Group Tree (SU)</a></span></li><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">Add Group</a><i class="wire-icon arrow"></i></span> <ul class=""><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=create">Blank Group </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=add&amp;type=agent">Full Group </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=add&amp;type=group">Group </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=add&amp;type=listbill">List Bill </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=add&amp;type=vendor">Vendor </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=add">Default </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">Group Import</a><i class="wire-icon arrow"></i></span> <ul class=""><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/users/import-dynamic.cfm?show=broker">Add / Update File </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=upload">Licenses / Appointments </a></span></li></div> <!----> <!----> <!----></ul></li> <!----></ul></li><li class="first-level"><a class="productlist"> 
+					Products 
+				</a> <ul><!----> <li><!----> <!----> <!----> <span><a href="javascript:showsearch(&#39;product&#39;, &#39;&#39;)">Product Search</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/products/index.cfm">View Products</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/products/detail.cfm">Add Products</a></span></li></ul></li></ul><ul class="dropdowns accounting"><li class="first-level"><a class="billing"> 
+					Billing 
+				</a> <ul><!----> <li><!----> <!----> <!----> <span><a href="javascript:showsearch(&#39;billing&#39;, &#39;&#39;)">Billing Search</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=today&amp;transaction_created_to=today">View Billing</a></span></li><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">View List</a><i class="wire-icon arrow"></i></span> <ul class=""><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=today&amp;transaction_created_to=today">Today </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=yesterday&amp;transaction_created_to=yesterday">Yesterday </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=thismonth&amp;transaction_created_to=today">This Month </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last7days&amp;transaction_created_to=today">7 Days </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last30days&amp;transaction_created_to=today">30 Days </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last60days&amp;transaction_created_to=today">60 Days </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last90days&amp;transaction_created_to=today">90 Days </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">View Summary</a><i class="wire-icon arrow"></i></span> <ul class=""><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=today&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date">Today </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=yesterday&amp;transaction_created_to=yesterday&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date">Yesterday </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=thismonth&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date">This Month </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last7days&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date">7 Days </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last30days&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date">30 Days </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last60days&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date">60 Days </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last90days&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date">90 Days </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">ACH Processing</a><i class="wire-icon arrow"></i></span> <ul class=""><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/nacha_ach.cfm">NACHA Export </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/operations/importACHResults.cfm">NACHA Import </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_ACH_payments.cfm">Check File </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/reports/report_projection.cfm">Billing Projection</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/processors/">Payment Processors</a></span></li></ul></li><li class="first-level"><a class="payables"> 
+					Payables 
+				</a> <ul><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/payables/index.cfm?opensearch=1&amp;dtPosted_start=06/19/2019&amp;dtPosted_end=06/19/2019&amp;view=full">Payables Search</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/payables/index.cfm?dtPosted_start=06/19/2019&amp;dtPosted_end=06/19/2019&amp;view=full">View Payables</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/payables/index.cfm?dtPosted_start=06/19/2019&amp;dtPosted_end=06/19/2019&amp;view=rollup">View Summary</a></span></li></ul></li><li class="first-level"><a class="payouts"> 
+					Comm 
+				</a> <ul><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/commissions/index2.cfm">View Commissions</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/commissions/index2.cfm?display=summary">View Summary</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/operations/copycommissions.cfm">Copy Commissions</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/commissions/">All Commissions</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/commissions/results.cfm">Commission Report</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/commissions/advanced_report.cfm">Advanced Commission Report</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/commissions/commissions.cfm">Export Commission</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/commissions/enroller_commission.cfm">Enroller Commission Report</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/commissions/run.cfm">Generate Group Commissions</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/commissions/advanced_homeland.cfm">Generate Advanced Commissions</a></span></li></ul></li><li class="first-level"><a class="listbilling"> 
+					Invoices 
+				</a> <ul><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/listbilling/invoices.cfm?opensearch=1">Invoice Search</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/listbilling/invoices.cfm">View Invoices</a></span></li><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">Add Invoice</a><i class="wire-icon arrow"></i></span> <ul class=""><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/listbilling/generateByAdHoc.cfm">Group </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/listbilling/generate_individual.cfm">Member </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/listbilling/groups.cfm">Group List</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/listbilling/individuals.cfm">Members List</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/listbilling/reports/">Invoice Reports</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/listbilling/processors.cfm">Processors</a></span></li></ul></li></ul><ul class="dropdowns operations"><li class="first-level"><a href="http://tatsatdev.local/manage/operations.cfm" class="mainnav operations Ops">
+					Ops 
+				</a> <!----></li><li class="first-level"><a class="reports"> 
+					Reports 
+				</a> <ul><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">Member</a><i class="wire-icon arrow"></i></span> <ul class=""><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_projection.cfm">Projection </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/operations/persistency.cfm">Persistency </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_sales_totals.cfm">Sales </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_retention.cfm">Retention </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_membersByState.cfm">Counts by State </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_interactions_detail.cfm?isTree=1">Interactions </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_documents.cfm?docFor=member">Documents </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_notes.cfm?dateFrom=06/19/2019&amp;dateTo=06/19/2019&amp;isTree=1&amp;noteFor=member&amp;noteType=-1&amp;action=Search+Notes">Notes </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/noFeeAssigned.cfm">Missing Product Fees </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/productsInNoSaleStates.cfm">No Sale States </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">Group</a><i class="wire-icon arrow"></i></span> <ul class=""><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_AgentInteractions.cfm?isTree=1">Interactions </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_documents.cfm?docFor=agent">Documents </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_notes.cfm?dateFrom=06/19/2019&amp;dateTo=06/19/2019&amp;isTree=1&amp;noteFor=agent&amp;noteType=-1&amp;action=Search+Notes">Notes </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><li class="has-child"><span class="has-child"><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">System</a><i class="wire-icon arrow"></i></span> <ul class=""><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_interactions.cfm">Interactions </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_documents.cfm">Documents </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_notes.cfm?dateFrom=06/19/2019&amp;dateTo=06/19/2019&amp;isTree=1&amp;noteFor=any&amp;noteType=-1&amp;action=Search+Notes">Notes </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_history.cfm?OrderBy=1&amp;SortBy=1&amp;PageIndex=0&amp;Download=0&amp;DoSearch=1&amp;FromDate=06/19/2019&amp;ToDate=06/19/2019&amp;SearchType=logins&amp;BrokerID=1002&amp;ShowTree=1&amp;PageSize=100&amp;ViewReport=View+Report">Security Settings </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/reports/report_SecuritySettings.cfm">User Tracking </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/operations/online_now.cfm">Online Now </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/reportarchive.cfm">Export Archive</a></span></li></ul></li><li class="first-level"><a class="todo"> 
+					ToDo 
+				</a> <ul><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/todo/index_new.cfm?opensearch=1">ToDo Search</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/todo/index_new.cfm">View List</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/todo/index.cfm">View Calendar</a></span></li></ul></li><li class="first-level"><a class="email"> 
+					Letters 
+				</a> <ul><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/massemail/template/">View Templates</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/massemail/schedule.cfm">View Scheduler</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/massemail/">Sent Emails</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/massemail/opened.cfm">Opened Emails</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/massemail/bounce.cfm">Bounced Emails</a></span></li></ul></li></ul><ul class="dropdowns settings"><li class="first-level"><a href="http://tatsatdev.local/manage/media/" class="mainnav media"><img src="./Home - Just Stick To Me_files/media.svg"></a> <!----></li><li class="first-level"><a href="http://tatsatdev.local/manage/materials.cfm" class="mainnav materials"><img src="./Home - Just Stick To Me_files/info.svg"></a> <!----></li><li class="first-level"><a class="settings"><img src="./Home - Just Stick To Me_files/settings.svg"></a> <ul><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/global/corp/edit.cfm?corp_ID=1001">System Settings</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/global/corp/securitygroups.cfm">User Security Types</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/global/corp/fields.cfm">Standard Questions</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/forms/field_list.cfm">Custom Questions</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/global/corp/selectoptions.cfm">Drop Down Options</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/savedlist/">Saved Lists</a></span></li><li class="has-child"><span class="has-child"><i class="wire-icon arrow"></i><a href="http://tatsatdev.local/manage/#" class="subnav-arrow">Jobs</a></span> <ul class=""><div><li><span class="hover-style"><a href="http://tatsatdev.local/manage/jobs/">Scheduler </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/jobs/log.cfm">History </a></span></li><li><span class="hover-style"><a href="http://tatsatdev.local/manage/jobs/jobCalendar.cfm">Calendar </a></span></li></div> <!----> <!----> <!----></ul></li> <!----><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/automation/">Automations</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/processors/">Payment Processors</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/memberIDs/">Code Inventory</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/promocodes/">Promo Codes</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/global/sms/">SMS Text Accounts</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/global/resources/">Resources</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/form/">Custom Forms</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/global/billingInvoice.cfm">Invoice Templates (SU)</a></span></li></ul></li><li class="first-level"><a class="userlist"><img src="./Home - Just Stick To Me_files/user.svg"></a> <ul><!----> <li><!----> <!----> <span><a href="http://tatsatdev.local/manage/#">systemadmin</a></span> <!----></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/index.cfm?logout=1">Sign Out</a></span></li><!----> <li><!----> <!----> <!----> <span><a href="http://tatsatdev.local/manage/help.cfm">Help</a></span></li><!----> <li><!----> <!----> <span><a href="http://tatsatdev.local/manage/#">Work Lists</a></span> <!----></li><!----> <li><!----> <!----> <span><a href="http://tatsatdev.local/manage/#">Notes</a></span> <!----></li><!----> <li><!----> <!----> <span><a href="http://tatsatdev.local/manage/#">Messages </a></span> <!----></li><!----> <li><!----> <!----> <span><a href="http://tatsatdev.local/manage/#">Pages Viewed</a></span> <!----></li><!----> <li><!----> <!----> <span><a href="http://tatsatdev.local/manage/#">Searches</a></span> <!----></li><!----> <li><!----> <!----> <span><a href="http://tatsatdev.local/manage/#">Reports</a></span> <!----></li><!----> <li><!----> <!----> <span><a href="http://tatsatdev.local/manage/#">Log Ins</a></span> <!----></li></ul></li></ul></nav></div>
+	
+	<script>
+		vm_menu = new Vue({ 
+			el: '#menu'
+		   });
+	</script>
+	
+
+	<div id="primary-div">
+
+		<table width="100%" cellspacing="20" cellpadding="0" border="0">
+			<tbody><tr>
+				<td class="page_text">
+					
+						<div id="myinformation" style="display:none"></div>
+					
+					<div id="addform" style="display:none"></div>
+					<div id="membersearch" style="display:none"></div>
+					<div id="memberquicksearch" style="display:none"></div>
+					<div id="agentsearch" style="display:none"></div>
+					<div id="billingsearch" style="display:none"></div>
+					<div id="productsearchpanel" style="display:none"></div>
+	
+		<div class="e123-corpID-div" style="position: fixed; top: 58px; left: 20px; border: 1px solid #aaa; border-radius: 8px; padding: 0 4px; font-weight: bold; color: #aaa;background-color: #fff;">
+			1001
+		</div>
+	
+				<script data-jsd-embedded="" data-key="bb5ed520-3dcf-431c-badc-e49a04d575ad" data-base-url="https://jsd-widget.atlassian.com" src="./Home - Just Stick To Me_files/embed.js"></script>
+			
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+	<td align="left" valign="top" class="page_text">
+		
+		<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+		<tbody><tr>
+			<td align="left" valign="bottom">
+				
+				<span id="welcome"><img src="./Home - Just Stick To Me_files/welcome_morning.gif" alt="Good" morning="" width="16" height="16" border="0">&nbsp;<a href="http://tatsatdev.local/manage/" class="title_link">Good Morning</a></span>
+					<script language="JavaScript">
+						function welcomeMessage() {
+							var obj = document.getElementById("welcome");
+							var visitormessage = "";
+							var visitordate = new Date();
+							var visitorhour = visitordate.getHours();
+							if (visitorhour >= 3 && visitorhour < 12) {
+								visitormessage = "<img src=/images/icons/welcome_morning.gif alt=Good Morning width=16 height=16 border=0>&nbsp;<a href=/manage/ class=title_link>Good Morning</a>";
+							} else if (visitorhour >= 12 && visitorhour < 17) {
+								visitormessage = "<img src=/images/icons/welcome_afternoon.gif alt=Good Afternoon width=16 height=16 border=0>&nbsp;<a href=/manage/ class=title_link>Good Afternoon</a>";
+							} else if (visitorhour >= 17 || visitorhour < 3) {
+								visitormessage = "<img src=/images/icons/welcome_evening.gif alt=Good Evening width=16 height=16 border=0>&nbsp;<a href=/manage/ class=title_link>Good Evening</a>";
+							}
+							obj.innerHTML = visitormessage;
+						}
+						welcomeMessage();
+					</script>
+			</td>
+			<td align="right" valign="bottom" style="font-size:11px;font-weight:normal;" nowrap="nowrap">
+				&nbsp;&nbsp;<a onclick="todaylink=window.open(this.href,&#39;today&#39;,&#39;height=825,width=750,resizable=1,scrollbars=1&#39;); todaylink.focus(); return false;" href="http://tatsatdev.local/today.cfm?id=1002" target="">Wednesday, June 19, 2019</a><br>
+			</td>
+		</tr>
+		</tbody></table>
+		<br clear="all">
+		
+		
+		<font class="page_text">
+		Just Stick To Me (1001)<br>
+		- Test Corp (<a href="http://tatsatdev.local/manage/agents/detail.cfm?id=1002">1002</a>)<br>
+		Username: <a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=security&amp;bsid=28699">systemadmin</a><br>
+		Website: <a href="http://www.enrollment123.com/1002" target="_blank">http://www.enrollment123.com/1002</a> <br>
+		Last Login: June 19, 2019 at 7:52 AM<br>
+			<br>
+		
+			<nobr>Enrollment123</nobr>
+		
+			<nobr>&nbsp;•&nbsp; David&nbsp;Jaeger</nobr>
+		
+		<br>
+		
+			<nobr>688 S Coast Hwy Ste 167</nobr> <nobr>Laguna Beach CA 92651</nobr><br>
+		
+			Phone: (949) 433-0084 
+			<br>
+		
+			Email: <a href="mailto:steve@enrollment123.com">steve@enrollment123.com</a><br>
+		
+			<br>
+			<style type="text/css">
+				@media (max-width: 1000px){
+					.login-different-brokerID{
+						max-width: 250px;
+					}	
+				}
+				@media (max-width: 640px){
+					.login-different-brokerID{
+						max-width: 200px;
+					}	
+				}
+				@media (max-width: 400px){
+					.login-different-brokerID{
+						max-width: 150px;
+					}	
+				}
+
+			</style>
+			<table cellspacing="0" cellpadding="0" border="0">
+				<form name="changebrokerform" action="http://tatsatdev.local/manage/index.cfm?" method="post" style="display:inline;"></form>
+				<tbody><tr>
+					<td align="left" valign="top">
+<style>
+.ui-autocomplete {
+	max-height: 396px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.ui-widget.ui-widget-content {
+	width:270px;
+	white-space: nowrap;
+	overflow-x: hidden;
+}
+</style>
+
+<input type="text" id="corplabel" size="40" value="1001 - Just Stick To Me" style="visibility: visible;" class="ui-autocomplete-input" autocomplete="off">
+<input type="hidden" name="loginDifferentBrokerID" value="1002"> 
+
+<input title="Login" accesskey="L" class="button" type="button" name="submitchangebrokerform" value="Login" onclick="submit();">
+<script type="text/javascript">
+$( function() {
+	var sourcearray =  new Array();
+sourcearray[0] = new Object();
+sourcearray[0]["id"] = 1002;
+sourcearray[0]["value"] = "1001 - Just Stick To Me";
+sourcearray[1] = new Object();
+sourcearray[1]["id"] = 1036;
+sourcearray[1]["value"] = "1009 - IMAS";
+sourcearray[2] = new Object();
+sourcearray[2]["id"] = 8165;
+sourcearray[2]["value"] = "1015 - Benefit Admin";
+sourcearray[3] = new Object();
+sourcearray[3]["id"] = 8255;
+sourcearray[3]["value"] = "1019 - Rx Gold Plan II";
+sourcearray[4] = new Object();
+sourcearray[4]["id"] = 8523;
+sourcearray[4]["value"] = "1021 - The Select Company";
+sourcearray[5] = new Object();
+sourcearray[5]["id"] = 8945;
+sourcearray[5]["value"] = "1022 - ~ Your Name Here";
+sourcearray[6] = new Object();
+sourcearray[6]["id"] = 10478;
+sourcearray[6]["value"] = "1025 - Association Enrollment";
+sourcearray[7] = new Object();
+sourcearray[7]["id"] = 14692;
+sourcearray[7]["value"] = "1028 - Select Dental Plan";
+sourcearray[8] = new Object();
+sourcearray[8]["id"] = 12168;
+sourcearray[8]["value"] = "1030 - ~ Administration123";
+sourcearray[9] = new Object();
+sourcearray[9]["id"] = 13503;
+sourcearray[9]["value"] = "1032 - ~ School Name";
+sourcearray[10] = new Object();
+sourcearray[10]["id"] = 13504;
+sourcearray[10]["value"] = "1033 - Rx Gold Plan";
+sourcearray[11] = new Object();
+sourcearray[11]["id"] = 13543;
+sourcearray[11]["value"] = "1034 - AHCA - 2";
+sourcearray[12] = new Object();
+sourcearray[12]["id"] = 14039;
+sourcearray[12]["value"] = "1035 - ~ Credit Repair";
+sourcearray[13] = new Object();
+sourcearray[13]["id"] = 14848;
+sourcearray[13]["value"] = "1037 - Healthcare Enrollment";
+sourcearray[14] = new Object();
+sourcearray[14]["id"] = 14849;
+sourcearray[14]["value"] = "1038 - ~ Registration";
+sourcearray[15] = new Object();
+sourcearray[15]["id"] = 15620;
+sourcearray[15]["value"] = "1042 - Administration Services";
+sourcearray[16] = new Object();
+sourcearray[16]["id"] = 21707;
+sourcearray[16]["value"] = "1051 - iRexion";
+sourcearray[17] = new Object();
+sourcearray[17]["id"] = 27254;
+sourcearray[17]["value"] = "1060 - United Benefits Direct";
+sourcearray[18] = new Object();
+sourcearray[18]["id"] = 28116;
+sourcearray[18]["value"] = "1063 - - Test";
+sourcearray[19] = new Object();
+sourcearray[19]["id"] = 28117;
+sourcearray[19]["value"] = "1064 - CalStar Financial";
+sourcearray[20] = new Object();
+sourcearray[20]["id"] = 28661;
+sourcearray[20]["value"] = "1066 - BeneTracks";
+sourcearray[21] = new Object();
+sourcearray[21]["id"] = 30610;
+sourcearray[21]["value"] = "1074 - NBBI Tech";
+sourcearray[22] = new Object();
+sourcearray[22]["id"] = 30878;
+sourcearray[22]["value"] = "1078 - EMA";
+sourcearray[23] = new Object();
+sourcearray[23]["id"] = 31982;
+sourcearray[23]["value"] = "1081 - Benefit Transact";
+sourcearray[24] = new Object();
+sourcearray[24]["id"] = 32665;
+sourcearray[24]["value"] = "1082 - Your Back Office";
+sourcearray[25] = new Object();
+sourcearray[25]["id"] = 35948;
+sourcearray[25]["value"] = "1087 - BTS Test";
+sourcearray[26] = new Object();
+sourcearray[26]["id"] = 35951;
+sourcearray[26]["value"] = "1088 - Benefits America";
+sourcearray[27] = new Object();
+sourcearray[27]["id"] = 35952;
+sourcearray[27]["value"] = "1089 - ~ Your Company Name";
+sourcearray[28] = new Object();
+sourcearray[28]["id"] = 35954;
+sourcearray[28]["value"] = "1091 - ADMU-AFIM";
+sourcearray[29] = new Object();
+sourcearray[29]["id"] = 35955;
+sourcearray[29]["value"] = "1092 - The iCan Group";
+sourcearray[30] = new Object();
+sourcearray[30]["id"] = 37653;
+sourcearray[30]["value"] = "1096 - Redemption-Vouchers";
+sourcearray[31] = new Object();
+sourcearray[31]["id"] = 41295;
+sourcearray[31]["value"] = "1100 - ICB America";
+sourcearray[32] = new Object();
+sourcearray[32]["id"] = 41296;
+sourcearray[32]["value"] = "1101 - NBLA Association ";
+sourcearray[33] = new Object();
+sourcearray[33]["id"] = 41297;
+sourcearray[33]["value"] = "1102 - Administration";
+sourcearray[34] = new Object();
+sourcearray[34]["id"] = 46435;
+sourcearray[34]["value"] = "1111 - Andersen Group, Inc";
+sourcearray[35] = new Object();
+sourcearray[35]["id"] = 46438;
+sourcearray[35]["value"] = "1112 - Prototype Insurance";
+sourcearray[36] = new Object();
+sourcearray[36]["id"] = 46580;
+sourcearray[36]["value"] = "1114 - Agentra Healthcare";
+sourcearray[37] = new Object();
+sourcearray[37]["id"] = 46582;
+sourcearray[37]["value"] = "1116 - CASA";
+sourcearray[38] = new Object();
+sourcearray[38]["id"] = 46586;
+sourcearray[38]["value"] = "1120 - Pinnacle Choice";
+sourcearray[39] = new Object();
+sourcearray[39]["id"] = 55032;
+sourcearray[39]["value"] = "1121 - AAG";
+sourcearray[40] = new Object();
+sourcearray[40]["id"] = 55174;
+sourcearray[40]["value"] = "1123 - Agent Back Office ";
+sourcearray[41] = new Object();
+sourcearray[41]["id"] = 55203;
+sourcearray[41]["value"] = "1126 - Rescue Medical Alert";
+sourcearray[42] = new Object();
+sourcearray[42]["id"] = 55204;
+sourcearray[42]["value"] = "1127 - ZZZ - MLA International";
+sourcearray[43] = new Object();
+sourcearray[43]["id"] = 56415;
+sourcearray[43]["value"] = "1130 - BENEFITS-USA";
+sourcearray[44] = new Object();
+sourcearray[44]["id"] = 56792;
+sourcearray[44]["value"] = "1137 - ABA";
+sourcearray[45] = new Object();
+sourcearray[45]["id"] = 56795;
+sourcearray[45]["value"] = "1140 - NCE Short Term ";
+sourcearray[46] = new Object();
+sourcearray[46]["id"] = 57869;
+sourcearray[46]["value"] = "1144 - ACE";
+sourcearray[47] = new Object();
+sourcearray[47]["id"] = 57870;
+sourcearray[47]["value"] = "1145 - Complete Care Dental";
+sourcearray[48] = new Object();
+sourcearray[48]["id"] = 58790;
+sourcearray[48]["value"] = "1147 - QuickQuoteUS";
+sourcearray[49] = new Object();
+sourcearray[49]["id"] = 58791;
+sourcearray[49]["value"] = "1148 - Advocate Staffing Services";
+sourcearray[50] = new Object();
+sourcearray[50]["id"] = 58792;
+sourcearray[50]["value"] = "1149 - ANY DOCTOR (Internal)";
+sourcearray[51] = new Object();
+sourcearray[51]["id"] = 58971;
+sourcearray[51]["value"] = "1151 - Universal Administrators";
+sourcearray[52] = new Object();
+sourcearray[52]["id"] = 59550;
+sourcearray[52]["value"] = "1154 - Benefits1StopShop";
+sourcearray[53] = new Object();
+sourcearray[53]["id"] = 59862;
+sourcearray[53]["value"] = "1157 - Benefits Administration";
+sourcearray[54] = new Object();
+sourcearray[54]["id"] = 59863;
+sourcearray[54]["value"] = "1158 - IHIP";
+sourcearray[55] = new Object();
+sourcearray[55]["id"] = 59864;
+sourcearray[55]["value"] = "1159 - Claims";
+sourcearray[56] = new Object();
+sourcearray[56]["id"] = 60179;
+sourcearray[56]["value"] = "1161 - Advantage MEC";
+sourcearray[57] = new Object();
+sourcearray[57]["id"] = 60181;
+sourcearray[57]["value"] = "1163 - Your Name Here";
+sourcearray[58] = new Object();
+sourcearray[58]["id"] = 61017;
+sourcearray[58]["value"] = "1166 - CareHQ";
+sourcearray[59] = new Object();
+sourcearray[59]["id"] = 61019;
+sourcearray[59]["value"] = "1168 - Ambassador";
+sourcearray[60] = new Object();
+sourcearray[60]["id"] = 61020;
+sourcearray[60]["value"] = "1169 - ~ Trial Business";
+sourcearray[61] = new Object();
+sourcearray[61]["id"] = 64413;
+sourcearray[61]["value"] = "1173 - HEI Medical Alarm";
+sourcearray[62] = new Object();
+sourcearray[62]["id"] = 64415;
+sourcearray[62]["value"] = "1175 - PROGRAM MANAGER";
+sourcearray[63] = new Object();
+sourcearray[63]["id"] = 65426;
+sourcearray[63]["value"] = "1176 - Quick Response Alert";
+sourcearray[64] = new Object();
+sourcearray[64]["id"] = 65428;
+sourcearray[64]["value"] = "1178 - Alliance Health";
+sourcearray[65] = new Object();
+sourcearray[65]["id"] = 65430;
+sourcearray[65]["value"] = "1180 - Call A Doctor Plus";
+sourcearray[66] = new Object();
+sourcearray[66]["id"] = 67026;
+sourcearray[66]["value"] = "1182 - LONE STAR SCRIPT CARE";
+sourcearray[67] = new Object();
+sourcearray[67]["id"] = 67027;
+sourcearray[67]["value"] = "1183 - CBA";
+sourcearray[68] = new Object();
+sourcearray[68]["id"] = 67028;
+sourcearray[68]["value"] = "1184 - IDCA";
+sourcearray[69] = new Object();
+sourcearray[69]["id"] = 67029;
+sourcearray[69]["value"] = "1185 - Advocates For America";
+sourcearray[70] = new Object();
+sourcearray[70]["id"] = 69238;
+sourcearray[70]["value"] = "1186 - BBG 2";
+sourcearray[71] = new Object();
+sourcearray[71]["id"] = 69682;
+sourcearray[71]["value"] = "1190 - Wellness Plan of America";
+sourcearray[72] = new Object();
+sourcearray[72]["id"] = 72362;
+sourcearray[72]["value"] = "1191 - American Health Options";
+sourcearray[73] = new Object();
+sourcearray[73]["id"] = 72363;
+sourcearray[73]["value"] = "1192 - AOBG";
+sourcearray[74] = new Object();
+sourcearray[74]["id"] = 73399;
+sourcearray[74]["value"] = "1193 - ~ Living Wage";
+sourcearray[75] = new Object();
+sourcearray[75]["id"] = 73400;
+sourcearray[75]["value"] = "1194 - WAOA";
+sourcearray[76] = new Object();
+sourcearray[76]["id"] = 73401;
+sourcearray[76]["value"] = "1195 - LCS Health Services";
+sourcearray[77] = new Object();
+sourcearray[77]["id"] = 79168;
+sourcearray[77]["value"] = "1199 - TMG Advocacy Service";
+sourcearray[78] = new Object();
+sourcearray[78]["id"] = 92188;
+sourcearray[78]["value"] = "1202 - CORE Solutions Group";
+sourcearray[79] = new Object();
+sourcearray[79]["id"] = 92190;
+sourcearray[79]["value"] = "1204 - GA Management Portal";
+sourcearray[80] = new Object();
+sourcearray[80]["id"] = 98617;
+sourcearray[80]["value"] = "1205 - BBG Benefit";
+sourcearray[81] = new Object();
+sourcearray[81]["id"] = 98619;
+sourcearray[81]["value"] = "1206 - Wellness Concierge";
+sourcearray[82] = new Object();
+sourcearray[82]["id"] = 99197;
+sourcearray[82]["value"] = "1207 - TPA Partner";
+sourcearray[83] = new Object();
+sourcearray[83]["id"] = 99199;
+sourcearray[83]["value"] = "1209 - ZZZ - Louis F. Leo Insurance ";
+sourcearray[84] = new Object();
+sourcearray[84]["id"] = 99200;
+sourcearray[84]["value"] = "1210 - MyHealthPass";
+sourcearray[85] = new Object();
+sourcearray[85]["id"] = 99202;
+sourcearray[85]["value"] = "1212 - The Hunting Grounds";
+sourcearray[86] = new Object();
+sourcearray[86]["id"] = 99203;
+sourcearray[86]["value"] = "1213 - ~ Pharmacy HQ";
+sourcearray[87] = new Object();
+sourcearray[87]["id"] = 99204;
+sourcearray[87]["value"] = "1214 - VelaPoint";
+sourcearray[88] = new Object();
+sourcearray[88]["id"] = 99205;
+sourcearray[88]["value"] = "1215 - ~ Medicare Supplement";
+sourcearray[89] = new Object();
+sourcearray[89]["id"] = 100550;
+sourcearray[89]["value"] = "1217 - ZZZ - ID Theft";
+sourcearray[90] = new Object();
+sourcearray[90]["id"] = 100551;
+sourcearray[90]["value"] = "1218 - Benefit Provisions";
+sourcearray[91] = new Object();
+sourcearray[91]["id"] = 100552;
+sourcearray[91]["value"] = "1219 - GMG Savings";
+sourcearray[92] = new Object();
+sourcearray[92]["id"] = 100553;
+sourcearray[92]["value"] = "1220 - Stryde Solutions";
+sourcearray[93] = new Object();
+sourcearray[93]["id"] = 100944;
+sourcearray[93]["value"] = "1223 - ZZZ - 800 Toll Free Now";
+sourcearray[94] = new Object();
+sourcearray[94]["id"] = 100946;
+sourcearray[94]["value"] = "1225 - Just Benefits";
+sourcearray[95] = new Object();
+sourcearray[95]["id"] = 107231;
+sourcearray[95]["value"] = "1227 - The Rx Advocates";
+sourcearray[96] = new Object();
+sourcearray[96]["id"] = 107233;
+sourcearray[96]["value"] = "1229 - Creactive";
+sourcearray[97] = new Object();
+sourcearray[97]["id"] = 109743;
+sourcearray[97]["value"] = "1231 - Test";
+sourcearray[98] = new Object();
+sourcearray[98]["id"] = 109772;
+sourcearray[98]["value"] = "1234 - Benefits Management";
+sourcearray[99] = new Object();
+sourcearray[99]["id"] = 109773;
+sourcearray[99]["value"] = "1235 - OPEN";
+sourcearray[100] = new Object();
+sourcearray[100]["id"] = 110835;
+sourcearray[100]["value"] = "1236 - 24/7 MedCall";
+sourcearray[101] = new Object();
+sourcearray[101]["id"] = 110836;
+sourcearray[101]["value"] = "1237 - BENEFITS CENTER";
+sourcearray[102] = new Object();
+sourcearray[102]["id"] = 110837;
+sourcearray[102]["value"] = "1238 - Core Value Benefits";
+sourcearray[103] = new Object();
+sourcearray[103]["id"] = 113016;
+sourcearray[103]["value"] = "1242 - InService America";
+sourcearray[104] = new Object();
+sourcearray[104]["id"] = 113017;
+sourcearray[104]["value"] = "1243 - Concierge Benefit Services";
+sourcearray[105] = new Object();
+sourcearray[105]["id"] = 113019;
+sourcearray[105]["value"] = "1245 - IPCA Billing Portal";
+sourcearray[106] = new Object();
+sourcearray[106]["id"] = 114687;
+sourcearray[106]["value"] = "1246 - Aliera Healthcare, Inc.";
+sourcearray[107] = new Object();
+sourcearray[107]["id"] = 114689;
+sourcearray[107]["value"] = "1248 - PHS / Health Depot";
+sourcearray[108] = new Object();
+sourcearray[108]["id"] = 126403;
+sourcearray[108]["value"] = "1253 - IHC  ";
+sourcearray[109] = new Object();
+sourcearray[109]["id"] = 126405;
+sourcearray[109]["value"] = "1255 - Health Insurance Agents";
+sourcearray[110] = new Object();
+sourcearray[110]["id"] = 128046;
+sourcearray[110]["value"] = "1256 - Insurance Market";
+sourcearray[111] = new Object();
+sourcearray[111]["id"] = 128047;
+sourcearray[111]["value"] = "1257 - Marsh";
+sourcearray[112] = new Object();
+sourcearray[112]["id"] = 128048;
+sourcearray[112]["value"] = "1258 - National Dental Solutions";
+sourcearray[113] = new Object();
+sourcearray[113]["id"] = 129254;
+sourcearray[113]["value"] = "1260 - BenefitHub";
+sourcearray[114] = new Object();
+sourcearray[114]["id"] = 132559;
+sourcearray[114]["value"] = "1261 - MedCareComplete";
+sourcearray[115] = new Object();
+sourcearray[115]["id"] = 132561;
+sourcearray[115]["value"] = "1263 - Quoting Portal 1";
+sourcearray[116] = new Object();
+sourcearray[116]["id"] = 132562;
+sourcearray[116]["value"] = "1264 - AAS Alliance";
+sourcearray[117] = new Object();
+sourcearray[117]["id"] = 132563;
+sourcearray[117]["value"] = "1265 - Edge Health Administrators";
+sourcearray[118] = new Object();
+sourcearray[118]["id"] = 132565;
+sourcearray[118]["value"] = "1266 - CerCare Patient Console";
+sourcearray[119] = new Object();
+sourcearray[119]["id"] = 132568;
+sourcearray[119]["value"] = "1268 - Tracking My Business";
+sourcearray[120] = new Object();
+sourcearray[120]["id"] = 136153;
+sourcearray[120]["value"] = "1271 - AFHS / Docwellbee";
+sourcearray[121] = new Object();
+sourcearray[121]["id"] = 136154;
+sourcearray[121]["value"] = "1272 - Innovative Benefit Solutions";
+sourcearray[122] = new Object();
+sourcearray[122]["id"] = 136155;
+sourcearray[122]["value"] = "1273 - PrescriptionAssistance123";
+sourcearray[123] = new Object();
+sourcearray[123]["id"] = 136507;
+sourcearray[123]["value"] = "1274 - Adroit Health Group";
+sourcearray[124] = new Object();
+sourcearray[124]["id"] = 136508;
+sourcearray[124]["value"] = "1275 - ZZZ - Multi Health Plans";
+sourcearray[125] = new Object();
+sourcearray[125]["id"] = 140443;
+sourcearray[125]["value"] = "1276 - BTS I";
+sourcearray[126] = new Object();
+sourcearray[126]["id"] = 140445;
+sourcearray[126]["value"] = "1278 - AWA";
+sourcearray[127] = new Object();
+sourcearray[127]["id"] = 140447;
+sourcearray[127]["value"] = "1280 - WellSpring";
+sourcearray[128] = new Object();
+sourcearray[128]["id"] = 157944;
+sourcearray[128]["value"] = "1281 - Other Portal 2";
+sourcearray[129] = new Object();
+sourcearray[129]["id"] = 157945;
+sourcearray[129]["value"] = "1282 - BTS II";
+sourcearray[130] = new Object();
+sourcearray[130]["id"] = 157946;
+sourcearray[130]["value"] = "1283 - MSA";
+sourcearray[131] = new Object();
+sourcearray[131]["id"] = 157948;
+sourcearray[131]["value"] = "1285 - Benefit Membership";
+sourcearray[132] = new Object();
+sourcearray[132]["id"] = 161777;
+sourcearray[132]["value"] = "1286 - BCS Benefits";
+sourcearray[133] = new Object();
+sourcearray[133]["id"] = 161778;
+sourcearray[133]["value"] = "1287 - The Rx Solution Leads";
+sourcearray[134] = new Object();
+sourcearray[134]["id"] = 161779;
+sourcearray[134]["value"] = "1288 - OneDigital";
+sourcearray[135] = new Object();
+sourcearray[135]["id"] = 161780;
+sourcearray[135]["value"] = "1289 - AFS Financial Security";
+sourcearray[136] = new Object();
+sourcearray[136]["id"] = 161781;
+sourcearray[136]["value"] = "1290 - NMC National Motor Club";
+sourcearray[137] = new Object();
+sourcearray[137]["id"] = 161783;
+sourcearray[137]["value"] = "1292 - SLAICO";
+sourcearray[138] = new Object();
+sourcearray[138]["id"] = 161784;
+sourcearray[138]["value"] = "1293 - AHCP ";
+sourcearray[139] = new Object();
+sourcearray[139]["id"] = 161785;
+sourcearray[139]["value"] = "1294 - MedLife";
+sourcearray[140] = new Object();
+sourcearray[140]["id"] = 161786;
+sourcearray[140]["value"] = "1295 - Insurance Concierge";
+sourcearray[141] = new Object();
+sourcearray[141]["id"] = 229640;
+sourcearray[141]["value"] = "1296 - Nations Health Group";
+sourcearray[142] = new Object();
+sourcearray[142]["id"] = 229641;
+sourcearray[142]["value"] = "1297 - Benefits Admin";
+sourcearray[143] = new Object();
+sourcearray[143]["id"] = 229642;
+sourcearray[143]["value"] = "1298 - Agentra Leads";
+sourcearray[144] = new Object();
+sourcearray[144]["id"] = 229644;
+sourcearray[144]["value"] = "1300 - I Life and Health";
+sourcearray[145] = new Object();
+sourcearray[145]["id"] = 238840;
+sourcearray[145]["value"] = "1301 - Nation Rx";
+sourcearray[146] = new Object();
+sourcearray[146]["id"] = 238841;
+sourcearray[146]["value"] = "1302 - O\'Neill Group";
+sourcearray[147] = new Object();
+sourcearray[147]["id"] = 238842;
+sourcearray[147]["value"] = "1303 - OPEN";
+sourcearray[148] = new Object();
+sourcearray[148]["id"] = 238843;
+sourcearray[148]["value"] = "1304 - NPLH Insurance";
+sourcearray[149] = new Object();
+sourcearray[149]["id"] = 238844;
+sourcearray[149]["value"] = "1305 - Doctor Now";
+sourcearray[150] = new Object();
+sourcearray[150]["id"] = 247261;
+sourcearray[150]["value"] = "1306 - Stephan Lake Adventure, LLC";
+sourcearray[151] = new Object();
+sourcearray[151]["id"] = 247262;
+sourcearray[151]["value"] = "1307 - Patient Help Network";
+sourcearray[152] = new Object();
+sourcearray[152]["id"] = 247264;
+sourcearray[152]["value"] = "1309 - Windslow Group";
+sourcearray[153] = new Object();
+sourcearray[153]["id"] = 247265;
+sourcearray[153]["value"] = "1310 - DigitalCyberDoc";
+sourcearray[154] = new Object();
+sourcearray[154]["id"] = 253053;
+sourcearray[154]["value"] = "1311 - TheVitaminPatch.com";
+sourcearray[155] = new Object();
+sourcearray[155]["id"] = 253054;
+sourcearray[155]["value"] = "1312 - Dylan Consulting";
+sourcearray[156] = new Object();
+sourcearray[156]["id"] = 253055;
+sourcearray[156]["value"] = "1313 - Community Care Group";
+sourcearray[157] = new Object();
+sourcearray[157]["id"] = 253056;
+sourcearray[157]["value"] = "1314 - Rx Valet";
+sourcearray[158] = new Object();
+sourcearray[158]["id"] = 253618;
+sourcearray[158]["value"] = "1315 - Family Prescription Plan";
+sourcearray[159] = new Object();
+sourcearray[159]["id"] = 253619;
+sourcearray[159]["value"] = "1316 - Premium Marketing Partners";
+sourcearray[160] = new Object();
+sourcearray[160]["id"] = 253621;
+sourcearray[160]["value"] = "1317 - ZZZ - Doctors Round the Clock";
+sourcearray[161] = new Object();
+sourcearray[161]["id"] = 253622;
+sourcearray[161]["value"] = "1318 - MyFit Agents";
+sourcearray[162] = new Object();
+sourcearray[162]["id"] = 253623;
+sourcearray[162]["value"] = "1319 - Integral Financial";
+sourcearray[163] = new Object();
+sourcearray[163]["id"] = 253624;
+sourcearray[163]["value"] = "1320 - Health Access Options";
+sourcearray[164] = new Object();
+sourcearray[164]["id"] = 261257;
+sourcearray[164]["value"] = "1321 - SureCo";
+sourcearray[165] = new Object();
+sourcearray[165]["id"] = 261258;
+sourcearray[165]["value"] = "1322 - Life Alarm";
+sourcearray[166] = new Object();
+sourcearray[166]["id"] = 261259;
+sourcearray[166]["value"] = "1323 - Advocate My Meds";
+sourcearray[167] = new Object();
+sourcearray[167]["id"] = 261261;
+sourcearray[167]["value"] = "1325 - Practical Health";
+sourcearray[168] = new Object();
+sourcearray[168]["id"] = 264165;
+sourcearray[168]["value"] = "1326 - Agency Portal";
+sourcearray[169] = new Object();
+sourcearray[169]["id"] = 264167;
+sourcearray[169]["value"] = "1328 - Distributor Franchise Services";
+sourcearray[170] = new Object();
+sourcearray[170]["id"] = 264168;
+sourcearray[170]["value"] = "1329 - Gotham Surety";
+sourcearray[171] = new Object();
+sourcearray[171]["id"] = 264665;
+sourcearray[171]["value"] = "1330 - Healthico";
+sourcearray[172] = new Object();
+sourcearray[172]["id"] = 264666;
+sourcearray[172]["value"] = "1331 - Cinergy";
+sourcearray[173] = new Object();
+sourcearray[173]["id"] = 264667;
+sourcearray[173]["value"] = "1332 - BeneServ Solutions LLC";
+sourcearray[174] = new Object();
+sourcearray[174]["id"] = 265660;
+sourcearray[174]["value"] = "1333 - Beastmode";
+sourcearray[175] = new Object();
+sourcearray[175]["id"] = 265661;
+sourcearray[175]["value"] = "1334 - American Select";
+sourcearray[176] = new Object();
+sourcearray[176]["id"] = 269127;
+sourcearray[176]["value"] = "1336 - Hooray Health";
+sourcearray[177] = new Object();
+sourcearray[177]["id"] = 269128;
+sourcearray[177]["value"] = "1337 - Great Health Choice";
+sourcearray[178] = new Object();
+sourcearray[178]["id"] = 269129;
+sourcearray[178]["value"] = "1338 - Premier - STM for AHG";
+sourcearray[179] = new Object();
+sourcearray[179]["id"] = 269130;
+sourcearray[179]["value"] = "1339 - Life Support";
+sourcearray[180] = new Object();
+sourcearray[180]["id"] = 269131;
+sourcearray[180]["value"] = "1340 - UNA";
+sourcearray[181] = new Object();
+sourcearray[181]["id"] = 279850;
+sourcearray[181]["value"] = "1341 - American Online Benefits Grp";
+sourcearray[182] = new Object();
+sourcearray[182]["id"] = 279851;
+sourcearray[182]["value"] = "1342 - Better Benefits";
+sourcearray[183] = new Object();
+sourcearray[183]["id"] = 279852;
+sourcearray[183]["value"] = "1343 - Symposium";
+sourcearray[184] = new Object();
+sourcearray[184]["id"] = 279853;
+sourcearray[184]["value"] = "1344 - Healthy Halo";
+sourcearray[185] = new Object();
+sourcearray[185]["id"] = 279854;
+sourcearray[185]["value"] = "1345 - R5 Admin";
+sourcearray[186] = new Object();
+sourcearray[186]["id"] = 290832;
+sourcearray[186]["value"] = "1346 - Shared Health Alliance";
+sourcearray[187] = new Object();
+sourcearray[187]["id"] = 290833;
+sourcearray[187]["value"] = "1347 - Enhanced Benefit Programs";
+sourcearray[188] = new Object();
+sourcearray[188]["id"] = 290834;
+sourcearray[188]["value"] = "1348 - AHS";
+sourcearray[189] = new Object();
+sourcearray[189]["id"] = 290835;
+sourcearray[189]["value"] = "1349 - Select Quote";
+sourcearray[190] = new Object();
+sourcearray[190]["id"] = 290836;
+sourcearray[190]["value"] = "1350 - Administration";
+sourcearray[191] = new Object();
+sourcearray[191]["id"] = 294692;
+sourcearray[191]["value"] = "1351 - Carter Thompson Inc.";
+sourcearray[192] = new Object();
+sourcearray[192]["id"] = 294693;
+sourcearray[192]["value"] = "1352 - FirstEnroll";
+sourcearray[193] = new Object();
+sourcearray[193]["id"] = 294694;
+sourcearray[193]["value"] = "1353 - C P F Insurance Trust";
+sourcearray[194] = new Object();
+sourcearray[194]["id"] = 294695;
+sourcearray[194]["value"] = "1354 - GBAS";
+sourcearray[195] = new Object();
+sourcearray[195]["id"] = 294696;
+sourcearray[195]["value"] = "1355 - Your Name Here";
+sourcearray[196] = new Object();
+sourcearray[196]["id"] = 306409;
+sourcearray[196]["value"] = "1356 - APEX-Assn for Creative Ind";
+sourcearray[197] = new Object();
+sourcearray[197]["id"] = 306410;
+sourcearray[197]["value"] = "1357 - OneShare";
+sourcearray[198] = new Object();
+sourcearray[198]["id"] = 306411;
+sourcearray[198]["value"] = "1358 - Rx Admin";
+sourcearray[199] = new Object();
+sourcearray[199]["id"] = 306412;
+sourcearray[199]["value"] = "1359 - America Dumpster";
+sourcearray[200] = new Object();
+sourcearray[200]["id"] = 306413;
+sourcearray[200]["value"] = "1360 - BeneBloc";
+sourcearray[201] = new Object();
+sourcearray[201]["id"] = 312076;
+sourcearray[201]["value"] = "1361 - Realtime Physicians";
+sourcearray[202] = new Object();
+sourcearray[202]["id"] = 312077;
+sourcearray[202]["value"] = "1362 - True Life Alliance";
+sourcearray[203] = new Object();
+sourcearray[203]["id"] = 312078;
+sourcearray[203]["value"] = "1363 - APEX - NCBA ";
+sourcearray[204] = new Object();
+sourcearray[204]["id"] = 312079;
+sourcearray[204]["value"] = "1364 - APEX - SALA";
+sourcearray[205] = new Object();
+sourcearray[205]["id"] = 312080;
+sourcearray[205]["value"] = "1365 - APEX";
+sourcearray[206] = new Object();
+sourcearray[206]["id"] = 315112;
+sourcearray[206]["value"] = "1366 - Healthcare2U";
+sourcearray[207] = new Object();
+sourcearray[207]["id"] = 315113;
+sourcearray[207]["value"] = "1367 - NEO Insurance";
+sourcearray[208] = new Object();
+sourcearray[208]["id"] = 315114;
+sourcearray[208]["value"] = "1368 - Aliere Advisors";
+sourcearray[209] = new Object();
+sourcearray[209]["id"] = 315116;
+sourcearray[209]["value"] = "1369 -  ";
+sourcearray[210] = new Object();
+sourcearray[210]["id"] = 315117;
+sourcearray[210]["value"] = "1370 - BeneCare";
+
+	$( "#corplabel" )
+		.autocomplete({
+			minLength: 0,
+			delay: 0,
+			autoFocus: true,
+			source: sourcearray,
+			select: function( event, ui ) {
+				$( "#corplabel" ).val( ui.item.label );
+				$( "input[name='loginDifferentBrokerID']" ).val( ui.item.id );
+				$( "input[name='submitchangebrokerform']" ).trigger("click");
+				return(false);
+			}
+		})
+		.on("click", function() {
+			$( this ).select();
+//			$( this ).val('');
+			$( this ).autocomplete( "search", "" );
+			return(false);
+		})
+		.css("visibility", "visible");
+});
+</script>
+					</td>
+				</tr>
+				
+			</tbody></table>
+		
+		<br>
+		<br></font>
+
+		
+		
+			<script type="text/javascript">
+				function todoChangeDay(date) {
+					document.todo.tododate.value = date;
+					document.todo.submit();
+				}
+				function ical(id) {
+					var _frame = $('iframe[name=download]');
+					_frame.attr('src', '/manage/todo/ical.cfm?todoid=' + id);
+				};
+			</script>
+			
+
+			<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+				<tbody><tr>
+					<td align="left" valign="top">
+						<a href="http://tatsatdev.local/manage/todo/" class="title_link">ToDo</a><br>
+					</td>
+				</tr>
+			</tbody></table>
+			<br clear="all">
+			<table id="calendar" width="100%" cellspacing="0" cellpadding="0" border="0">
+				
+					<tbody><tr>
+						<td valign="top" style="background-color:#ffffff; padding:5px 5x 5px 5px; border-top : 0px solid #333333; border-bottom : 0px solid #333333; border-right : 0px solid #333333; border-left : 0px solid #333333; COLOR: #000000; font-weight:normal; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px; text-align : left;">
+							Add a ToDo Task for a <a href="javascript: showsearch(&#39;member&#39;, &#39;&#39;)">Member</a> or <a href="javascript: showsearch(&#39;agent&#39;, &#39;&#39;)">Group</a>
+						</td>
+					</tr>
+				
+
+			</tbody></table>
+			<br clear="all">
+			<br><br>
+
+				
+
+		
+		
+			<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+				<tbody><tr>
+					<td align="left" valign="top">
+						<span class="title_link">Notes</span><br>
+					</td>
+				</tr>
+			</tbody></table>
+		<div id="stickynote" style="width: 70%;"><div class="notes-wrapper preload"><div class="note next-note"></div> <!----> <p><div class="preload"><div class="note"><section class="header"><!----> <!----> <!----></section> <section class="body"><textarea placeholder="Edit note." onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Edit note.&#39;" maxlength="500" class="noteText" style="height: 87px;"></textarea></section> <section class="footer"><span class="note-error"></span> <!----> <!----> <!----> <div class="saved-wrapper"><div class="icon-saved small button saver">Saved</div></div></section></div></div></p></div></div>
+		
+		<script>
+		new Vue({ 
+			el: '#stickynote'
+			});
+		</script>	
+	</td>
+
+	
+	<td class="page_text" width="2%">
+		<br><br>
+	</td>
+
+	
+	<td align="left" valign="top" class="page_text" width="66%">
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			
+				<tbody><tr>
+					<td align="left" valign="top" colspan="5">
+						<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+						<tbody><tr>
+							<td align="left" valign="top">
+								<a href="http://tatsatdev.local/manage/" class="title_link sitemap dashboards">Dashboards</a><br>
+							</td>
+						</tr>
+						</tbody></table>
+						<form id="dashboardForm" action="http://tatsatdev.local/manage/index.cfm" method="post">
+							<input type="hidden" id="dashboardPage" name="dashboardPage" value="1">
+							<input type="hidden" id="dashboardPageSize" name="dashboardPageSize" value="10">
+							<table cellspacing="0" cellpadding="0" border="0" width="100%">
+							<tbody><tr>
+								<td>
+									<table cellspacing="0" cellpadding="0" border="0" class="pageText">
+									<tbody><tr>
+										<td class="dashboardForm">
+											<select name="dashboardType">
+												
+														<option value="2">Summary Information</option>
+													
+														<option value="1">Member Tracking</option>
+													
+														<option value="9">Members Created by Date</option>
+													
+														<option value="4">Members Created by Group</option>
+													
+														<option value="6">Member Interactions</option>
+													
+														<option value="5">Group Tracking</option>
+													
+														<option value="8">Group Interactions</option>
+													
+														<option value="7">Products Created</option>
+													
+														<option value="10">Products Created by Date</option>
+													
+														<option value="3">Products Created by Group</option>
+													
+														<option value="12">Transactions by Date (Debits)</option>
+													
+														<option value="11">Transactions by Date (Debits and Credits)</option>
+													
+											</select>
+											
+											
+											&nbsp;&nbsp;
+											
+												<select name="dashboardBrokerID" id="BrokerID">
+													
+														<option value="128361">[ Empty Value ] (128361)</option>
+													
+														<option value="278190">[ Empty Value ] (278190)</option>
+													
+														<option value="278191">[ Empty Value ] (278191)</option>
+													
+														<option value="278193">[ Empty Value ] (278193)</option>
+													
+														<option value="278196">[ Empty Value ] (278196)</option>
+													
+														<option value="278199">[ Empty Value ] (278199)</option>
+													
+														<option value="278202">[ Empty Value ] (278202)</option>
+													
+														<option value="278204">[ Empty Value ] (278204)</option>
+													
+														<option value="278205">[ Empty Value ] (278205)</option>
+													
+														<option value="278206">[ Empty Value ] (278206)</option>
+													
+														<option value="278207">[ Empty Value ] (278207)</option>
+													
+														<option value="278210">[ Empty Value ] (278210)</option>
+													
+														<option value="278212">[ Empty Value ] (278212)</option>
+													
+														<option value="278214">[ Empty Value ] (278214)</option>
+													
+														<option value="278244">[ Empty Value ] (278244)</option>
+													
+														<option value="222266">[ Empty Value ] (222266)</option>
+													
+														<option value="280711"> (280711)</option>
+													
+														<option value="280712"> (280712)</option>
+													
+														<option value="280713"> (280713)</option>
+													
+														<option value="280714"> (280714)</option>
+													
+														<option value="280716"> (280716)</option>
+													
+														<option value="280717"> (280717)</option>
+													
+														<option value="280718"> (280718)</option>
+													
+														<option value="280719"> (280719)</option>
+													
+														<option value="280720"> (280720)</option>
+													
+														<option value="125180"> (125180)</option>
+													
+														<option value="287861">&gt;&lt;((((º&gt; (287861)</option>
+													
+														<option value="322213">(DO NOT TOUCH) CHECKOU... (322213)</option>
+													
+														<option value="1002" selected="">- Test Corp (1002)</option>
+													
+														<option value="214068">__TreeTestAgent1 (214068)</option>
+													
+														<option value="214079">__TreeTestAgent2 (214079)</option>
+													
+														<option value="214242">__TreeTestAgent3 (214242)</option>
+													
+														<option value="214545">__TreeTestAgent4 (214545)</option>
+													
+														<option value="2503">1016 (2503)</option>
+													
+														<option value="41530">1370 (41530)</option>
+													
+														<option value="41533">1385 (41533)</option>
+													
+														<option value="98654">2docs (98654)</option>
+													
+														<option value="17522">aaa new agent (17522)</option>
+													
+														<option value="63843">Admin123 Test Group (63843)</option>
+													
+														<option value="244259">Agent Portal (244259)</option>
+													
+														<option value="245646">Agent Portal (245646)</option>
+													
+														<option value="37889">Agents (37889)</option>
+													
+														<option value="37894">Agents (37894)</option>
+													
+														<option value="20840">another new nested age... (20840)</option>
+													
+														<option value="293443">Ant Agent (293443)</option>
+													
+														<option value="108966">Beacon (108966)</option>
+													
+														<option value="41531">Billy The Agent (41531)</option>
+													
+														<option value="41532">Billy The Agent (41532)</option>
+													
+														<option value="43206">Billy The Agent (43206)</option>
+													
+														<option value="193123">bob (193123)</option>
+													
+														<option value="18131">breakthetree (18131)</option>
+													
+														<option value="193124">carl (193124)</option>
+													
+														<option value="41534">Carmen The Agent (41534)</option>
+													
+														<option value="18148">Chechia (18148)</option>
+													
+														<option value="129384">clippers (129384)</option>
+													
+														<option value="129393">Clippers (129393)</option>
+													
+														<option value="144153">Company (144153)</option>
+													
+														<option value="115155">Company (115155)</option>
+													
+														<option value="115156">Company (115156)</option>
+													
+														<option value="92522">copy for detail displa... (92522)</option>
+													
+														<option value="92551">copy from 92522 (92551)</option>
+													
+														<option value="291219">copy of 1137 (291219)</option>
+													
+														<option value="98570">copy of 97557 (98570)</option>
+													
+														<option value="58543">Copy of billy (58543)</option>
+													
+														<option value="55933">Copy of Magic Johnson (55933)</option>
+													
+														<option value="22002">copycommagenttest (22002)</option>
+													
+														<option value="258070">d (258070)</option>
+													
+														<option value="142859">D League (142859)</option>
+													
+														<option value="142860">D League (142860)</option>
+													
+														<option value="25691">Date Rules Copy Test (25691)</option>
+													
+														<option value="28001">dbfieldtest (28001)</option>
+													
+														<option value="134653">Deleted User Repo (134653)</option>
+													
+														<option value="31149">demo (31149)</option>
+													
+														<option value="18132">donotbreakthetree (18132)</option>
+													
+														<option value="39982">Edward The Agent (39982)</option>
+													
+														<option value="21478">Enrollment123 (21478)</option>
+													
+														<option value="21479">Enrollment123 (21479)</option>
+													
+														<option value="21480">Enrollment123 (21480)</option>
+													
+														<option value="21482">Enrollment123 (21482)</option>
+													
+														<option value="21901">Enrollment123 (21901)</option>
+													
+														<option value="142861">Enrollment123, Inc (142861)</option>
+													
+														<option value="143896">Enrollment123, Inc (143896)</option>
+													
+														<option value="144152">Enrollment123, Inc (144152)</option>
+													
+														<option value="250681">Enrollment123, Inc (250681)</option>
+													
+														<option value="253184">Enrollment123, Inc (253184)</option>
+													
+														<option value="253185">Enrollment123, Inc (253185)</option>
+													
+														<option value="223118">Enrollment123, Inc (223118)</option>
+													
+														<option value="258071">Enrollment123, Inc (258071)</option>
+													
+														<option value="258778">Enrollment123, Inc (258778)</option>
+													
+														<option value="304771">Enrollment123, Inc (304771)</option>
+													
+														<option value="115366">George's Company (115366)</option>
+													
+														<option value="103290">jaeger (103290)</option>
+													
+														<option value="103291">jaeger (103291)</option>
+													
+														<option value="103617">jaeger (103617)</option>
+													
+														<option value="103618">jaeger (103618)</option>
+													
+														<option value="108893">jaeger (108893)</option>
+													
+														<option value="11819">John Smith (11819)</option>
+													
+														<option value="280878">John Wick (280878)</option>
+													
+														<option value="9409">Karl Malone (9409)</option>
+													
+														<option value="129158">khjg kjhfv (129158)</option>
+													
+														<option value="129159">khjg kjhfv (129159)</option>
+													
+														<option value="1144">Kobe Bryant (1144)</option>
+													
+														<option value="2504">Larry Bird (Guinea Pig... (2504)</option>
+													
+														<option value="124100">Lebron (124100)</option>
+													
+														<option value="264263">Life (264263)</option>
+													
+														<option value="256190">Life Association Holdi... (256190)</option>
+													
+														<option value="109746">Little Magic (109746)</option>
+													
+														<option value="109745">Little Shaq (109745)</option>
+													
+														<option value="1137">Los Angeles Lakers (1137)</option>
+													
+														<option value="1148">Magic Johnson (1148)</option>
+													
+														<option value="18155">Moon Unit Zappa (18155)</option>
+													
+														<option value="125182">my company (125182)</option>
+													
+														<option value="125183">my firstname (125183)</option>
+													
+														<option value="125185">my firstname and my la... (125185)</option>
+													
+														<option value="125181">my label (125181)</option>
+													
+														<option value="125184">my lastname (125184)</option>
+													
+														<option value="73156">new (73156)</option>
+													
+														<option value="75838">new (75838)</option>
+													
+														<option value="35592">new agent (35592)</option>
+													
+														<option value="35593">new agent (35593)</option>
+													
+														<option value="36005">new agent (36005)</option>
+													
+														<option value="36007">new agent (36007)</option>
+													
+														<option value="63316">New Agent (63316)</option>
+													
+														<option value="73155">new agent copy (73155)</option>
+													
+														<option value="129416">New Agent Copy - Testi... (129416)</option>
+													
+														<option value="280852">New Agent Label (280852)</option>
+													
+														<option value="280853">New Agent Label (280853)</option>
+													
+														<option value="92417">new copy of copy of bi... (92417)</option>
+													
+														<option value="92418">new copy of copy of bi... (92418)</option>
+													
+														<option value="92419">new copy of copy of bi... (92419)</option>
+													
+														<option value="92429">new copy of new copy o... (92429)</option>
+													
+														<option value="20839">new nested agent (20839)</option>
+													
+														<option value="38530">New Server Agent (38530)</option>
+													
+														<option value="1142">Phil Jackson (1142)</option>
+													
+														<option value="161124">Product Add Test (161124)</option>
+													
+														<option value="1165">Rick Fox (1165)</option>
+													
+														<option value="97555">sadl;fhjk (97555)</option>
+													
+														<option value="41535">Sam the Agent (41535)</option>
+													
+														<option value="1143">Shaquille O'Neal (1143)</option>
+													
+														<option value="19796">specta (19796)</option>
+													
+														<option value="15890">spectra (15890)</option>
+													
+														<option value="28013">Spectra Internet Consu... (28013)</option>
+													
+														<option value="18255">Spectra Test (18255)</option>
+													
+														<option value="18323">spectra test (18323)</option>
+													
+														<option value="18324">spectra test (18324)</option>
+													
+														<option value="18325">spectra test (18325)</option>
+													
+														<option value="18326">spectra test (18326)</option>
+													
+														<option value="21477">statebasedproduct (21477)</option>
+													
+														<option value="58250">Subagent 10 (58250)</option>
+													
+														<option value="27246">sunni (27246)</option>
+													
+														<option value="97557">Sunni Label Group (97557)</option>
+													
+														<option value="27247">sunni-shaq (27247)</option>
+													
+														<option value="21218">test (21218)</option>
+													
+														<option value="21220">test (21220)</option>
+													
+														<option value="37884">test (37884)</option>
+													
+														<option value="37888">test (37888)</option>
+													
+														<option value="129391">test (129391)</option>
+													
+														<option value="115154">Test (115154)</option>
+													
+														<option value="193161">test (193161)</option>
+													
+														<option value="256529">Test Agent Payment Pro... (256529)</option>
+													
+														<option value="322195">TEST Agent XYZ (322195)</option>
+													
+														<option value="35206">test copy (35206)</option>
+													
+														<option value="67263">test copy 2 (67263)</option>
+													
+														<option value="263528">test created (263528)</option>
+													
+														<option value="24924">test email (24924)</option>
+													
+														<option value="24923">test email 123 (24923)</option>
+													
+														<option value="222293">Test Lock (222293)</option>
+													
+														<option value="322196">TEST Shaq (322196)</option>
+													
+														<option value="256400">Test Shaq (256400)</option>
+													
+														<option value="108652">Test Troy Agent (108652)</option>
+													
+														<option value="58412">test-new from (58412)</option>
+													
+														<option value="258066">test2 (258066)</option>
+													
+														<option value="18157">testbackendsubagent (18157)</option>
+													
+														<option value="18158">testbackendsubagent (18158)</option>
+													
+														<option value="18159">testbackendsubagent (18159)</option>
+													
+														<option value="18151">testbackendsubagent (18151)</option>
+													
+														<option value="18152">testbackendsubagent (18152)</option>
+													
+														<option value="18153">testbackendsubagent (18153)</option>
+													
+														<option value="18154">testbackendsubagent (18154)</option>
+													
+														<option value="18145">testbackendsubagent (18145)</option>
+													
+														<option value="18146">testbackendsubagent (18146)</option>
+													
+														<option value="18147">testbackendsubagent (18147)</option>
+													
+														<option value="258065">testerdood (258065)</option>
+													
+														<option value="21832">testing the commission... (21832)</option>
+													
+														<option value="21833">testing the commission... (21833)</option>
+													
+														<option value="22003">testing the commission... (22003)</option>
+													
+														<option value="22005">testing the commission... (22005)</option>
+													
+														<option value="22006">testing the commission... (22006)</option>
+													
+														<option value="25840">Testing the signup 100... (25840)</option>
+													
+														<option value="25839">Testing the signup 100... (25839)</option>
+													
+														<option value="18140">Testlistreset (18140)</option>
+													
+														<option value="18141">Testlistreset (18141)</option>
+													
+														<option value="18142">Testlistreset (18142)</option>
+													
+														<option value="18143">Testlistreset (18143)</option>
+													
+														<option value="18144">testsubsubsubagent (18144)</option>
+													
+														<option value="263412">Troy's Test Agent (263412)</option>
+													
+														<option value="128368">Unified - HCCUA (128368)</option>
+													
+														<option value="66743">WPA - Test Members (66743)</option>
+													
+												</select>&nbsp;
+											
+											Tree<input type="checkbox" name="dashboardIsTree" id="IsTree" value="1" checked="">&nbsp;
+											<input type="submit" name="ViewDashboard" value="View" class="button">
+											
+										</td>
+									</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							
+							</tbody></table>
+							<br clear="all">
+						</form>
+					</td>
+				</tr>
+			
+			<tr>
+				<td align="left" valign="top" class="page_text" width="34%">
+
+
+				
+					<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+					<tbody><tr>
+						<td align="left" valign="top">
+							<a href="http://tatsatdev.local/manage/users/index.cfm" class="title_link sitemap membersLabel">Members</a><br>
+						</td>
+					</tr>
+					</tbody></table>
+					<table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tbody><tr>
+						<td class="menu_box">
+							<table cellspacing="0" cellpadding="0" border="0">
+								
+									<tbody><tr>
+										<td class="menu_left">
+											<a href="http://tatsatdev.local/manage/users/index.cfm" class="sitemap viewMembers"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="http://tatsatdev.local/manage/users/index.cfm" class="sitemap viewMembers">View Members</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="menu_left">
+											<br>
+										</td>
+										<td class="menu_right">
+											
+												<form style="padding:0px; margin:0px;display:inline;" name="customerList" action="http://tatsatdev.local/manage/users/index.cfm">
+												<select name="reportId" style="font-size:12px;">
+													
+															<option value="" disabled="">MEMBER</option>
+															
+														<option value="186">Test List Member</option>
+													
+														<option value="15">Member List</option>
+													
+														<option value="291">Age &amp; Gender</option>
+													
+														<option value="318">Active Members</option>
+													
+														<option value="6738">Test Member Export for Importing into Agent Portal</option>
+													
+															<option value="" disabled="">PRODUCT</option>
+															
+														<option value="188">Customer List*</option>
+													
+														<option value="16" selected="">Product List*</option>
+													
+														<option value="294">Rainbow Dates</option>
+													
+														<option value="297">Product Category</option>
+													
+														<option value="300">Next Billing Today</option>
+													
+														<option value="303">Next Billing No Date</option>
+													
+														<option value="306">Next Billing in Past</option>
+													
+														<option value="312">Created Today</option>
+													
+														<option value="315">Hold List</option>
+													
+														<option value="321">Inactive List</option>
+													
+														<option value="5491">Next Billing Amount Old</option>
+													
+														<option value="5492">Next Billing Amount New</option>
+													
+														<option value="7624">Bill List</option>
+													
+															<option value="" disabled="">SAVED</option>
+															
+														<option value="7988">test1</option>
+													
+												</select>
+												<input type="submit" class="button" name="submit" value="View">
+												</form>
+											
+										</td>
+									</tr>
+									
+								
+			<tr>
+				<td class="menu_left"><a href="javascript: showsearch(&#39;addform&#39;, &#39;&#39;)"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a></td>
+				<td class="menu_right"><a href="javascript: showsearch(&#39;addform&#39;, &#39;&#39;)">Add Member Short Form</a></td>
+			</tr>
+
+			<tr>
+				<td class="menu_left"><a href="http://tatsatdev.local/manage/users/manage.cfm?method=user"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a></td>
+				<td class="menu_right"><a href="http://tatsatdev.local/manage/users/manage.cfm?method=user">Add Member Long Form</a></td>
+			</tr>
+
+			<tr>
+				<td class="menu_left"><a href="http://tatsatdev.local/manage/users/create.cfm"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a></td>
+				<td class="menu_right"><a href="http://tatsatdev.local/manage/users/create.cfm">Add Member 1 Page Vert</a></td>
+			</tr>
+
+			<tr>
+				<td class="menu_left"><a href="http://tatsatdev.local/manage/users/create_new.cfm"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a></td>
+				<td class="menu_right"><a href="http://tatsatdev.local/manage/users/create_new.cfm">Add Member 1 Page Horiz</a></td>
+			</tr>
+
+		
+									<tr>
+										<td class="menu_left">
+											<a href="javascript: showsearch(&#39;memberQuick&#39;, &#39;&#39;)"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="javascript: showsearch(&#39;memberQuick&#39;, &#39;&#39;)" class="sitemap memberSearch">Member Basic Search</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="menu_left">
+											<a href="javascript: showsearch(&#39;member&#39;, &#39;&#39;)"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="javascript: showsearch(&#39;member&#39;, &#39;&#39;)" class="sitemap memberAdvanceSearch">Member Advanced Search</a>
+										</td>
+									</tr>
+								
+									<tr>
+										<td class="menu_left">
+											<a href="http://tatsatdev.local/manage/operations/1001_multicorp_search.cfm" class="sitemap memberMultiCorpSearch"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="http://tatsatdev.local/manage/operations/1001_multicorp_search.cfm" class="sitemap memberMultiCorpSearch">Search for Members Multi-Corp</a>
+										</td>
+									</tr>
+								
+									<tr>
+										<td class="menu_left">
+											<a href="http://tatsatdev.local/manage/users/import_process.cfm" class="sitemap importMemberFile"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="http://tatsatdev.local/manage/users/import_process.cfm" class="sitemap importMemberFixFile">Import Member File Fixed</a>
+										</td>
+									</tr>
+								
+									<tr>
+										<td class="menu_left">
+											<a href="http://tatsatdev.local/manage/users/import-dynamic.cfm" class="sitemap importMemberFixFile"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="http://tatsatdev.local/manage/users/import-dynamic.cfm" class="sitemap importDynamicFile">Import Member File Dynamic</a>
+										</td>
+									</tr>
+								
+									<tr>
+										<td class="menu_left">
+											<a href="http://tatsatdev.local/manage/global/duplicates/" class="sitemap mergeDuplicate"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="http://tatsatdev.local/manage/global/duplicates/" class="sitemap mergeDuplicate">Merge Duplicate Members</a>
+										</td>
+									</tr>
+								
+									<tr>
+										<td class="menu_left">
+											<a href="http://tatsatdev.local/manage/users/undelete.cfm" class="sitemap deleteMember"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="http://tatsatdev.local/manage/users/undelete.cfm" class="sitemap viewDeletedMember">View Deleted Members</a>
+										</td>
+									</tr>
+								
+
+								
+							</tbody></table>
+						</td>
+					</tr>
+					</tbody></table>
+					<br clear="all">
+				
+
+					<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+					<tbody><tr>
+						<td align="left" valign="top">
+							<a href="http://tatsatdev.local/manage/operations.cfm" class="title_link">Operations</a><br>
+						</td>
+					</tr>
+					</tbody></table>
+					<table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tbody><tr>
+						<td align="left" valign="top" style="padding:10px 0px 10px 0px;">
+							
+	<table cellspacing="0" cellpadding="0" border="0">
+		
+			<tbody><tr>
+				
+					<td valign="top">
+						<table cellspacing="0" cellpadding="0" border="0">
+							
+								<tbody><tr><td class="menu_left" valign="top"><a href="http://tatsatdev.local/manage/reports/1030/competitiveHealth.cfm"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/1030/competitiveHealth.cfm">Competitive Health</a></td></tr>
+							
+								<tr><td class="menu_left" valign="top"><a href="http://tatsatdev.local/manage/reports/fulfillment.cfm"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/fulfillment.cfm">Fulfillment (NEW)</a></td></tr>
+							
+								<tr><td class="menu_left" valign="top"><a href="http://tatsatdev.local/manage/reports/report_fulfillment.cfm"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_fulfillment.cfm">Fulfillment File</a></td></tr>
+							
+								<tr><td class="menu_left" valign="top"><a href="http://tatsatdev.local/manage/reports/report_eligability.cfm"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_eligability.cfm">Eligibility File</a></td></tr>
+							
+								<tr><td class="menu_left" valign="top"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm">Product Report</a></td></tr>
+							
+						</tbody></table>
+					</td>
+					
+					<td valign="top">
+						<table cellspacing="0" cellpadding="0" border="0">
+							
+								<tbody><tr><td class="menu_left" valign="top"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm">Product Report2</a></td></tr>
+							
+								<tr><td class="menu_left" valign="top"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm">Product Report3</a></td></tr>
+							
+								<tr><td class="menu_left" valign="top"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm">Product Report4</a></td></tr>
+							
+								<tr><td class="menu_left" valign="top"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm">Product Report5</a></td></tr>
+							
+								<tr><td class="menu_left" valign="top"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_roster.cfm">Product Report6</a></td></tr>
+							
+						</tbody></table>
+					</td>
+					
+			</tr>
+			
+	</tbody></table>
+
+						</td>
+					</tr>
+					</tbody></table>
+					<br clear="all">
+				
+				     	<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+						<tbody><tr>
+							<td align="left" valign="top">
+								<a href="http://tatsatdev.local/manage/reports.cfm" class="title_link">Reports</a><br>
+							</td>
+						</tr>
+						</tbody></table>
+						<table cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tbody><tr>
+							<td align="left" valign="top" style="padding:10px 0px 10px 0px;">
+								
+	
+<table cellspacing="0" cellpadding="0" border="0">
+	
+		<tbody><tr>
+			<td valign="top">
+				<table cellspacing="0" cellpadding="0" border="0">
+					
+						<tbody><tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_projection.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_projection.cfm">Member: Billing Projection</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/operations/persistency.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/operations/persistency.cfm">Member: Persistency Report</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_sales_totals.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_sales_totals.cfm">Member: Sales Report</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_retention.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_retention.cfm">Member: Retention Report</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_userinfo.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_userinfo.cfm">Member: Export (Horiz)</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_userinfo_vert.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_userinfo_vert.cfm">Member: Export (Vert)</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_membersByState.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_membersByState.cfm">Member: Counts by State</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_documents.cfm?docFor=member"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_documents.cfm?docFor=member">Member: Documents</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_notes.cfm?dateFrom=06/19/2019&amp;dateTo=06/19/2019&amp;isTree=1&amp;noteFor=member&amp;noteType=-1&amp;action=Search+Notes"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_notes.cfm?dateFrom=06/19/2019&amp;dateTo=06/19/2019&amp;isTree=1&amp;noteFor=member&amp;noteType=-1&amp;action=Search+Notes">Member: Notes</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/noFeeAssigned.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/noFeeAssigned.cfm">Member: Missing Product Fees</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_agents.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_agents.cfm">Group: Export (Horiz)</a></td></tr>
+					
+				</tbody></table>
+			</td>
+			<td valign="top" style="padding:0px 0px 0px 10px;">
+				<table cellspacing="0" cellpadding="0" border="0">
+					
+						<tbody><tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_documents.cfm?docFor=agent"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_documents.cfm?docFor=agent">Group: Documents</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_notes.cfm?dateFrom=06/19/2019&amp;dateTo=06/19/2019&amp;isTree=1&amp;noteFor=agent&amp;noteType=-1&amp;action=Search+Notes"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_notes.cfm?dateFrom=06/19/2019&amp;dateTo=06/19/2019&amp;isTree=1&amp;noteFor=agent&amp;noteType=-1&amp;action=Search+Notes">Group: Notes</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_AgentInteractions.cfm?isTree=1"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_AgentInteractions.cfm?isTree=1">Group Interactions: List</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_interactions_detail.cfm?isTree=1"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_interactions_detail.cfm?isTree=1">Member Interactions: List</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_interactions.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_interactions.cfm">Member Interactions: Summary</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_documents.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_documents.cfm">System: Documents</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_notes.cfm?dateFrom=06/19/2019&amp;dateTo=06/19/2019&amp;isTree=1&amp;noteFor=any&amp;noteType=-1&amp;action=Search+Notes"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_notes.cfm?dateFrom=06/19/2019&amp;dateTo=06/19/2019&amp;isTree=1&amp;noteFor=any&amp;noteType=-1&amp;action=Search+Notes">System: Notes</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_SecuritySettings.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_SecuritySettings.cfm">System: User Security Settings</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reports/report_history.cfm?OrderBy=1&amp;SortBy=1&amp;PageIndex=0&amp;Download=0&amp;DoSearch=1&amp;FromDate=06/19/2019&amp;ToDate=06/19/2019&amp;SearchType=logins&amp;BrokerID=1002&amp;ShowTree=1&amp;PageSize=100&amp;ViewReport=View+Report"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reports/report_history.cfm?OrderBy=1&amp;SortBy=1&amp;PageIndex=0&amp;Download=0&amp;DoSearch=1&amp;FromDate=06/19/2019&amp;ToDate=06/19/2019&amp;SearchType=logins&amp;BrokerID=1002&amp;ShowTree=1&amp;PageSize=100&amp;ViewReport=View+Report">System: User Tracking</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/operations/online_now.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/operations/online_now.cfm">System: Online Now</a></td></tr>
+					
+						<tr><td class="menu_left"><a href="http://tatsatdev.local/manage/reportarchive.cfm"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a></td><td class="menu_right"><a href="http://tatsatdev.local/manage/reportarchive.cfm">System: Export Archive</a></td></tr>
+					
+				</tbody></table>
+			</td>
+		</tr>
+		
+
+</tbody></table>
+
+
+							</td>
+						</tr>
+						</tbody></table>
+						<br clear="all">
+					
+					<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+					<tbody><tr>
+						<td align="left" valign="top">
+							<a href="http://tatsatdev.local/manage/media/" class="title_link">Media</a><br>
+						</td>
+					</tr>
+					</tbody></table>
+					<table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tbody><tr>
+						<td class="menu_box">
+							<table cellspacing="0" cellpadding="0" border="0">
+								<tbody><tr>
+									<td class="menu_left">
+										<a href="http://tatsatdev.local/manage/media/" class="sitemap viewAndManageFiles"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a>
+									</td>
+									<td class="menu_right">
+										<a href="http://tatsatdev.local/manage/media/" class="sitemap viewAndManageFiles">View and Manage Files</a>
+									</td>
+								</tr>
+								
+							</tbody></table>
+						</td>
+					</tr>
+					</tbody></table>
+					<br clear="all">
+				
+			     	<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+					<tbody><tr>
+						<td align="left" valign="top">
+							<a href="http://tatsatdev.local/manage/global.cfm" class="title_link">Settings</a><br>
+						</td>
+					</tr>
+					</tbody></table>
+					<table cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tbody><tr>
+						<td align="left" valign="top" style="padding:10px 0px 10px 0px;">
+							
+<table cellspacing="0" cellpadding="0" border="0">
+	
+		<tbody><tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/global/corp/edit.cfm?corp_ID=1001" class="sitemap systemSettingsIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/global/corp/edit.cfm?corp_ID=1001" class="sitemap systemSettings">System Settings</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/global/corp/securitygroups.cfm" class="sitemap userSecurityTypesIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/global/corp/securitygroups.cfm" class="sitemap userSecurityTypes">User Security Types</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/global/corp/fields.cfm" class="sitemap standardDatbaseQuestionsIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/global/corp/fields.cfm" class="sitemap standardDatbaseQuestions">Standard Database Questions</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/forms/field_list.cfm" class="sitemap customDatabasaeQuestionIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/forms/field_list.cfm" class="sitemap customDatabasaeQuestion">Custom Database Questions</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/global/corp/selectoptions.cfm" class="sitemap dropDownMenuOptionsIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/global/corp/selectoptions.cfm" class="sitemap dropDownMenuOptions">Drop Down Menu Options</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/savedlist/" class="minnav savedListsReportsIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/savedlist/" class="minnav savedListsReports">Saved Lists / Reports</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/automation/" class="sitemap automotationWorkflorIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/automation/" class="sitemap automotationWorkflor">Automation Workflow</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/jobs/" class="sitemap jobSchedulerIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/jobs/" class="sitemap jobScheduler">Job Scheduler</a> / <a href="http://tatsatdev.local/manage/jobs/log.cfm" class="sitemap History">History</a> / <a href="http://tatsatdev.local/manage/jobs/jobCalendar.cfm" class="sitemap Calendar">Calendar</a>
+			</td>
+		</tr>
+		
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/processors/" class="sitemap paymentProcessorsIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/processors/" class="sitemap paymentProcessors">Payment Processors</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/global/sms/" class="sitemap smsTextAccountsIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/global/sms/" class="sitemap smsTextAccounts">SMS Text Accounts</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/memberIDs/" class="sitemap codeInventoryIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/memberIDs/" class="sitemap codeInventory">Code Inventory</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/promocodes/" class="sitemap promoCodesICon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/promocodes/" class="sitemap promoCodes">Promo Codes</a>
+			</td>
+		</tr>
+	
+	<tr>
+		<td class="menu_left">
+			<a href="http://tatsatdev.local/manage/global/resources/" class="sitemap redourcesIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+		</td>
+		<td class="menu_right">
+			<a href="http://tatsatdev.local/manage/global/resources/" class="sitemap redources">Resources</a>
+		</td>
+	</tr>
+
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/form/" class="sitemap customFormsIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/form/" class="sitemap customForms">Custom Forms</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/global/billingInvoice.cfm" class="invoiceTemplatesIcon"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/global/billingInvoice.cfm" class="invoiceTemplates">Invoice Templates</a>
+			</td>
+		</tr>
+	
+</tbody></table>
+
+						</td>
+					</tr>
+					</tbody></table>
+					<br clear="all">
+				
+
+
+				</td>
+				<td class="page_text" width="2%">
+					<br><br>
+				</td>
+
+				
+				<td align="left" valign="top" class="page_text" width="34%">
+					
+						<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+						<tbody><tr>
+							<td align="left" valign="top">
+								<a href="http://tatsatdev.local/manage/agents/index.cfm" class="title_link sitemap agentsLabel">Groups</a><br>
+							</td>
+						</tr>
+						</tbody></table>
+
+						<table cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tbody><tr>
+							<td class="menu_box">
+								<table cellspacing="0" cellpadding="0" border="0">
+									
+										<tbody><tr>
+											<td class="menu_left">
+												<a href="http://tatsatdev.local/manage/agents/index.cfm" class="sitemap viewAgents"><img src="./Home - Just Stick To Me_files/bullet_orange.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="http://tatsatdev.local/manage/agents/index.cfm" class="sitemap viewAgents">View Groups</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="menu_left">
+												<br>
+											</td>
+											<td class="menu_right">
+												
+													<form style="padding:0px; margin:0px;display:inline;" name="agentList" action="http://tatsatdev.local/manage/agents/index.cfm">
+													<select name="reportId" style="font-size:12px;">
+														
+																<option value="" disabled="">GROUP</option>
+																
+															<option value="3433" selected="">Agent List*</option>
+														
+															<option value="3867">Group List</option>
+														
+															<option value="3654">Contact List</option>
+														
+															<option value="3933">Vendor List</option>
+														
+															<option value="6904">Testing the Criteria</option>
+														
+															<option value="8700">TEst</option>
+														
+													</select>
+													<input type="submit" class="button" name="submit" value="View">
+													</form>
+												
+											</td>
+										</tr>
+									
+										<tr>
+											<td class="menu_left">
+												<a href="http://tatsatdev.local/manage/agents/index.cfm?view=tree" class="sitemap viewAgents"><img src="./Home - Just Stick To Me_files/bullet_orange.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="http://tatsatdev.local/manage/agents/index.cfm?view=tree" class="sitemap viewAgents">View Group Tree</a>
+											</td>
+										</tr>
+									
+										<tr>
+											<td class="menu_left">
+												<a href="http://tatsatdev.local/manage/agents/orgchart.cfm" target="_blank" class="sitemap viewNewAgentTreee"><img src="./Home - Just Stick To Me_files/bullet_orange.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="http://tatsatdev.local/manage/agents/orgchart.cfm" target="_blank" class="sitemap viewNewAgentTreee">View NEW Group Tree</a>
+											</td>
+										</tr>
+									
+			<tr>
+				<td class="menu_left"><a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=create"><img src="./Home - Just Stick To Me_files/bullet_orange.gif" border="0" width="16" height="16"></a></td>
+				<td class="menu_right"><a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=create">Add Group</a></td>
+			</tr>
+			<tr>
+				<td class="menu_left"><a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=add&amp;type=agent"><img src="./Home - Just Stick To Me_files/bullet_orange.gif" border="0" width="16" height="16"></a></td>
+				<td class="menu_right"><a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=add&amp;type=agent">Add Group</a> - <a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=add&amp;type=group">Group</a> - <a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=add&amp;type=listbill">List Bill</a> - <a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=add&amp;type=vendor">Vendor</a> - <a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=add">Default</a>
+				
+				</td>
+			</tr>
+		
+										<tr>
+											<td class="menu_left">
+												<a href="javascript: showsearch(&#39;agent&#39;, &#39;&#39;)" class="sitemap SearchForeAgent"><img src="./Home - Just Stick To Me_files/bullet_orange.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="javascript: showsearch(&#39;agent&#39;, &#39;&#39;)" class="sitemap SearchForeAgent">Search for Groups</a>
+											</td>
+										</tr>
+									
+										<tr>
+											<td class="menu_left">
+												<a href="http://tatsatdev.local/manage/operations/1001_multicorp_search_agent.cfm" class="sitemap searchForAgentMulitCorp"><img src="./Home - Just Stick To Me_files/bullet_orange.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="http://tatsatdev.local/manage/operations/1001_multicorp_search_agent.cfm" class="sitemap searchForAgentMulitCorp">Search for Groups Multi-Corp</a>
+											</td>
+										</tr>
+									
+										<tr>
+											<td class="menu_left">
+												<a href="http://tatsatdev.local/manage/users/import-dynamic.cfm?show=broker" class="sitemap importAgentFile"><img src="./Home - Just Stick To Me_files/bullet_orange.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="http://tatsatdev.local/manage/users/import-dynamic.cfm?show=broker" class="sitemap importAgentFile">Import Group File</a>
+											</td>
+										</tr>
+									
+										<tr>
+											<td class="menu_left">
+												<a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=upload" class="sitemap ImportLicenseAppoinments"><img src="./Home - Just Stick To Me_files/bullet_orange.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="http://tatsatdev.local/manage/agents/manage.cfm?id=1002&amp;method=upload" class="sitemap ImportLicenseAppoinments">Import Licenses-Appointments</a>
+											</td>
+										</tr>
+									
+										<tr>
+											<td class="menu_left">
+												<a href="http://tatsatdev.local/manage/agents/queue.cfm" class="sitemap manageAgentRoundRobin"><img src="./Home - Just Stick To Me_files/bullet_orange.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="http://tatsatdev.local/manage/agents/queue.cfm" class="sitemap manageAgentRoundRobin">Manage Group Round-Robin</a>
+											</td>
+										</tr>
+									
+									
+									
+								</tbody></table>
+							</td>
+						</tr>
+						</tbody></table>
+						<br clear="all">
+					
+						<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+						<tbody><tr>
+							<td align="left" valign="top">
+								<a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=today&amp;transaction_created_to=today" class="title_link sitemap billingLable">Billing</a><br>
+							</td>
+						</tr>
+						</tbody></table>
+						<table cellspacing="0" cellpadding="0" border="0" width="100%">
+							<tbody><tr>
+								<td align="left" valign="top" style="padding:10px 0px 10px 0px;">
+									
+
+<table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td class="menu_left" valign="top">
+			<a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=today&amp;transaction_created_to=today" class="sitemap viewBillingList"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+		</td>
+		<td class="menu_right">
+			<a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=today&amp;transaction_created_to=today" class="sitemap viewBillingList">View Billing List</a><br>
+			<a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=today&amp;transaction_created_to=today" class="sitemap viewBillingListTD">TD</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=yesterday&amp;transaction_created_to=yesterday" class="sitemap viewBillingListYD">YD</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=thismonth&amp;transaction_created_to=today" class="sitemap viewBillingListMO">MO</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last7days&amp;transaction_created_to=today" class="sitemap viewBillingListSeven">7</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last30days&amp;transaction_created_to=today" class="sitemap viewBillingListThirty">30</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last60days&amp;transaction_created_to=today" class="sitemap viewBillingListSixty">60</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last90days&amp;transaction_created_to=today" class="sitemap viewBillingListNinty">90</a><br>
+		</td>
+	</tr>
+	<tr>
+		<td class="menu_left" valign="top">
+			<a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=today&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date" class="sitemap viewBillingSummary"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+		</td>
+		<td class="menu_right">
+			<a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=today&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date" class="sitemap viewBillingSummary">View Billing Summary</a><br>
+			<a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=today&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date" class="sitemap viewBillingSummaryTD">TD</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=yesterday&amp;transaction_created_to=yesterday&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date" class="sitemap viewBillingSummaryYD">YD</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=thismonth&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date" class="sitemap viewBillingSummaryMO">MO</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last7days&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date" class="sitemap viewBillingSummarySeven">7</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last30days&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date" class="sitemap viewBillingSummaryThirty">30</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last60days&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date" class="sitemap viewBillingSummarySixty">60</a> - <a href="http://tatsatdev.local/manage/billing/index.cfm?transaction_created_from=last90days&amp;transaction_created_to=today&amp;_v=stats&amp;billing_rollup=date&amp;billing_fields=date" lass="sitemap viewBillingSummarySixtyNinty">90</a><br>
+		</td>
+	</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="javascript: showsearch(&#39;billing&#39;, &#39;&#39;)"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="javascript: showsearch(&#39;billing&#39;, &#39;&#39;)" class="sitemap searchBillingTransaction">Search Billing Transactions</a>
+			</td>
+		</tr>
+	
+				<tr>
+					<td class="menu_left">
+						<a href="http://tatsatdev.local/manage/reports/nacha_ach.cfm" class="sitemap AchNachaFileExport"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+					</td>
+					<td class="menu_right">
+						<a href="http://tatsatdev.local/manage/reports/nacha_ach.cfm" class="sitemap AchNachaFileExport">ACH NACHA File Export</a>
+					</td>
+				</tr>
+			
+			<tr>
+				<td class="menu_left">
+					<a href="http://tatsatdev.local/manage/operations/importACHResults.cfm" class="sitemap AchNachaFileExport"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+				</td>
+				<td class="menu_right">
+					<a href="http://tatsatdev.local/manage/operations/importACHResults.cfm" class="sitemap AchNachaFileExport">ACH NACHA File Import</a>
+				</td>
+			</tr>
+		
+			<tr>
+				<td class="menu_left">
+					<a href="http://tatsatdev.local/manage/reports/report_ACH_payments.cfm" class="sitemap AchCheckFile"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+				</td>
+				<td class="menu_right">
+					<a href="http://tatsatdev.local/manage/reports/report_ACH_payments.cfm" class="sitemap AchCheckFile">ACH Check File</a>
+				</td>
+			</tr>
+		
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/operations/1044_payroll_import.cfm" class="sitemap weeklyPayrollImportArchco"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/operations/1044_payroll_import.cfm" class="sitemap weeklyPayrollImportArchco">Weekly Payroll Import - Archco</a>
+			</td>
+		</tr>
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/operations/1044_payroll_import_mps.cfm" class="sitemap weeklyPayrollImportMps"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/operations/1044_payroll_import_mps.cfm" class="sitemap weeklyPayrollImportMps">Weekly Payroll Import - MPS</a>
+			</td>
+		</tr>
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/reports/1044/1044_weekly_export.cfm" class="sitemap weeklyGroupExport"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/reports/1044/1044_weekly_export.cfm" class="sitemap weeklyGroupExport">Weekly Group Export</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/processors/" class="paymentProcessors"><img src="./Home - Just Stick To Me_files/bullet_green.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/processors/" class="paymentProcessors">Payment Processors</a>
+			</td>
+		</tr>
+	
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+		
+
+
+								</td>
+							</tr>
+						</tbody></table>
+						<br clear="all">
+					
+						<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+						<tbody><tr>
+							<td align="left" valign="top">
+								<a href="http://tatsatdev.local/manage/listbilling/invoices.cfm" class="title_link sitemap invoiceLabel">Invoices</a><br>
+							</td>
+						</tr>
+						</tbody></table>
+						<table cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tbody><tr>
+							<td align="left" valign="top" style="padding:10px 0px 10px 0px;">
+								
+<table cellspacing="0" cellpadding="0" border="0">	
+	<tbody><tr>
+		<td class="menu_left">
+			<a href="http://tatsatdev.local/manage/listbilling/invoices.cfm" class="sitemap viewInvoices"><img src="./Home - Just Stick To Me_files/bullet_purple.gif" border="0" width="16" height="16"></a>
+		</td>
+		<td class="menu_right">
+			<a href="http://tatsatdev.local/manage/listbilling/invoices.cfm" class="sitemap viewInvoices">View Invoices</a>
+		</td>
+	</tr>
+	<tr>
+		<td class="menu_left">
+			<a href="http://tatsatdev.local/manage/listbilling/individuals.cfm" class="sitemap viewMemberInvoice"><img src="./Home - Just Stick To Me_files/bullet_purple.gif" border="0" width="16" height="16"></a>
+		</td>
+		<td class="menu_right">
+			<a href="http://tatsatdev.local/manage/listbilling/individuals.cfm" class="sitemap viewMemberInvoice">View Members</a>
+		</td>
+	</tr>
+	<tr>
+		<td class="menu_left">
+			<a href="http://tatsatdev.local/manage/listbilling/groups.cfm" class="sitemap viewGroups"><img src="./Home - Just Stick To Me_files/bullet_purple.gif" border="0" width="16" height="16"></a>
+		</td>
+		<td class="menu_right">
+			<a href="http://tatsatdev.local/manage/listbilling/groups.cfm" class="sitemap viewGroups">View Groups</a>
+		</td>
+	</tr>
+	
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/listbilling/generateByAdhoc.cfm" class="sitemap generateGroupInvoices"><img src="./Home - Just Stick To Me_files/bullet_purple.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/listbilling/generateByAdhoc.cfm" class="sitemap generateGroupInvoices">Generate Group Invoices</a>
+			</td>
+		</tr>
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/listbilling/generate_individual.cfm" class="sitemap genrateIndividualInvoices"><img src="./Home - Just Stick To Me_files/bullet_purple.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/listbilling/generate_individual.cfm" class="sitemap genrateIndividualInvoices">Generate Individual Invoices</a>
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="menu_left">
+				<a href="http://tatsatdev.local/manage/listbilling/reports/" class="sitemap groupReports"><img src="./Home - Just Stick To Me_files/bullet_purple.gif" border="0" width="16" height="16"></a>
+			</td>
+			<td class="menu_right">
+				<a href="http://tatsatdev.local/manage/listbilling/reports/" class="sitemap groupReports">Group Reports</a>
+			</td>
+		</tr>
+	
+</tbody></table>
+
+							</td>
+						</tr>
+						</tbody></table>
+						<br clear="all">
+					
+						<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+						<tbody><tr>
+							<td align="left" valign="top">
+								<a href="http://tatsatdev.local/manage/payables/index.cfm?dtPosted_start=06/19/2019&amp;dtPosted_end=06/19/2019&amp;view=full" class="title_link">Payables</a><br>
+							</td>
+						</tr>
+						</tbody></table>
+						<table cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tbody><tr>
+							<td align="left" valign="top" style="padding:10px 0px 10px 0px;">
+										
+
+<table cellspacing="0" cellpadding="0" border="0">	
+	<tbody><tr>
+		<td class="menu_left">
+			<a href="http://tatsatdev.local/manage/payables/index.cfm?dtPosted_start=06/19/2019&amp;dtPosted_end=06/19/2019&amp;view=full"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a>
+		</td>
+		<td class="menu_right">
+			<a href="http://tatsatdev.local/manage/payables/index.cfm?dtPosted_start=06/19/2019&amp;dtPosted_end=06/19/2019&amp;view=full">View Payables List</a>
+		</td>
+	</tr>
+	<tr>
+		<td class="menu_left">
+			<a href="http://tatsatdev.local/manage/payables/index.cfm?dtPosted_start=06/19/2019&amp;dtPosted_end=06/19/2019&amp;view=rollup"><img src="./Home - Just Stick To Me_files/bullet_blue.gif" border="0" width="16" height="16"></a>
+		</td>
+		<td class="menu_right">
+			<a href="http://tatsatdev.local/manage/payables/index.cfm?dtPosted_start=06/19/2019&amp;dtPosted_end=06/19/2019&amp;view=rollup">View Payables Summary</a>
+		</td>
+	</tr>
+</tbody></table>
+				
+
+							</td>
+						</tr>
+						</tbody></table>
+						<br clear="all">
+					
+						<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+						<tbody><tr>
+							<td align="left" valign="top">
+								<a href="http://tatsatdev.local/manage/commissions/index2.cfm" class="title_link sitemap commissionsLabel">Commissions</a><br>
+
+								
+							</td>
+						</tr>
+						</tbody></table>
+						<table cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tbody><tr>
+							<td align="left" valign="top" style="padding:10px 0px 10px 0px;">
+								
+
+<table cellspacing="0" cellpadding="0" border="0">
+	
+			
+			<tbody><tr>
+				<td colspan="2">
+					 <b>Commission 1</b>
+				</td>
+			</tr>
+			
+			<tr>
+				<td class="menu_left">
+					<a href="http://tatsatdev.local/manage/commissions/index2.cfm" class="sitemap viewComissionList"><img src="./Home - Just Stick To Me_files/bullet_yellow.gif" border="0" width="16" height="16"></a>
+				</td>
+				<td class="menu_right">
+					<a href="http://tatsatdev.local/manage/commissions/index2.cfm" class="sitemap viewComissionList">View Commission List</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="menu_left">
+					<a href="http://tatsatdev.local/manage/commissions/index2.cfm?display=summary" class="sitemap viewComissionSummary"><img src="./Home - Just Stick To Me_files/bullet_yellow.gif" border="0" width="16" height="16"></a>
+				</td>
+				<td class="menu_right">
+					<a href="http://tatsatdev.local/manage/commissions/index2.cfm?display=summary" class="sitemap viewComissionSummary">View Commission Summary</a>
+				</td>
+			</tr>
+			
+			
+				<tr>
+					<td class="menu_left">
+						<a href="http://tatsatdev.local/manage/operations/commbonus.cfm" class="sitemap generateBonusCommissions"><img src="./Home - Just Stick To Me_files/bullet_yellow.gif" border="0" width="16" height="16"></a>
+					</td>
+					<td class="menu_right">
+						<a href="http://tatsatdev.local/manage/operations/commbonus.cfm" class="sitemap generateBonusCommissions">Generate Bonus Commissions</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="menu_left">
+						<a href="http://tatsatdev.local/manage/operations/copycommissions.cfm" class="sitemap copyAgentCommissions"><img src="./Home - Just Stick To Me_files/bullet_yellow.gif" border="0" width="16" height="16"></a>
+					</td>
+					<td class="menu_right">
+						<a href="http://tatsatdev.local/manage/operations/copycommissions.cfm" class="sitemap copyAgentCommissions">Copy Group Commissions</a>
+					</td>
+				</tr>
+			
+			
+			<tr>
+				<td colspan="2">
+					 <b>Commission 2</b>
+				</td>
+			</tr>
+			
+			<tr>
+				<td class="menu_left">
+					<a href="http://tatsatdev.local/manage/commissions/" class="sitemap viewComissions"><img src="./Home - Just Stick To Me_files/bullet_yellow.gif" border="0" width="16" height="16"></a>
+				</td>
+				<td class="menu_right">
+					<a href="http://tatsatdev.local/manage/commissions/" class="sitemap viewComissions">View Commissions</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="menu_left">
+					<a href="http://tatsatdev.local/manage/commissions/results.cfm" class="sitemap commissionReport"><img src="./Home - Just Stick To Me_files/bullet_yellow.gif" border="0" width="16" height="16"></a>
+				</td>
+				<td class="menu_right">
+					<a href="http://tatsatdev.local/manage/commissions/results.cfm" class="sitemap commissionReport">Commission Report</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="menu_left">
+					<a href="http://tatsatdev.local/manage/commissions/advanced_report.cfm" class="sitemap advanceCommisionReport"><img src="./Home - Just Stick To Me_files/bullet_yellow.gif" border="0" width="16" height="16"></a>
+				</td>
+				<td class="menu_right">
+					<a href="http://tatsatdev.local/manage/commissions/advanced_report.cfm" class="sitemap advanceCommisionReport">Advanced Commission Report</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="menu_left">
+					<a href="http://tatsatdev.local/manage/commissions/commissions.cfm" class="sitemap ExportCommision"><img src="./Home - Just Stick To Me_files/bullet_yellow.gif" border="0" width="16" height="16"></a>
+				</td>
+				<td class="menu_right">
+					<a href="http://tatsatdev.local/manage/commissions/commissions.cfm" class="sitemap ExportCommision">Export Commissions</a>
+				</td>
+			</tr>
+			
+				<tr>
+					<td class="menu_left">
+						<a href="http://tatsatdev.local/manage/commissions/enroller_commission.cfm"><img src="./Home - Just Stick To Me_files/bullet_yellow.gif" border="0" width="16" height="16"></a>
+					</td>
+					<td class="menu_right">
+						<a href="http://tatsatdev.local/manage/commissions/enroller_commission.cfm" class="sitemap enrollerCommisionReport">Enroller Commission Report</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="menu_left">
+						<a href="http://tatsatdev.local/manage/commissions/run.cfm" class="sitemap genrateAgentCommission"><img src="./Home - Just Stick To Me_files/bullet_yellow.gif" border="0" width="16" height="16"></a>
+					</td>
+					<td class="menu_right">
+						<a href="http://tatsatdev.local/manage/commissions/run.cfm" class="sitemap genrateAgentCommission">&gt;Generate Group Commissions</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="menu_left">
+						<a href="http://tatsatdev.local/manage/commissions/advanced_homeland.cfm" class="sitemap gnerateAdvancedCommissions"><img src="./Home - Just Stick To Me_files/bullet_yellow.gif" border="0" width="16" height="16"></a>
+					</td>
+					<td class="menu_right">
+						<a href="http://tatsatdev.local/manage/commissions/advanced_homeland.cfm" class="sitemap gnerateAdvancedCommissions">Generate Advanced Commissions</a>
+					</td>
+				</tr>
+			
+
+</tbody></table>
+
+
+
+
+
+							</td>
+						</tr>
+						</tbody></table>
+						<br clear="all">
+					
+						<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+							<tbody><tr>
+								<td align="left" valign="top">
+									<a href="http://tatsatdev.local/manage/massemail/template/" class="title_link sitemap lettersEmailText">Letters-Email-Text</a><br>
+								</td>
+							</tr>
+						</tbody></table>
+						<table cellspacing="0" cellpadding="0" border="0" width="100%">
+							<tbody><tr>
+								<td class="menu_box">
+									<table cellspacing="0" cellpadding="0" border="0">
+									<tbody><tr>
+										<td class="menu_left">
+											<a href="http://tatsatdev.local/manage/massemail/template/" class="sitemap viewTemplates"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="http://tatsatdev.local/manage/massemail/template/" class="sitemap viewTemplates">View Templates</a>
+										</td>
+									</tr>
+									
+										<tr>
+											<td class="menu_left">
+												<a href="http://tatsatdev.local/manage/massemail/schedule.cfm" class="sitemap viewSchedules"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="http://tatsatdev.local/manage/massemail/schedule.cfm" class="sitemap viewSchedules">View Schedules</a>
+											</td>
+										</tr>
+									
+									<tr>
+										<td class="menu_left">
+											<a href="javascript: showsearch(&#39;member&#39;, &#39;&#39;)" class="sitemap sendMessageToMember"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="javascript: showsearch(&#39;member&#39;, &#39;&#39;)" class="sitemap sendMessageToMember">Send Message to Members</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="menu_left">
+											<a href="javascript: showsearch(&#39;agent&#39;, &#39;&#39;)" class="sitemap sendMessageToAgent"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="javascript: showsearch(&#39;agent&#39;, &#39;&#39;)" class="sitemap sendMessageToAgent">Send Message to Groups</a>
+										</td>
+									</tr>
+									
+										<tr>
+											<td class="menu_left">
+												<a href="http://tatsatdev.local/manage/massemail/" class="sitemap viewSentEmails"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="http://tatsatdev.local/manage/massemail/" class="sitemap viewSentEmails">View Sent Emails</a>
+											</td>
+										</tr>
+									
+										<tr>
+											<td class="menu_left">
+												<a href="http://tatsatdev.local/manage/massemail/opened.cfm" class="sitemap viewOpentedEmails"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="http://tatsatdev.local/manage/massemail/opened.cfm" class="sitemap viewOpentedEmails">View Opened Emails</a>
+											</td>
+										</tr>
+									
+										<tr>
+											<td class="menu_left">
+												<a href="http://tatsatdev.local/manage/massemail/bounce.cfm" class="sitemap viewBouncedEmails"><img src="./Home - Just Stick To Me_files/bullet_red.gif" border="0" width="16" height="16"></a>
+											</td>
+											<td class="menu_right">
+												<a href="http://tatsatdev.local/manage/massemail/bounce.cfm" class="sitemap viewBouncedEmails">View Bounced Emails</a>
+											</td>
+										</tr>
+									
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>
+						<br clear="all">
+					
+						<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+						<tbody><tr>
+							<td align="left" valign="top">
+								<a href="http://tatsatdev.local/manage/messaging/list.cfm" class="title_link sitemap messages">Messages</a><br>
+							</td>
+						</tr>
+						</tbody></table>
+						<table cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tbody><tr>
+							<td class="menu_box">
+								<table cellspacing="0" cellpadding="0" border="0">
+									<tbody><tr>
+										<td class="menu_left">
+											<a href="http://tatsatdev.local/manage/messaging/list.cfm" class="sitemap viewMessages"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="http://tatsatdev.local/manage/messaging/list.cfm" class="sitemap viewMessages">View Messages</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="menu_left">
+											<a href="http://tatsatdev.local/manage/messaging/list.cfm" class="sitemap sendMessages"><img src="./Home - Just Stick To Me_files/bullet_pink.gif" border="0" width="16" height="16"></a>
+										</td>
+										<td class="menu_right">
+											<a href="http://tatsatdev.local/manage/messaging/list.cfm" class="sitemap sendMessages">Send a Message</a>
+										</td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+						</tbody></table>
+						<br clear="all">
+					
+							</td>
+							<td class="page_text mobile-hide" width="2%">
+								<br><br>
+							</td>
+							<td align="left" valign="top" class="page_text mobile-hide" width="30%" infodiv="">
+								<table cellspacing="0" cellpadding="0" border="0" width="100%" class="home_title">
+									<tbody><tr>
+										<td align="left" valign="top">
+											<a href="http://tatsatdev.local/manage/materials.cfm" class="title_link">Information</a><br>
+										</td>
+									</tr>
+								</tbody></table>
+								<table cellspacing="0" width="100%" cellpadding="3" border="0" style="padding:10px 0px 10px 0px;">
+									<tbody><tr>
+										<td align="left" valign="top">
+											
+												<table cellspacing="0" cellpadding="3" border="0">
+												<tbody><tr>
+													
+															<td align="left" valign="middle">
+																<a href="http://tatsatdev.local/manage/materials/1001/-WRD000.jpg" target="_blank">
+																
+																		<img src="./Home - Just Stick To Me_files/ico_type_graphic.gif" alt="Graphic" width="16" height="16" border="0">
+																	
+																</a>
+															</td>
+															<td align="left" valign="middle">
+																<font class="mat"><a href="http://tatsatdev.local/manage/materials/1001/-WRD000.jpg" target="_blank">Test Upload</a></font><br>
+															</td>
+														</tr>
+													</tbody></table>
+														
+												<table cellspacing="0" cellpadding="3" border="0">
+												<tbody><tr>
+													
+															<td align="left" valign="middle">
+																<a href="http://www.providerlocator.com/search.cfm?code=a1" target="_blank"><img src="./Home - Just Stick To Me_files/link.gif" alt="Website Link" width="16" height="16" border="0"></a>
+															</td>
+															<td align="left" valign="middle">
+																<font class="mat"><a href="http://www.providerlocator.com/search.cfm?code=a1" target="_blank">Provider Search</a></font><br>
+															</td>
+														</tr>
+													</tbody></table>
+														
+												<table cellspacing="0" cellpadding="3" border="0">
+												<tbody><tr>
+													
+															<td align="left" valign="middle">
+																<a href="http://tatsatdev.local/manage/materials/1001/System_Member_Import.pdf" target="_blank">
+																
+																		<img src="./Home - Just Stick To Me_files/ico_type_pdf.gif" alt="PDF" width="16" height="16" border="0">
+																	
+																</a>
+															</td>
+															<td align="left" valign="middle">
+																<font class="mat"><a href="http://tatsatdev.local/manage/materials/1001/System_Member_Import.pdf" target="_blank">Member Import File Format</a></font><br>
+															</td>
+														</tr>
+													</tbody></table>
+														
+												<table cellspacing="0" cellpadding="3" border="0">
+												<tbody><tr>
+													
+															<td align="left" valign="middle">
+																<a href="http://tatsatdev.local/manage/materials/1001/A1Healthcare_Fulfillment_1000.doc" target="_blank">
+																
+																		<img src="./Home - Just Stick To Me_files/ico_type_doc.gif" alt="Word" width="16" height="16" border="0">
+																	
+																</a>
+															</td>
+															<td align="left" valign="middle">
+																<font class="mat"><a href="http://tatsatdev.local/manage/materials/1001/A1Healthcare_Fulfillment_1000.doc" target="_blank">Program 1000 Fulfillment</a></font><br>
+															</td>
+														</tr>
+													</tbody></table>
+														
+												<table cellspacing="0" cellpadding="3" border="0">
+												<tbody><tr>
+													
+															<td align="left" valign="middle">
+																<a href="http://tatsatdev.local/manage/materials/1001/A1Healthcare_Fulfillment_3000.doc" target="_blank">
+																
+																		<img src="./Home - Just Stick To Me_files/ico_type_doc.gif" alt="Word" width="16" height="16" border="0">
+																	
+																</a>
+															</td>
+															<td align="left" valign="middle">
+																<font class="mat"><a href="http://tatsatdev.local/manage/materials/1001/A1Healthcare_Fulfillment_3000.doc" target="_blank">Program 3000 Fulfillment</a></font><br>
+															</td>
+														</tr>
+													</tbody></table>
+														
+												</td>
+											</tr>
+										</tbody></table>
+									
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+</tbody></table>	
+<br clear="all">
+<br>
+
+
+
+
+	<table cellspacing="0" cellpadding="20" border="0" width="100%">
+	<tbody><tr>
+		<td align="center" valign="top">
+			
+			
+
+			<table border="0" cellspacing="0" cellpadding="4" width="70%">
+			<tbody><tr>
+				<td class="detail_title">Super User</td>
+				<td align="right">
+					
+					Server: <strong>192.168.123.106 - TatsatDev.local</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local: <strong>192.168.123.106</strong>
+				</td>
+			</tr>
+			</tbody></table>
+
+			<table border="0" cellspacing="1" cellpadding="4" width="70%">
+			<tbody><tr>
+				<td width="34%" bgcolor="#eeeeee" style="border: 1px solid #b3b3b3"> <strong>Utility Functions</strong></td>
+				<td width="33%" bgcolor="#eeeeee" style="border: 1px solid #b3b3b3"> <strong>Corp Functions</strong></td>
+				<td width="33%" bgcolor="#eeeeee" style="border: 1px solid #b3b3b3"> <strong>Jobs &amp; Queues</strong></td>
+			</tr>
+			<tr>
+				<td width="34%" valign="top">
+					
+					<table border="0" cellspacing="0" cellpadding="3">
+						<tbody><tr><td>· <a href="http://tatsatdev.local/manage/errors/index.cfm"><span class="admin_error">2,102</span> Unfixed Errors in Queue (5,909 Fixed)</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/manageBlackList.cfm">Manage BlackList</a></td></tr>
+						<tr><td>· <a href="javascript:void(0)" onclick="viewVars(1)">View System Variables</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/global/corp/rateCheckDebug.cfm">Rate Check and Validation</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/_secure_scripts/epjTemp/cqDisplayTest.cfm">Custom Question Display Validation</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/operations/online_now.cfm">Users Online Now</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/users/undelete.cfm">Un-delete Members</a></td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/global/corp/codeInventoryMgt.cfm">Code Inventory Management</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/global/corp/genPolicyNumbers.cfm">Generate Policy Numbers For Code Inventory</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/global/corp/assignPolicyNumbers.cfm">Backfill Missing Policy Numbers From Code Inventory</a></td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/reports/MyTeleMedMemberUpdate.cfm">MyTelemedicine Manual Member Update</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a target="GoogleCalendarEnrollment123" href="https://calendar.google.com/calendar/embed?src=enrollment123%40gmail.com&amp;ctz=America/Los_Angeles">Google Calendar (Link)</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/gateway/test_post.cfm" target="_blank">API Gateway Post Test</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superusercookie.cfm">Delete Superuser Cookie</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/ftpConnectTest.cfm">FTP Connection Test</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/usernameLookup.cfm">Broker Username/BSID Lookup</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/brokerSecurity.cfm">Unmasked Broker Status/Search</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/tokenSearch.cfm">Search Token Lookup</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/customQuestionSearch.cfm">Custom Question Search</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/MEMD_memberlookup.cfm">MeMD Member Lookup</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/nas.cfm">NAS Browser</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/_secure_scripts/epjTemp/lastProdPaste.cfm">Last Prod Paste</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/pdfforms/index.cfm">PDF Forms</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/sandbox.cfm">Sandbox</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td style="font-weight: bolder; text-decoration: underline;">Temp DB</td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/_secure_scripts/TempDbLogDownload.cfm">Download TempDB Log</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/_secure_scripts/TempDbLogDelete.cfm">Delete TempDB Log</a></td></tr>
+					</tbody></table>
+
+				</td>
+				<td width="33%" valign="top">
+					
+					<table border="0" cellspacing="0" cellpadding="3">
+						<tbody><tr><td>· <a href="http://tatsatdev.local/manage/superuser/create_corp.cfm">Add New Corp</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/global/corp/">Corp Settings</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/global/corp/corpContactSheet.cfm">Corp Contact Sheet</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/processors/">Payment Processors</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/copyProductsBetweenCorps.cfm">Copy Products Between Corps</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/copySavedLists.cfm">Copy Saved List</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/reports/">Master List Database</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/forms/field_list.cfm">Custom Form Fields</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/copyStandardQuestions.cfm">Standard Question Copy</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/copyCustomQuestions.cfm">Custom Question Copy</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/copySelectOptions.cfm">Dropdown Menu/Select Options Copy</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/global/corp/agentCommPWList.cfm">Group Commissions Password Manager</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/emailVarList.cfm">Mass Email Variables Manager</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/corp/billingSnapshot.cfm">Enrollment123 Billing Snapshot</a></td></tr>
+
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a href="javascript: showsearch(&#39;billingNEW&#39;, &#39;&#39;)">Billing Search - NEW</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/billing/index2.cfm?transaction_created_from=today&amp;transaction_created_to=today">View Billing - NEW</a></td></tr>
+					</tbody></table>
+
+				</td>
+				<td width="33%" valign="top">
+					
+					<table border="0" cellspacing="0" cellpadding="3">
+						<tbody><tr><td>· <a href="http://tatsatdev.local/manage/users/import_process.cfm"><font color="red">981</font> Member Import Queue</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/monthly_billing.cfm">Monthly Billing</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/dashboardBatchRuns.cfm">Dashboard Batch Runs</a></td></tr>
+						<tr><td></td></tr>
+
+
+						<tr><td></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/jobs/jobCalendar.cfm">Job Calendar</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/jobLookup.cfm">Job ID Lookup</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/runsomejobs.cfm">Run Some Jobs</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/runSomeEmailSchedules.cfm">Run Some Email Schedules</a></td></tr>
+						<tr><td></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/findUnbilledMembers.cfm">Find Unbilled Members</a></td></tr>
+						<tr><td>· <a href="http://tatsatdev.local/manage/superuser/InterfaceForBillingInvoiceTemplate.cfm"> Interface For Billing Invoice Template</a></td></tr>
+					</tbody></table>
+
+				</td>
+			</tr>
+			</tbody></table>
+
+
+
+
+
+
+		
+	</td>
+</tr>
+</tbody></table>
+<br clear="all">
+
+
+<br>
+<br>
+
+<div id="BrokerIDdiv"><table id="BrokerIDlist" class="formName" cellpadding="0" cellspacing="0"></table><div id="BrokerIDpager"></div></div>
+<iframe name="download" src="./Home - Just Stick To Me_files/saved_resource.html" style="display: none"></iframe>
+
+
+
+
+			
+		
+	
+	
+	</div>
+
+	
+	<script type="text/javascript">
+	
+	</script>
+
+	<!--TatsatDev.local-->
+	
+	
+	
+	<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><iframe scrolling="no" name="JSD widget" id="jsd-widget" style="height: 80px; width: 70px; position: fixed; border: 0px; bottom: 0px; right: 0px; z-index: 2147483647; transition: height 0s ease 0s;" src="./Home - Just Stick To Me_files/saved_resource(1).html"></iframe></body></html>

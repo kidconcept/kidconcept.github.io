@@ -1,0 +1,70 @@
+img {
+	max-width: 100%;
+}
+
+// The header image for /work pages
+
+.hero {
+	height: 70%;
+	margin-top: 3.8rem;
+	.image {
+		position: fixed;
+		height: 70%;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		z-index: -1;
+	}
+}
+
+iframe.video {
+	height: 175px;
+	@include media($tablet) {
+		height: 285px;
+	};
+	@include media($laptop) {
+		height: 374px;
+	};
+	@include media($desktop) {
+		height: 534px;
+	};
+}
+
+.arttools {
+	margin-top: 6rem;
+    margin-bottom: 1rem;
+	@include media($laptop) {
+		display: block;
+	    max-width: 36rem;
+	    float: none;
+	    padding-top: 8rem;
+	    margin-left: auto;
+	    margin-right: auto;
+	};
+}
+
+.logowall {
+	width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+img.fullframe {
+	margin-bottom: 2rem;
+}
+
+#simplefader {
+	position: relative;
+	img {
+		position: absolute;
+		top: 0;
+		opacity: 0;
+		transition: opacity, 400ms;
+	}
+	img:first-child {
+		opacity: 1;
+	}
+	img.show {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,83 @@
+$nav-open-height: 6.3rem;
+$nav-closed-height: 3.8rem;
+
+.topbar {
+	background-image: url('../assets/img/qbert.png');
+	height: $topbar-height;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+	top: 0;
+	&.hide {
+		top: -40px;
+		.logo img {
+			top: 48px;
+		}
+	}
+
+	@include media($tablet) {
+		padding: 0 30px;
+	}
+
+	.grid-container {
+		height: 100%;
+	}
+
+	.logo {
+		height: 2.1rem;
+	    width: 7.8rem;
+	    margin: 1.5rem auto 0;
+	    display: block;
+	    overflow: hidden;
+
+		@include media($tablet) {
+			padding-left: 0
+		};
+
+		img {
+			position: relative;
+			top: 16px;
+			margin-top: -16px;
+		}
+
+	}
+
+	nav {
+		text-align: center;
+		height: 100%;
+		z-index: 1;
+    	position: relative;
+    	cursor: pointer;
+		font-weight: 600;
+		margin-top: 0;
+		a,
+		a:visited {
+			color: white;
+		    font-size: 1.1rem;
+		    display: inline-block;
+		    height: .6rem;
+		    position: relative;
+		    top: 0.3rem;
+		}
+		a.casestudies {
+		    width: 5.7rem;
+		}
+		span.slash {
+			background-image: url(../assets/img/slash.svg);
+		    height: 0.9rem;
+		    width: 0.85rem;
+		    margin-left: -0.1rem;
+		    margin-right: 0.15rem;
+		    background-position: center;
+		    display: inline-block;
+		    position: relative;
+		    top: .2rem;
+		    background-repeat: no-repeat;
+		}
+		a.sayhello {
+			width: 4.4rem;
+		}
+
+	}
+
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-41 407.2 768 19.1"
+	 style="enable-background:new -41 407.2 768 19.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#8BC53F;}
+	.st1{fill:#5CC5CF;}
+</style>
+<title>footer-top</title>
+<desc>Created with Sketch.</desc>
+<g id="Home" sketch:type="MSPage">
+	<g id="Tablet-Portrait" transform="translate(0.000000, -2622.000000)" sketch:type="MSArtboardGroup">
+		<g id="footer-top" transform="translate(0.000000, 2622.000000)" sketch:type="MSLayerGroup">
+			<path id="Path-2-Copy" sketch:type="MSShapeGroup" class="st0" d="M-41,415.3v-8.6h768v15.1L-41,415.3z"/>
+			<path id="Path-5" sketch:type="MSShapeGroup" class="st1" d="M727,409.4v15.7l-768-9.2v-1.1C-41,414.8,471.1,411.5,727,409.4z"/>
+		</g>
+	</g>
+</g>
+</svg>
