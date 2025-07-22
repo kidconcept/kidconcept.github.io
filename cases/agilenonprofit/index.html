@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/vars.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+   <script>
+    function transformScroll(event) {
+      if (!event.deltaY) {
+        return;
+      }
+
+      event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+      event.preventDefault();
+    }
+
+    var element = document.scrollingElement || document.documentElement;
+    element.addEventListener('wheel', transformScroll);
+  </script>
+
+  <title>Product Design Case Studies</title>
+</head>
+	<body class="advisor">
+
+  <div class="bread">
+      <a href="/">Home</a>
+      <a href="/digital">Digital</a>
+      <a href="/physical">Physical</a>
+      <a href="/exhibition">Exhibition</a>
+      <a href="/research">Research</a>
+      <a href="/story">Story</a>
+      <span>Cases</span>
+      <a href="#contact">Contact</a>
+  </div><!-- /bread -->
+
+	<div class="content">
+		<div class="scroller">
+
+				<div class="text">
+					<div>
+						<h1>Designing a Guide for CivicActions Clients</h1>
+						<p><a href="https://civicactions.com/">CivicActions</a> is a rad group of web makers who work with public good clients. They work with big government organizations, NGOs, and Nonprofits and have tens of thousands of hours of web expertise in-house. Their clients trust CivicActions to have the best technology and the best process, and back in 2011 many of their clients had never heard of Agile development. This guide was to help them understand the process.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/tablet-phone.jpg">
+				</div>
+
+				<div class="text">
+					<div>
+						<p>CivicActions produced the content and I developed a new brand identity that they would go on to use for their distributed marketing material.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/phone.jpg">
+				</div>
+
+				<div class="text">
+					<div>
+						<p>Communicating process is something every successful design and development studio needs to do continually with their clients. This guide made clear all the steps involved in developing a user-centered, CMS driving, modern website.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/tablet-hands.jpg">
+				</div>	
+
+				<div class="text">
+					<div>
+						<p>The guide was a great draw for new clients. With it, they understood CivicActions process and were able to adapt that process for their internal projects as well. As a marketing strategy, making revelent instructional material for clients turned out to be a great success.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/tablet.jpg">
+				</div>																
+
+
+
+		      <div class="footer" id="contact">
+		        <div class="spacer">
+		          <div class="contactinfo">
+		            <p>Lets work.<br/>
+		              +1 (831) 266-7357<br/>
+		              <a href="mailto:hello@danvallentyne.com">hello@danvallentyne.com</a></p>
+		            <p>LinkedIn<br/><a href="http://www.linkedin.com/in/danvallentyne">/in/danvallentyne</a></p>
+		            <p>Research Gate<br/><a href="https://www.researchgate.net/profile/Dan-Vallentyne-2">/Dan-Vallentntyne-2</a></p>
+		            <p>Github<br/><a href="https://github.com/kidconcept">/kidconcept</a></p>
+		          </div>
+		        </div>
+		      </div><!-- /footer -->
+
+		    </div><!-- /scroller -->
+		  </div><!-- /content -->
+
+	</body>
+</html>

@@ -1,134 +1,127 @@
-<!doctype html>
-<html class="no-js" lang="">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>UX Design and Development</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="stylesheet" href="css/app.css">
-		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-	</head>
-	<body>
-		<!--[if lt IE 8]>
-			<p class="browserupgrade">Your browser is straight up old. Please use a <a href="http://browsehappy.com/">new one</a> for your sake and for ours.</p>
-		<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/vars.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-		<div class="topbar hide" id="topBar">
-			<div class="grid-container">
-				<a href="/" class="logo"><img src="assets/img/logo.svg" id="navLogo"></a>
-				<nav class="work">
-					<a href="/work" class="casestudies"><img src="/assets/img/casestudies.svg" alt="case studies"></a>
-					<span class="slash"></span>
-					<a href="#hello" class="sayhello"><img src="/assets/img/sayhello.svg" alt="say hello"></a>
-				</nav>
-			</div>
-		</div>
+  <script>
+    function transformScroll(event) {
+      if (!event.deltaY) {
+        return;
+      }
 
-		<div class="heroslider">
-			<!--<div class="slide capslcok open">
-				<video class="videobackground not-mobile" type="video/mp4" src="assets/video/360.mp4" poster="assets/video/poster.jpg" autoplay="true" loop="true">
-					<source type="video/mp4" src="assets/video/360.mp4" />
-					<source type="video/webm" src="assets/video/360.webm" />
-				</video>
-				<div class="posterbackground mobile-only" style="background-image: url('/assets/video/poster.jpg');"></div>
-				<div class="videooverlay"></div>
-				<img src="/assets/img/logo-white.svg" class="hello-logo">
-			</div>-->
-			<div class="slide open right">
-				<div class="posterbackground" style="background-image: url('/work/divethedata/slide.jpg');"></div>
-				<div class="headlines">
-					<h2 class="slidetitle">
-						<img src="/assets/img/slides/citizen-science.svg" style="top: 23px" alt="Citizen Science">
-						<img src="/assets/img/slides/formarinemegafauna.svg" alt="for Marine Megafauna">
-					</h2>
-					<a href="/work/divethedata" class="readon"><span><img src="/assets/img/slides/readonx.svg" alt="Read On"></span></a>
-				</div>
-			</div>
-			<div class="slide left">
-				<div class="posterbackground" style="background-image: url('/work/mantasponsorship/slide.jpg');"></div>
-				<div class="headlines">
-					<h2 class="slidetitle">
-						<img src="/assets/img/slides/fundraising.svg" style="width: 75%" alt="Citizen Science">
-						<img src="/assets/img/slides/toprotect.svg" style="width: 74%;margin-top: -16px" alt="for Marine Megafauna">
-						<img src="/assets/img/slides/theocean.svg" style="width: 71%;margin-top: -25px" alt="for Marine Megafauna">
-					</h2>
-					<a href="/work/mantasponsorship" class="readon"><span><img src="/assets/img/slides/readonx.svg" alt="Read On"></span></a>
-				</div>
-			</div>
-			<div class="slide right">
-				<div class="posterbackground" style="background-image: url('/work/sweetclocks/slide.jpg');"></div>
-				<div class="headlines">
-					<h2 class="slidetitle"><img src="/assets/img/slides/makingtime.svg" alt="Making Time"><img src="/assets/img/slides/withjavascript.svg" alt="with Javascript"></h2>
-					<a href="/work/sweetclocks" class="readon"><span><img src="/assets/img/slides/readonx.svg" alt="Read On"></span></a>
-				</div>
-			</div>
-		</div>
+      event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+      event.preventDefault();
+    }
 
-		<!-- gives some space to expose all those fixed elements -->
-		<div class="fixed_spacer">
-		</div>
+    var element = document.scrollingElement || document.documentElement;
+    element.addEventListener('wheel', transformScroll);
+  </script>
 
-		<div class="page-container" id="intro">
-			<div class="grid-container intro">
-				<div>
-					<h1>User experience design to educate, promote science, and protect our&nbsp;environment.</h1>
-					<p>Design is a powerful ally to have while creating digital products. It connects product, development, marketing, design and the user together with a shared vision.</p>
-					<p>This is my approach to designing mobile apps, responsive web applications, and desktop software interface. If you need communication design, interactive data, information architecture, visual designs, system design, or front end development, I can produce them all to improve the your user experience.</p>
-					<a href="/work" class="button casestudies">View Case Studies</a>
-				</div>
-				<h1>My Disciplines</h1>
-				<div class="tray">
-					<div class="discipline">
-						<h2>System Design</h2>
-						<p>Understanding how a product is built, delivered and experienced provides opportunities to improve efficiency and effectiveness of the product team and its process. System design looks for these opportunities to improve both the process and the product. Developers, visual designers, product managers, and industrial designers all benefit from good system design.</p>
-					</div>
-					<div class="discipline">
-						<h2>Interface Design</h2>
-						<p>Between the person and the machine is the visual layer. This is where people respond emotionally, where they connect with and understand the underlying information and functionality. It's the user’s first impression and carries the character of the product's identity. Our understanding of art and visual design ensures the interface is elegant, ingenious, and simple.</p>
-					</div>
-					<div class="discipline">
-						<h2>Development</h2>
-						<p>The interface artwork is expressed in code and Capslock has a deep understanding of this layer in web applications. Building great patterns with SASS/CSS and working closely with front-end developers ensures the interface's artwork is faithfully represented while aiding the development of the product.</p>
-					</div>
-				</div>
-				<img class="arttools" src="assets/img/arttools.svg">
-				<div>
-					<h1>My Background</h1>
-					<p>I've worked in visual design, development, content and strategy for NGO's, education, lifestyle brands, finance, social media, hospitality, and the energy industry. These are some of the brands I've worked with in the past.</p>
-					<img src="assets/img/background-mobile.svg" class="logowall mobile-only">
-					<img src="assets/img/background-tablet.svg" class="logowall not-mobile">
-				</div>
-			</div>
+  <title>Product Designer</title>
+</head>
+<body>
+  <div class="bread">
+      <span>Home</span>
+      <a href="/digital">Digital</a>
+      <a href="/physical">Physical</a>
+      <a href="/exhibition">Exhibition</a>
+      <a href="/research">Research</a>
+      <a href="/story">Story</a>
+      <a href="/cases">Cases</a>
+      <a href="#contact">Contact</a>
+  </div><!-- /bread -->
+  <div class="content">
+    <div class="scroller">
 
-			<footer id="hello">
-				<div>
-					<h2>Let's work together.</h2>
-					<a href="mailto:hello@danvallentyne.com" class="button">hello@danvallentyne.com</a>
-					<p class="phone">Phone: +1 (415) 702-7607</p>
-					<img src="assets/img/ohwhale.png">
-				</div>
-			</footer>
-		</div>
+      <div class="opener">
+        <div class="spacer">
+          <h1>LONGVIEW<br/>DESIGN</h1>
+        </div>
+      </div><!-- /opener -->
 
-		<script src="js/vendor/velocity.min.js" type="text/javascript"></script>
-		<script src="js/capslock.js" type="text/javascript"></script>
-		<script>
+      <div class="text">
+        <div>
+          <h1>I design products to help future generations.</h1>
+          <p>
+              I design products and conduct research that will help generations to come. That’s the longview of product design. If your digital or physical product has a longview then I’m available to help with research, interface, and experience design. My experience is cross-functional and I’ve developed products and services in education, ecology, social justice, sustainable energy, finance and more throughout my career. 
+              I’ve launched apps, published science, built exhibits, and communicated vision. If you need to improve adoption, engagement, functionality or reach with your product I have the skills and experience to help. I’ve mentored designers, led developers, and directed research all toward a shared vision of a better product.
+           </p>
+        </div>
+      </div><!-- /text -->
 
-			window.onload = function() {
-			   capslock.slider();
-		   };
+      <div class="text">
+        <div>
+          <h1>Digital Product</h1>
+          <p>
+              At the center of the information age is the Digital Product, and its no surprise that this type of work has dominated my career. I’ve helped produce desktop and mobile applications, web applications, software as a service, and design systems in research, insurance, finance, hospitality, education, and games.
+              <a class="button" href="/digitalproduct.html">View my process</a>
+           </p>
+        </div>
+      </div><!-- /text -->
 
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      <div class="text">
+        <div>
+          <h1>Physical Product</h1>
+          <p>
+              In a material world design often comes across the constraints of the physical. I’ve explored the world of physical design for a long time, and have designed and prototyped across a diverse space. I’ve designed textiles, games, research equipment, office equipment, food, and public sculpture.
+              <a class="button" href="./digitalproduct.html">Some physical</a>
+           </p>
+        </div>
+      </div><!-- /text -->
 
-			ga('create', 'UA-16532523-9', 'auto');
-			ga('send', 'pageview');
+      <div class="text">
+        <div>
+          <h1>Exhibition Design</h1>
+          <p>
+              My first museum installation at the Pacific Grove Museum of Natural History is at the intersection of my professional and personal interests. It’s also a return to public works design that I begin early in my career.
+              <a class="button" href="./digitalproduct.html">View my exhibition</a>
+           </p>
+        </div>
+      </div><!-- /text -->
 
-		</script>
+      <div class="text">
+        <div>
+          <h1>Research</h1>
+          <p>
+              I’ve worked with the national parks in Bonaire STINAPA and the University of Queensland to publish research in the Marine Sciences. I’ve worked with the Marine Megafauna Foundation, Shark Stewards, and the Pacific Grove Museum of Natural History to communicate scientific findings on ecology, natural history, conservation and restoration to the public.
+              <a class="button" href="./digitalproduct.html">Learn about my research</a>
+           </p>
+        </div>
+      </div><!-- /text -->
 
-	</body>
+      <div class="text">
+        <div>
+          <h1>My Story</h1>
+          <p>
+              My timeline, and how I came to be a designer focused on the Longview. From social justice communication design to Software as a service for huge corporations and on to scientific research it’s been a fun career with a lot of interesting twists. Learn how it came together for me as a product designer.
+              <a class="button" href="./digitalproduct.html">Step through time</a>
+           </p>
+        </div>
+      </div><!-- /text -->
+
+      <div class="footer" id="contact">
+        <div class="spacer">
+          <div class="contactinfo">
+            <p>Lets work.<br/>
+              +1 (831) 266-7357<br/>
+              <a href="mailto:hello@danvallentyne.com">hello@danvallentyne.com</a></p>
+            <p>LinkedIn<br/><a href="http://www.linkedin.com/in/danvallentyne">/in/danvallentyne</a></p>
+            <p>Research Gate<br/><a href="https://www.researchgate.net/profile/Dan-Vallentyne-2">/Dan-Vallentntyne-2</a></p>
+            <p>Github<br/><a href="https://github.com/kidconcept">/kidconcept</a></p>
+          </div>
+        </div>
+      </div><!-- /footer -->
+
+    </div><!-- /scroller -->
+  </div><!-- /content -->
+  
+</body>
 </html>

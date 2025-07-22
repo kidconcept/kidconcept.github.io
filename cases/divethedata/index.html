@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/vars.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+   <script>
+    function transformScroll(event) {
+      if (!event.deltaY) {
+        return;
+      }
+
+      event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+      event.preventDefault();
+    }
+
+    var element = document.scrollingElement || document.documentElement;
+    element.addEventListener('wheel', transformScroll);
+  </script>
+
+  <title>Product Design Case Studies</title>
+</head>
+	<body class="advisor">
+
+  <div class="bread">
+      <a href="/">Home</a>
+      <a href="/digital">Digital</a>
+      <a href="/physical">Physical</a>
+      <a href="/exhibition">Exhibition</a>
+      <a href="/research">Research</a>
+      <a href="/story">Story</a>
+      <span>Cases</span>
+      <a href="#contact">Contact</a>
+  </div><!-- /bread -->
+
+	<div class="content">
+		<div class="scroller">
+
+				<div class="text">
+					<div>
+						<h1>A Pilot Project for Citizen Science Megafauna Sightings</h1>
+						<p>Some of the most iconic species of megafuana frequent Mozambican waters. Ask many scuba divers what they would most like to see in the water and you will often hear whale shark, manta ray, humpback whale, and many of the other species often spotted on the Mozambique coast. But how often are they spotted?. Two dive centers in Tofo, Mozambique have been collecting sightings data on megafauna species for the past several years in collaboration with the Marine Megafuana Foundation. To help understand the dataset, my collegue wanted to build an interactive visualization using plotly.js and asked me to design the project.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/intro-laptop.jpg">
+					<p>The core interface for Dive the Data provids insights on charasmatic megafauna trends over time and space.</p>
+				</div>						
+
+				<div class="text">
+					<div>
+						<p>Interacting with data is a helpful way to understand it and interactive graphs are one of plotly’s strengths. After exploring several design options we settled on three cross graphs that each provide a unique view into the data: location, frequency, and time. Each graph acts as a selection filter for the other two. This allows the user to focus on the sections of the datasets they are most interested in, and hopefully tease insights out from the numbers.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/divecenter.jpg">
+					<p>The team at a divecenter in Mozambique is checking out the potential of the platform, after this demonstration they signed up to collect data for the project.</p>
+				</div><!-- /figure -->	
+
+				<div class="text">
+					<div>
+						<h2>Growing a Global Database</h2>
+						<p>This pilot visualization is using data from a single region and if it proves successful we will expand to other regions. Collecting sightings data on these species can enable researches to better understand trends that affect these animals, many of which are listed as endangered by the International Union for Conservation of Nature. Through understanding these animals we can better protect them. This project shares insights from the data set with the dive centers that are collecting the data. The centers can share this insight with their clients and use it to market their business.</p>
+					</div>
+				</div>
+								
+				<div class="figure">
+					<video src="./img/divethedata-compressed.mp4" autoplay muted loop></video>
+					<p>The core visualization is a series of cross graphs that allow you to filter based on species, dive site, region, and time.</p>
+				</div>
+
+				<div class="text">
+					<div>
+						<h2>Improving Data Collection</h2>
+						<p>After an analysis of how the sightings data were collected, I discovered that some of the divemasters weren't recording all off the sightings as the original data collection method was troublesome. We brainstormed a better method of collection by talking to the divemasters: a whiteboard and a cellphone camera. This whiteboard is easily accessible during the dive debrief while the sightings are still fresh in everyone's minds. When the board fills up, photos of the boards are mailed to a Marine Megafauna research assistant who records that data into a sheet, where it gets collated into the site.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/divecenter2.jpg">
+					<p>A dive center in Mexico is inputting the weeks sightings into the database. Building tools like this whiteboard was critical to reducing friction for dive centers, driving retention and engagement.</p>
+				</div><!-- /figure -->
+
+				<div class="figure">
+					<img src="img/full-width.jpg">
+					<p>The two ways that most dive centers were thinking about the sightings data were by dive site and by species, so ensuring that both of those views were great was critical to growing adoption.</p>
+				</div><!-- /figure -->
+
+				<div class="text">
+					<div>
+						<p>Plotly graphs are great because they offer complex interactions, which allow users to do more with the data. However for users who’ve never interacted with a graph they can be a challenge to interact with. In user testing, I found that many divers had trouble with plotly’s default interactions. After many iterations modifying the default interactions, adding tutorials, and making subtle changes to the design I was able to improve the success rate significantly.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/responsive-states.jpg">
+					<p>Dive the data</p>
+				</div>			
+
+
+
+		      <div class="footer" id="contact">
+		        <div class="spacer">
+		          <div class="contactinfo">
+		            <p>Lets work.<br/>
+		              +1 (831) 266-7357<br/>
+		              <a href="mailto:hello@danvallentyne.com">hello@danvallentyne.com</a></p>
+		            <p>LinkedIn<br/><a href="http://www.linkedin.com/in/danvallentyne">/in/danvallentyne</a></p>
+		            <p>Research Gate<br/><a href="https://www.researchgate.net/profile/Dan-Vallentyne-2">/Dan-Vallentntyne-2</a></p>
+		            <p>Github<br/><a href="https://github.com/kidconcept">/kidconcept</a></p>
+		          </div>
+		        </div>
+		      </div><!-- /footer -->
+
+		    </div><!-- /scroller -->
+		  </div><!-- /content -->
+
+	</body>
+</html>

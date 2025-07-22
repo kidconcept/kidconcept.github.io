@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/vars.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+   <script>
+    function transformScroll(event) {
+      if (!event.deltaY) {
+        return;
+      }
+
+      event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+      event.preventDefault();
+    }
+
+    var element = document.scrollingElement || document.documentElement;
+    element.addEventListener('wheel', transformScroll);
+  </script>
+
+  <title>Product Design Case Studies</title>
+</head>
+	<body class="advisor">
+
+  <div class="bread">
+      <a href="/">Home</a>
+      <a href="/digital">Digital</a>
+      <a href="/physical">Physical</a>
+      <a href="/exhibition">Exhibition</a>
+      <a href="/research">Research</a>
+      <a href="/story">Story</a>
+      <span>Cases</span>
+      <a href="#contact">Contact</a>
+  </div><!-- /bread -->
+
+	<div class="content">
+		<div class="scroller">
+
+				<div class="text">
+					<div>
+						<h1>Designing a mobile app for People&nbsp;Magazine</h1>
+						<p>Working with Prophet.com I was contracted to design a few mobile applications and a mobile website for People magazine. Prophet already had a few ideas including a minigames pack and a celebrity news tracker. Those were the two ideas we ended up running with and ultimately pitching to People. We delivered wireframes and a few key screens with rendered interfaces for each app.</p>
+					</div>
+				</div>
+				<div class="figure">
+					<img src="wireframes.png" class="medium">
+				</div>
+				<div class="text">
+					<div>
+						<h2>Planning the Apps</h2>
+						<p>I did the wireframing internally in Prophet offices. We went through several iterations as I incorporated feedback from the team on the concept and interaction. Once we all felt good with the direction I started approaching the visuals.</p>
+					</div>
+				</div>
+				<div class="figure">
+					<img src="brainteaser.jpg">
+				</div>
+				<div class="text">
+					<div>
+						<h2>Mobile Trivia Packs and DLC</h2>
+						<p>The game pack idea was realized as a sort of celebrity trivia lightning rounds. The idea was that with 10 or 15 different minigame types People magazine could release and sell new packs of current celebrity trivia. The games were tied into a whole rewards scheme that would give partnership brands the opportunity to promote coupons, discounts, and giftcards as redeemable rewards for status points players won by playing the trivia packs.</p>
+					</div>
+				</div>
+				<div class="figure">
+					<img src="startracker.jpg">
+				</div>
+				<div class="text">
+					<div>
+						<h2>Tracking Celebrities</h2>
+						<p>The second app idea was a more direct version of what People was already doing online. Delivering 	celebrity news content and style advice. Basically a native application version of what People's magazine was already doing online.</p>
+					</div>
+				</div>
+				<div class="figure">
+					<img src="startracker-3up.jpg" class="fullframe">
+				</div>		
+
+
+
+		      <div class="footer" id="contact">
+		        <div class="spacer">
+		          <div class="contactinfo">
+		            <p>Lets work.<br/>
+		              +1 (831) 266-7357<br/>
+		              <a href="mailto:hello@danvallentyne.com">hello@danvallentyne.com</a></p>
+		            <p>LinkedIn<br/><a href="http://www.linkedin.com/in/danvallentyne">/in/danvallentyne</a></p>
+		            <p>Research Gate<br/><a href="https://www.researchgate.net/profile/Dan-Vallentyne-2">/Dan-Vallentntyne-2</a></p>
+		            <p>Github<br/><a href="https://github.com/kidconcept">/kidconcept</a></p>
+		          </div>
+		        </div>
+		      </div><!-- /footer -->
+
+		    </div><!-- /scroller -->
+		  </div><!-- /content -->
+
+	</body>
+</html>

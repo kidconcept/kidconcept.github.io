@@ -1,0 +1,184 @@
+:root {
+  --link: #069bd6;
+  --bg: #fff;
+}
+
+
+/* Header */
+
+.bread {
+  text-align: left;
+  position: fixed;
+  left: 3vw;
+  width: 94vw;
+  top: 0;
+  height: 7vh;
+  line-height: 9vh;
+  border-bottom: 1px solid grey;
+  margin-bottom: 2vh;
+
+  a, span {
+    margin-right: 1vh;
+    font-size: 1.7vh;
+  }
+}
+
+/* Scroll Area */
+
+.content {
+  margin-left: 3vw;
+  margin-top: 9vh;
+  height: 87vh;
+}
+
+@media (orientation: portrait) {
+  .content {
+    overflow-x: auto;
+  }
+}
+
+.scroller {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  height: 100%;
+}
+
+.scroller .text img,
+.scroller .text video {
+  width: 100%;
+  display: block;
+}
+
+.scroller .text > div {
+  width: 24vw;
+}
+
+/* Figures */
+
+.figure {
+  height: 100%;
+}
+
+.figure img,
+.figure video {
+  max-height: 80%;
+
+  &.small {
+    height: 60%;
+  }
+}
+
+.figure iframe {
+  aspect-ratio: 16 / 9;
+  width: 50vw;
+}
+
+@media (orientation: portrait) {
+  .figure img {
+    max-height: 50%;
+  }
+}
+
+.figure p {
+  max-width: 90vw;
+}
+
+/* Footer */
+
+.footer .spacer {
+  width: 100vw;
+  min-width: 900px;
+  height: 100%; 
+  background: url('../assets/chairsitter.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.footer .contactinfo {
+  position: relative;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  padding-left: 18vw;
+}
+
+.footer .contactinfo p {
+  margin-top: 1.6vh;
+  line-height: 2.6vh;
+  font-weight: 400;
+}
+
+/* Opener */
+
+.opener .spacer {
+  width: 91vw;
+  height: 100%; 
+  background: url('../assets/hedge.jpg') no-repeat center;
+  background-size: cover;
+
+  h1 {
+    font-weight: 1000;
+    color: var(--bg);
+    position: absolute;
+    bottom: 9vh;
+    left: 12vh;
+    font-size: 15vh;
+    line-height: 12vh;
+    letter-spacing: -0.5vh;
+  }
+}
+
+/* Buttons */
+
+a.button {
+  display: block;
+  border-top: 1px solid var(--link);
+  padding: 2.3vh 3vh;
+  margin-top: 4.6vh;
+  font-weight: 400;
+  font-size: 2vh;
+
+  &:hover {
+    color: var(--bg);
+    background-color: var(--link);
+    transition: 200ms;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+}
+
+
+/* Typography */
+
+h1, h2 {
+  font-weight: 100;
+  font-size: 4.3vh;
+  line-height: 5.3vh;
+  margin-bottom: 1.6vh;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 3.8vh;
+  line-height: 4.7vh;
+  margin-top: 1.8vh;
+  margin-bottom: 1vh;
+}
+
+p {
+  font-size: 2.2vh;
+  font-weight: 100;
+}
+
+.figure p {
+  font-style: italic;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  text-decoration: underline;
+}

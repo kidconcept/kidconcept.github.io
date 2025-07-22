@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/vars.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+   <script>
+    function transformScroll(event) {
+      if (!event.deltaY) {
+        return;
+      }
+
+      event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+      event.preventDefault();
+    }
+
+    var element = document.scrollingElement || document.documentElement;
+    element.addEventListener('wheel', transformScroll);
+  </script>
+
+  <title>Product Design Case Studies</title>
+</head>
+	<body class="advisor">
+
+  <div class="bread">
+      <a href="/">Home</a>
+      <a href="/digital">Digital</a>
+      <a href="/physical">Physical</a>
+      <a href="/exhibition">Exhibition</a>
+      <a href="/research">Research</a>
+      <a href="/story">Story</a>
+      <span>Cases</span>
+      <a href="#contact">Contact</a>
+  </div><!-- /bread -->
+
+	<div class="content">
+		<div class="scroller">
+
+			<div class="opener">
+        <div class="spacer" style="background-image: url('./img/hero.jpg')">
+          
+        </div>
+      </div><!-- /opener -->
+
+				<div class="text">
+					<div>
+						<h1>Teaching Kids to Program Electronics</h1>
+						<p>Programming has grown from a niche career to a useful skill across many industries and specializations. Computers and electronics are now ubiquitous and any child growing up today benefits from knowing how to operate, construct, and program them. That’s the proposition that <a href=’https://www.playpiper.com/’>Piper</a> takes to heart with their Piper Computer Kit which empowers children to build their own Raspberry Pi based computer, and then use that computer to assemble and program electronics.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/piperkit-2.jpg">
+					<p>The core piperkit, running the PiperOS I designed.</p>
+				</div>						
+
+				<div class="text">
+					<div>
+						<h2>Empowered to Create</h2>
+						<p>The skills the students gain throughout the course combined with the electronics tools in the kit lets them create their own electronics projects. This sets children up with the technological expertise that they will need throughout their lives, empowering them to create their future world.</p>		
+					</div>
+				</div>								
+
+				<div class="figure">
+					<video src="img/piper-clip-2.mp4" controls loop muted poster="img/piper-clip-2.jpg" class="small"></video>
+					<p>Here testing one of the interactive electronic games users can build from scratch using piperOS</p>
+				</div><!-- /figure -->	
+
+				<div class="text">
+					<div>
+						<h2>Rapid Prototyping and User Testing</h2>
+						<p>Working on a tight schedule we jumped into production right away, getting our first Piper Code proof of concepts in front of playtesters. User testing feedback was critical as electronics projects with the Rasberry Pi required a lot of attention to detail that was difficult for young children. We playtested wherever and whenever we could. We brought Piper Code to classrooms, brought students into the office, and visited families in their home. All of this feedback went back into improving the experience.</p>
+					</div>
+				</div>
+				
+				<div class="figure">
+					<img src="img/beat-the-buzzer.jpg">
+					<p>Title screen, assembly instructions, code, and physical components for one of the experiences in PiperOS.</p>
+				</div><!-- /figure -->								
+
+				<div class="text">
+					<div>
+						<h2>Learning to Build Games</h2>
+						<p>To become innovative designers each of our students crafted physical electronics games, and the program culminates with them creating and programming their own games. Throughout the program, the children build simple games like Beat the Buzzer, Simon, and a Dice Roller using breadboards, buttons, and jumper wires.</p>		
+					</div>
+				</div>
+
+				<div class="figure">
+					<video src="img/piper-clip-3.mp4" controls loop muted poster="img/piper-clip-3.jpg" class="small"></video>
+					<p>Working with Piper I designed and produced Piper Code, a Blockly based educational experience that walks kids through assembling and programming their own electronics projects.</p>
+				</div><!-- /figure -->
+
+				<div class="text">
+					<div>
+						<h2>The Basics</h2>
+						<p>We wanted our students to learn programming fundamentals they could take with them into other languages and environments so we set up a curriculum that teaches the basics of programming. Based on the International Society for Technology in Education (ISTE) we built a program that taught students how to be computational thinkers and innovative designers.  Learning how to use variables, loops, lists, events, and how to critically debug a program are all part of becoming computational thinkers.</p>	
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/piperkit-1.jpg">
+					<p>What they needed was software that teaches children how to program those electronics, and that’s where I come in.</p>
+				</div>
+	
+
+
+
+		      <div class="footer" id="contact">
+		        <div class="spacer">
+		          <div class="contactinfo">
+		            <p>Lets work.<br/>
+		              +1 (831) 266-7357<br/>
+		              <a href="mailto:hello@danvallentyne.com">hello@danvallentyne.com</a></p>
+		            <p>LinkedIn<br/><a href="http://www.linkedin.com/in/danvallentyne">/in/danvallentyne</a></p>
+		            <p>Research Gate<br/><a href="https://www.researchgate.net/profile/Dan-Vallentyne-2">/Dan-Vallentntyne-2</a></p>
+		            <p>Github<br/><a href="https://github.com/kidconcept">/kidconcept</a></p>
+		          </div>
+		        </div>
+		      </div><!-- /footer -->
+
+		    </div><!-- /scroller -->
+		  </div><!-- /content -->
+
+	</body>
+</html>

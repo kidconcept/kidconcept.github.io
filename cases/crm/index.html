@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/vars.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+   <script>
+    function transformScroll(event) {
+      if (!event.deltaY) {
+        return;
+      }
+
+      event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+      event.preventDefault();
+    }
+
+    var element = document.scrollingElement || document.documentElement;
+    element.addEventListener('wheel', transformScroll);
+  </script>
+
+  <title>Product Design Case Studies</title>
+</head>
+	<body class="advisor">
+
+  <div class="bread">
+      <a href="/">Home</a>
+      <a href="/digital">Digital</a>
+      <a href="/physical">Physical</a>
+      <a href="/exhibition">Exhibition</a>
+      <a href="/research">Research</a>
+      <a href="/story">Story</a>
+      <span>Cases</span>
+      <a href="#contact">Contact</a>
+  </div><!-- /bread -->
+
+	<div class="content">
+		<div class="scroller">
+
+				<div class="text">
+					<div>
+						<h1>Leopardshark: A redesign and front-end framework processing billions of dollars.</h1>
+						<p>The owners and original authors of a successful CRM in the insurance space approached me about modernizing their application. Working in-house over the next 10 months we created a new look and feel along with an API based front-end. The CRM had built long relationships with their clients and wanted a smooth transition for existing, heavily used features. The application moved billions of dollars annually so the need to maintain and improve functionality was significant.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/darktheme.jpg" class="medium">
+					<p>Leopardshark revolutionized the way that Accounting123 built their front end.</p>
+				</div>						
+
+				<div class="text">
+					<div>
+						<h2>A new tech stack</h2>
+						<p>The client knew they wanted to implement an API to improve interface performance and open the possibility of extending the application to other platforms. We chose taffy and vue.js to interface with their legacy ColdFusion code. I divided the application into reusable widgets and managed a team tasked with rebuilding the front-end with API powered vue.js widgets.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/hero.jpg" class="medium">
+					<p>We added a lot of functionality into the system that didn't exist that came out of our research on what their users needed. The interactions pane (center) gave managers daily insights on their agents actions and the member status ratio gave a critical business indicator that was previously unavailable.</p>
+				</div><!-- /figure -->	
+
+				<div class="text">
+					<div>
+						<h2>User Research</h2>
+						<p>I put google analytics in place early into the project and worked extensively with the client’s customer support team. These insights helped us to understand where and how the end users were most heavily using the application. Armed with insights we developed a transition plan that eased users of a work-heavy application through the transition.</p>
+					</div>
+				</div>		
+
+				<div class="figure">
+					<img src="img/mobilecheck.jpg" class="small">
+					<p>New signup forms streamlined onboarding improving adoption by 10 to 15%.</p>
+				</div>
+
+				<div class="text">
+					<div>
+						<h2>A utility for developers</h2>
+						<p>The larger in-house development team was responsible for maintaining and extending the application while responding to incoming client requests. To keep the site looking and feeling modern I wrote a theme framework, Leopardshark, as a resource for the client’s developers. Built with SCSS and javascript, the front end framework gives developers utilities they need to build interface according to spec. The new API/Vue.js framework required that developers work collaboratively in feature pods, so we worked to extend the client’s code release pathway to accommodate more collaborative development.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/themeguide.jpg" class="medium">
+					<p>A code library for the design system reduced developer lift, allowing one developer to do the work of three.</p>
+				</div><!-- /figure -->
+
+				<div class="text">
+					<div>
+						<h2>Competitor analysis</h2>
+						<p>An indepth analysis of companies in the same and adjacent space helped everyone understand the interface landscape. These insights helped us to understand which features we most needed to maintain a competitive edge and which features of our application already were winning. Armed with insights we could focus on developing the highest value features.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/competitors.jpg" class="small">
+					<p>Several key features fell out of this research including key member list actions, grouped status ratios, and pathways for the onboarding funnel.</p>
+				</div>
+
+				<div class="text">
+					<div>
+						<h2>A Dynamic Theme</h2>
+						<p>Leopardshark leveraging CSS/SCSS features and functions the Leopardshark framework can accommodate global color themes by simply defining new color tables. Font scaling is handled through a global variable that enables the site to be legible across its wide userbase. Each widget is designed to fluidly fill its container, making modular layouts possible.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="img/threeup_A.jpg" class="fullframe">
+					<p>Leopardshark is a whitelable system, allowing resellers to customize the look to match their brand.</p>
+				</div>						
+
+
+
+		      <div class="footer" id="contact">
+		        <div class="spacer">
+		          <div class="contactinfo">
+		            <p>Lets work.<br/>
+		              +1 (831) 266-7357<br/>
+		              <a href="mailto:hello@danvallentyne.com">hello@danvallentyne.com</a></p>
+		            <p>LinkedIn<br/><a href="http://www.linkedin.com/in/danvallentyne">/in/danvallentyne</a></p>
+		            <p>Research Gate<br/><a href="https://www.researchgate.net/profile/Dan-Vallentyne-2">/Dan-Vallentntyne-2</a></p>
+		            <p>Github<br/><a href="https://github.com/kidconcept">/kidconcept</a></p>
+		          </div>
+		        </div>
+		      </div><!-- /footer -->
+
+		    </div><!-- /scroller -->
+		  </div><!-- /content -->
+
+	</body>
+</html>

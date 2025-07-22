@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/vars.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+   <script>
+    function transformScroll(event) {
+      if (!event.deltaY) {
+        return;
+      }
+
+      event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+      event.preventDefault();
+    }
+
+    var element = document.scrollingElement || document.documentElement;
+    element.addEventListener('wheel', transformScroll);
+  </script>
+
+  <title>Product Design Case Studies</title>
+</head>
+	<body class="advisor">
+
+  <div class="bread">
+      <a href="/">Home</a>
+      <a href="/digital">Digital</a>
+      <a href="/physical">Physical</a>
+      <a href="/exhibition">Exhibition</a>
+      <a href="/research">Research</a>
+      <a href="/story">Story</a>
+      <span>Cases</span>
+      <a href="#contact">Contact</a>
+  </div><!-- /bread -->
+
+	<div class="content">
+		<div class="scroller">
+
+				<div class="text">
+					<div>
+						<h1>A Better Way to Track Global Time</h1>
+						<p>As a consultant who travels frequently and keeps clients, friends, and family in all corners of the globe, one of the things I'm constantly juggling is what timezone my meetings are in. This difficulty is compounded by no one else being willing to deal with the time conversions. Asking around, I realized all of my colleagues who travel frequently have similar frustrations. The native apps were limited by search: you had to know a major city within the same timezone you were scheduling around. Fine if you are in New York or London, but frustrating if your friend happens to be in Punto d'Ouro, Mozambique or on the Island of Mabul. Asking google for the time always worked, regardless of how remote the location, but it's results were not persistent. I wanted both, an application that returned times for any location on the planet and remembered all the timezones I was interested in.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<video src="./search.mp4" autoplay loop poster="./search.png" muted class="small"></video>
+					<p>Writing bubbly interactions into the interface gives sweetclocks appeal.</p>
+				</div>		
+
+				<div class="text">
+					<div>
+						<h2>Choosing the API</h2>
+						<p>I originally targeted timezonedb.com to access the timezone information, but soon realized that it's city search API was much more limited that I wanted. It required that the user select a city, and didn't have nearly the same scoped dataset that google provided. Google seemed like the best solution, and with a little searching I found they have a timezone API. Unfortunately it only accepts results from providing geo-coordinates. But a google Places Autocomplete  query provides geo-coordinates for any location which can be easily passed to the timezone API returns everything else I need, the current time in the location, the offset from GMT, and if the location is currently in Daylight savings time. I was ready to start building.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="code.jpg">
+					<p>I wrote the sweetclocks frontend and backend</p>
+				</div>	
+
+				<div class="text">
+					<div>
+						<h2>Rapid Prototyping</h2>
+						<p>I already had a good idea of what the product requirements were, so I jumped right into the prototype. I wanted to get a working proof of concept done before I started in on the visual layer. This allowed me to hammer out any problems with the application before I got bogged down pushing pixels.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="prototype.jpg">
+					<p>I did the designwork in the code layer, saving time and exercising my method</p>
+				</div>		
+
+				<div class="text"><h2>Responsive Scaling</h2>
+					<div>
+						<p>I wanted a design that would scale fluidly between responsive states, so the clocks always took up as much screen as you gave them. However, the internal layout of each clock required a static layout just to keep readable and looking clean. So I settled on having a fixed layout, and then fluidly scaling the clocks all together with a 3D transform ratio applied via Javascript attached to an event listener that detects changes to layout.</p>
+					</div>
+				</div>				
+
+				<div class="figure">
+					<img src="phones.jpg">
+					<p>Fully responsive</p>
+				</div>	
+
+				<div class="text"><h2>User Testing</h2>
+					<div>
+						<p>A simple, single page application with very little depth to the user flow is a good candidate for a high rate of problem discoverability. This means testing with 5 users should discover the large majority of usability issues. I sat on sessions with a small number of users who were trying the app for the first time and noted where they were getting lost or confused within the app. This insight allowed me to adjust the introductory tutorial, add features, and tweak the visual design to overcome usability issues.</p>
+					</div>
+				</div>
+
+				<div class="figure">
+					<img src="ondesk.jpg">
+					<p>Looks great works great</p>
+				</div>		
+																	
+				
+				
+				
+				
+				
+
+		      <div class="footer" id="contact">
+		        <div class="spacer">
+		          <div class="contactinfo">
+		            <p>Lets work.<br/>
+		              +1 (831) 266-7357<br/>
+		              <a href="mailto:hello@danvallentyne.com">hello@danvallentyne.com</a></p>
+		            <p>LinkedIn<br/><a href="http://www.linkedin.com/in/danvallentyne">/in/danvallentyne</a></p>
+		            <p>Research Gate<br/><a href="https://www.researchgate.net/profile/Dan-Vallentyne-2">/Dan-Vallentntyne-2</a></p>
+		            <p>Github<br/><a href="https://github.com/kidconcept">/kidconcept</a></p>
+		          </div>
+		        </div>
+		      </div><!-- /footer -->
+
+		    </div><!-- /scroller -->
+		  </div><!-- /content -->
+
+	</body>
+</html>
