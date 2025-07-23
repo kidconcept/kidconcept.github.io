@@ -51,7 +51,8 @@
 }
 
 .scroller .text > div {
-  width: 24vw;
+  aspect-ratio: 1 / 2;
+  height: 100%;
 }
 
 /* Figures */
