@@ -22,6 +22,12 @@
     font-size: 1.7vh;
     font-weight: 400;
   }
+
+  button {
+    display: none;
+    transform: rotate(90deg);
+  }
+
 }
 
 @media screen 
@@ -29,12 +35,24 @@
 
   .bread {
     line-height: 6vh;
-    padding: 8vw 10vw;
     text-align: center;
     width: 100%;
     left: 0;
+    padding: 0 3vh;
+    text-align: left;
+    .links {
+      display: none;
+      padding: 0 0 8vw 0;
+      text-align: center;    
+    }
+    &.open .links {
+      display: block;
+    }
     a, span {
       font-size: 2vh;
+    }
+    button {
+      display: inline;
     }
   }
 

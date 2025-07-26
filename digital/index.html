@@ -23,21 +23,39 @@
 
     var element = document.scrollingElement || document.documentElement;
     element.addEventListener('wheel', transformScroll);
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const element = document.getElementById("breadnav");
+
+      if (element) {
+        element.addEventListener("click", function () {
+          element.classList.toggle("open");
+        });
+      }
+
+    });
+
   </script>
 
   <title>Digital Product</title>
 </head>
 <body>
-<div class="bread">
-      <button>Menu</button>
-      <a href="/">Home</a>
-      <span>Digital</span>
-      <a href="/physical">Physical</a>
-      <a href="/exhibition">Exhibition</a>
-      <a href="/research">Research</a>
-      <a href="/cases">Cases</a>
-      <a href="#contact">Contact</a>
+
+  <div class="bread" id="breadnav">
+      <button>|||</button>
+      <div class="links">
+        <a href="/">Home</a>
+        <span>Digital</span>
+        <a href="/physical">Physical</a>
+        <a href="/exhibition">Exhibition</a>
+        <a href="/research">Research</a>
+        <a href="/cases">Cases</a>
+        <a href="#contact">Contact</a>
+      </div>
   </div><!-- /bread -->
+
   <div class="content">
     <div class="scroller">
 

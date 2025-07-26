@@ -23,20 +23,39 @@
 
     var element = document.scrollingElement || document.documentElement;
     element.addEventListener('wheel', transformScroll);
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const element = document.getElementById("breadnav");
+
+      if (element) {
+        element.addEventListener("click", function () {
+          element.classList.toggle("open");
+        });
+      }
+
+    });
+
   </script>
 
   <title>Physical Product</title>
 </head>
 <body>
-<div class="bread">
-      <a href="/">Home</a>
-      <a href="/digital">Digital</a>
-      <span>Physical</span>
-      <a href="/exhibition">Exhibition</a>
-      <a href="/research">Research</a>
-      <a href="/cases">Cases</a>
-      <a href="#contact">Contact</a>
+
+  <div class="bread" id="breadnav">
+      <button>|||</button>
+      <div class="links">
+        <a href="/">Home</a>
+        <span>Digital</span>
+        <a href="/physical">Physical</a>
+        <a href="/exhibition">Exhibition</a>
+        <a href="/research">Research</a>
+        <a href="/cases">Cases</a>
+        <a href="#contact">Contact</a>
+      </div>
   </div><!-- /bread -->
+
   <div class="content">
     <div class="scroller">
 
@@ -203,13 +222,21 @@
 
       <div class="footer" id="contact">
         <div class="spacer">
+
           <div class="contactinfo">
-            <p>Lets work.<br/>
-              +1 (831) 266-7357<br/>
-              <a href="mailto:hello@danvallentyne.com">hello@danvallentyne.com</a></p>
-            <p>LinkedIn<br/><a href="http://www.linkedin.com/in/danvallentyne">/in/danvallentyne</a></p>
-            <p>Research Gate<br/><a href="https://www.researchgate.net/profile/Dan-Vallentyne-2">/Dan-Vallentntyne-2</a></p>
-            <p>Github<br/><a href="https://github.com/kidconcept">/kidconcept</a></p>
+
+            <div class="sitter"></div>
+
+            <div>
+              <h4>Let's work.</h4>
+              <p class="email"><a href="mailto:hello@danvallentyne.com">hello@danvallentyne.com</a></p>
+              <p class="links">
+                <a href="http://www.linkedin.com/in/danvallentyne">Linkedin</a>
+                <a href="https://www.researchgate.net/profile/Dan-Vallentyne-2">Research Gate</a>
+                <a href="https://github.com/kidconcept">Github</a>
+              </p>
+            </div>
+
           </div>
         </div>
       </div><!-- /footer -->
